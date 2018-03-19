@@ -18,7 +18,7 @@ This project was originaly developed to learn the basics of [Electron](https://e
 
 ## Features
 
-Functionality you'll find in this application supports the following features:
+Functionality you'll find in this application include:
 
 - Ability to backup and restore user lists limited only by Twitter's API.
 - A robust customized streaming search that harvests a litany of data.
