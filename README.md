@@ -1,5 +1,7 @@
 <h1><img src="https://raw.github.com/tomshaw/electron-twitter-tools/master/docs/logo.png" alt="Electron Twitter Tools"></h1>
 
+[![Build Status](https://travis-ci.org/tomshaw/electron-twitter-tools.svg?branch=master)](https://travis-ci.org/tomshaw/electron-twitter-tools)
+[![Tag](https://img.shields.io/github/tag/tomshaw/electron-twitter-tools.svg)](https://github.com/tomshaw/electron-twitter-tools/tags)
 [![GitHub (pre-)release](https://img.shields.io/github/release/tomshaw/electron-twitter-tools/all.svg)](https://github.com/tomshaw/electron-twitter-tools/releases)
 [![Version npm](https://img.shields.io/npm/v/electron-twitter-tools.svg)](https://www.npmjs.com/package/electron-twitter-tools)
 [![Downloads npm](https://img.shields.io/npm/dt/electron-twitter-tools.svg)](https://www.npmjs.com/package/electron-twitter-tools)
