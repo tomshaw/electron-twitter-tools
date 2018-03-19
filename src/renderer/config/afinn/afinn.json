@@ -1,0 +1,7432 @@
+[{
+  "word": "abandon",
+  "value": "-2"
+}, {
+  "word": "abandoned",
+  "value": "-2"
+}, {
+  "word": "abandons",
+  "value": "-2"
+}, {
+  "word": "abducted",
+  "value": "-2"
+}, {
+  "word": "abduction",
+  "value": "-2"
+}, {
+  "word": "abductions",
+  "value": "-2"
+}, {
+  "word": "abhor",
+  "value": "-3"
+}, {
+  "word": "abhorred",
+  "value": "-3"
+}, {
+  "word": "abhorrent",
+  "value": "-3"
+}, {
+  "word": "abhors",
+  "value": "-3"
+}, {
+  "word": "abilities",
+  "value": "2"
+}, {
+  "word": "ability",
+  "value": "2"
+}, {
+  "word": "aboard",
+  "value": "1"
+}, {
+  "word": "absentee",
+  "value": "-1"
+}, {
+  "word": "absentees",
+  "value": "-1"
+}, {
+  "word": "absolve",
+  "value": "2"
+}, {
+  "word": "absolved",
+  "value": "2"
+}, {
+  "word": "absolves",
+  "value": "2"
+}, {
+  "word": "absolving",
+  "value": "2"
+}, {
+  "word": "absorbed",
+  "value": "1"
+}, {
+  "word": "abuse",
+  "value": "-3"
+}, {
+  "word": "abused",
+  "value": "-3"
+}, {
+  "word": "abuses",
+  "value": "-3"
+}, {
+  "word": "abusive",
+  "value": "-3"
+}, {
+  "word": "accept",
+  "value": "1"
+}, {
+  "word": "accepted",
+  "value": "1"
+}, {
+  "word": "accepting",
+  "value": "1"
+}, {
+  "word": "accepts",
+  "value": "1"
+}, {
+  "word": "accident",
+  "value": "-2"
+}, {
+  "word": "accidental",
+  "value": "-2"
+}, {
+  "word": "accidentally",
+  "value": "-2"
+}, {
+  "word": "accidents",
+  "value": "-2"
+}, {
+  "word": "accomplish",
+  "value": "2"
+}, {
+  "word": "accomplished",
+  "value": "2"
+}, {
+  "word": "accomplishes",
+  "value": "2"
+}, {
+  "word": "accusation",
+  "value": "-2"
+}, {
+  "word": "accusations",
+  "value": "-2"
+}, {
+  "word": "accuse",
+  "value": "-2"
+}, {
+  "word": "accused",
+  "value": "-2"
+}, {
+  "word": "accuses",
+  "value": "-2"
+}, {
+  "word": "accusing",
+  "value": "-2"
+}, {
+  "word": "ache",
+  "value": "-2"
+}, {
+  "word": "achievable",
+  "value": "1"
+}, {
+  "word": "aching",
+  "value": "-2"
+}, {
+  "word": "acquit",
+  "value": "2"
+}, {
+  "word": "acquits",
+  "value": "2"
+}, {
+  "word": "acquitted",
+  "value": "2"
+}, {
+  "word": "acquitting",
+  "value": "2"
+}, {
+  "word": "acrimonious",
+  "value": "-3"
+}, {
+  "word": "active",
+  "value": "1"
+}, {
+  "word": "adequate",
+  "value": "1"
+}, {
+  "word": "admire",
+  "value": "3"
+}, {
+  "word": "admired",
+  "value": "3"
+}, {
+  "word": "admires",
+  "value": "3"
+}, {
+  "word": "admiring",
+  "value": "3"
+}, {
+  "word": "admit",
+  "value": "-1"
+}, {
+  "word": "admits",
+  "value": "-1"
+}, {
+  "word": "admitted",
+  "value": "-1"
+}, {
+  "word": "admonish",
+  "value": "-2"
+}, {
+  "word": "admonished",
+  "value": "-2"
+}, {
+  "word": "adopt",
+  "value": "1"
+}, {
+  "word": "adopts",
+  "value": "1"
+}, {
+  "word": "adorable",
+  "value": "3"
+}, {
+  "word": "adore",
+  "value": "3"
+}, {
+  "word": "adored",
+  "value": "3"
+}, {
+  "word": "adores",
+  "value": "3"
+}, {
+  "word": "advanced",
+  "value": "1"
+}, {
+  "word": "advantage",
+  "value": "2"
+}, {
+  "word": "advantages",
+  "value": "2"
+}, {
+  "word": "adventure",
+  "value": "2"
+}, {
+  "word": "adventures",
+  "value": "2"
+}, {
+  "word": "adventurous",
+  "value": "2"
+}, {
+  "word": "affected",
+  "value": "-1"
+}, {
+  "word": "affection",
+  "value": "3"
+}, {
+  "word": "affectionate",
+  "value": "3"
+}, {
+  "word": "afflicted",
+  "value": "-1"
+}, {
+  "word": "affronted",
+  "value": "-1"
+}, {
+  "word": "afraid",
+  "value": "-2"
+}, {
+  "word": "aggravate",
+  "value": "-2"
+}, {
+  "word": "aggravated",
+  "value": "-2"
+}, {
+  "word": "aggravates",
+  "value": "-2"
+}, {
+  "word": "aggravating",
+  "value": "-2"
+}, {
+  "word": "aggression",
+  "value": "-2"
+}, {
+  "word": "aggressions",
+  "value": "-2"
+}, {
+  "word": "aggressive",
+  "value": "-2"
+}, {
+  "word": "aghast",
+  "value": "-2"
+}, {
+  "word": "agog",
+  "value": "2"
+}, {
+  "word": "agonise",
+  "value": "-3"
+}, {
+  "word": "agonised",
+  "value": "-3"
+}, {
+  "word": "agonises",
+  "value": "-3"
+}, {
+  "word": "agonising",
+  "value": "-3"
+}, {
+  "word": "agonize",
+  "value": "-3"
+}, {
+  "word": "agonized",
+  "value": "-3"
+}, {
+  "word": "agonizes",
+  "value": "-3"
+}, {
+  "word": "agonizing",
+  "value": "-3"
+}, {
+  "word": "agree",
+  "value": "1"
+}, {
+  "word": "agreeable",
+  "value": "2"
+}, {
+  "word": "agreed",
+  "value": "1"
+}, {
+  "word": "agreement",
+  "value": "1"
+}, {
+  "word": "agrees",
+  "value": "1"
+}, {
+  "word": "alarm",
+  "value": "-2"
+}, {
+  "word": "alarmed",
+  "value": "-2"
+}, {
+  "word": "alarmist",
+  "value": "-2"
+}, {
+  "word": "alarmists",
+  "value": "-2"
+}, {
+  "word": "alas",
+  "value": "-1"
+}, {
+  "word": "alert",
+  "value": "-1"
+}, {
+  "word": "alienation",
+  "value": "-2"
+}, {
+  "word": "alive",
+  "value": "1"
+}, {
+  "word": "allergic",
+  "value": "-2"
+}, {
+  "word": "allow",
+  "value": "1"
+}, {
+  "word": "alone",
+  "value": "-2"
+}, {
+  "word": "amaze",
+  "value": "2"
+}, {
+  "word": "amazed",
+  "value": "2"
+}, {
+  "word": "amazes",
+  "value": "2"
+}, {
+  "word": "amazing",
+  "value": "4"
+}, {
+  "word": "ambitious",
+  "value": "2"
+}, {
+  "word": "ambivalent",
+  "value": "-1"
+}, {
+  "word": "amuse",
+  "value": "3"
+}, {
+  "word": "amused",
+  "value": "3"
+}, {
+  "word": "amusement",
+  "value": "3"
+}, {
+  "word": "amusements",
+  "value": "3"
+}, {
+  "word": "anger",
+  "value": "-3"
+}, {
+  "word": "angers",
+  "value": "-3"
+}, {
+  "word": "angry",
+  "value": "-3"
+}, {
+  "word": "anguish",
+  "value": "-3"
+}, {
+  "word": "anguished",
+  "value": "-3"
+}, {
+  "word": "animosity",
+  "value": "-2"
+}, {
+  "word": "annoy",
+  "value": "-2"
+}, {
+  "word": "annoyance",
+  "value": "-2"
+}, {
+  "word": "annoyed",
+  "value": "-2"
+}, {
+  "word": "annoying",
+  "value": "-2"
+}, {
+  "word": "annoys",
+  "value": "-2"
+}, {
+  "word": "antagonistic",
+  "value": "-2"
+}, {
+  "word": "anti",
+  "value": "-1"
+}, {
+  "word": "anticipation",
+  "value": "1"
+}, {
+  "word": "anxiety",
+  "value": "-2"
+}, {
+  "word": "anxious",
+  "value": "-2"
+}, {
+  "word": "apathetic",
+  "value": "-3"
+}, {
+  "word": "apathy",
+  "value": "-3"
+}, {
+  "word": "apeshit",
+  "value": "-3"
+}, {
+  "word": "apocalyptic",
+  "value": "-2"
+}, {
+  "word": "apologise",
+  "value": "-1"
+}, {
+  "word": "apologised",
+  "value": "-1"
+}, {
+  "word": "apologises",
+  "value": "-1"
+}, {
+  "word": "apologising",
+  "value": "-1"
+}, {
+  "word": "apologize",
+  "value": "-1"
+}, {
+  "word": "apologized",
+  "value": "-1"
+}, {
+  "word": "apologizes",
+  "value": "-1"
+}, {
+  "word": "apologizing",
+  "value": "-1"
+}, {
+  "word": "apology",
+  "value": "-1"
+}, {
+  "word": "appalled",
+  "value": "-2"
+}, {
+  "word": "appalling",
+  "value": "-2"
+}, {
+  "word": "appease",
+  "value": "2"
+}, {
+  "word": "appeased",
+  "value": "2"
+}, {
+  "word": "appeases",
+  "value": "2"
+}, {
+  "word": "appeasing",
+  "value": "2"
+}, {
+  "word": "applaud",
+  "value": "2"
+}, {
+  "word": "applauded",
+  "value": "2"
+}, {
+  "word": "applauding",
+  "value": "2"
+}, {
+  "word": "applauds",
+  "value": "2"
+}, {
+  "word": "applause",
+  "value": "2"
+}, {
+  "word": "appreciate",
+  "value": "2"
+}, {
+  "word": "appreciated",
+  "value": "2"
+}, {
+  "word": "appreciates",
+  "value": "2"
+}, {
+  "word": "appreciating",
+  "value": "2"
+}, {
+  "word": "appreciation",
+  "value": "2"
+}, {
+  "word": "apprehensive",
+  "value": "-2"
+}, {
+  "word": "approval",
+  "value": "2"
+}, {
+  "word": "approved",
+  "value": "2"
+}, {
+  "word": "approves",
+  "value": "2"
+}, {
+  "word": "ardent",
+  "value": "1"
+}, {
+  "word": "arrest",
+  "value": "-2"
+}, {
+  "word": "arrested",
+  "value": "-3"
+}, {
+  "word": "arrests",
+  "value": "-2"
+}, {
+  "word": "arrogant",
+  "value": "-2"
+}, {
+  "word": "ashame",
+  "value": "-2"
+}, {
+  "word": "ashamed",
+  "value": "-2"
+}, {
+  "word": "ass",
+  "value": "-4"
+}, {
+  "word": "assassination",
+  "value": "-3"
+}, {
+  "word": "assassinations",
+  "value": "-3"
+}, {
+  "word": "asset",
+  "value": "2"
+}, {
+  "word": "assets",
+  "value": "2"
+}, {
+  "word": "assfucking",
+  "value": "-4"
+}, {
+  "word": "asshole",
+  "value": "-4"
+}, {
+  "word": "astonished",
+  "value": "2"
+}, {
+  "word": "astound",
+  "value": "3"
+}, {
+  "word": "astounded",
+  "value": "3"
+}, {
+  "word": "astounding",
+  "value": "3"
+}, {
+  "word": "astoundingly",
+  "value": "3"
+}, {
+  "word": "astounds",
+  "value": "3"
+}, {
+  "word": "attack",
+  "value": "-1"
+}, {
+  "word": "attacked",
+  "value": "-1"
+}, {
+  "word": "attacking",
+  "value": "-1"
+}, {
+  "word": "attacks",
+  "value": "-1"
+}, {
+  "word": "attract",
+  "value": "1"
+}, {
+  "word": "attracted",
+  "value": "1"
+}, {
+  "word": "attracting",
+  "value": "2"
+}, {
+  "word": "attraction",
+  "value": "2"
+}, {
+  "word": "attractions",
+  "value": "2"
+}, {
+  "word": "attracts",
+  "value": "1"
+}, {
+  "word": "audacious",
+  "value": "3"
+}, {
+  "word": "authority",
+  "value": "1"
+}, {
+  "word": "avert",
+  "value": "-1"
+}, {
+  "word": "averted",
+  "value": "-1"
+}, {
+  "word": "averts",
+  "value": "-1"
+}, {
+  "word": "avid",
+  "value": "2"
+}, {
+  "word": "avoid",
+  "value": "-1"
+}, {
+  "word": "avoided",
+  "value": "-1"
+}, {
+  "word": "avoids",
+  "value": "-1"
+}, {
+  "word": "await",
+  "value": "-1"
+}, {
+  "word": "awaited",
+  "value": "-1"
+}, {
+  "word": "awaits",
+  "value": "-1"
+}, {
+  "word": "award",
+  "value": "3"
+}, {
+  "word": "awarded",
+  "value": "3"
+}, {
+  "word": "awards",
+  "value": "3"
+}, {
+  "word": "awesome",
+  "value": "4"
+}, {
+  "word": "awful",
+  "value": "-3"
+}, {
+  "word": "awkward",
+  "value": "-2"
+}, {
+  "word": "axe",
+  "value": "-1"
+}, {
+  "word": "axed",
+  "value": "-1"
+}, {
+  "word": "backed",
+  "value": "1"
+}, {
+  "word": "backing",
+  "value": "2"
+}, {
+  "word": "backs",
+  "value": "1"
+}, {
+  "word": "bad",
+  "value": "-3"
+}, {
+  "word": "badass",
+  "value": "-3"
+}, {
+  "word": "badly",
+  "value": "-3"
+}, {
+  "word": "bailout",
+  "value": "-2"
+}, {
+  "word": "bamboozle",
+  "value": "-2"
+}, {
+  "word": "bamboozled",
+  "value": "-2"
+}, {
+  "word": "bamboozles",
+  "value": "-2"
+}, {
+  "word": "ban",
+  "value": "-2"
+}, {
+  "word": "banish",
+  "value": "-1"
+}, {
+  "word": "bankrupt",
+  "value": "-3"
+}, {
+  "word": "bankster",
+  "value": "-3"
+}, {
+  "word": "banned",
+  "value": "-2"
+}, {
+  "word": "bargain",
+  "value": "2"
+}, {
+  "word": "barrier",
+  "value": "-2"
+}, {
+  "word": "bastard",
+  "value": "-5"
+}, {
+  "word": "bastards",
+  "value": "-5"
+}, {
+  "word": "battle",
+  "value": "-1"
+}, {
+  "word": "battles",
+  "value": "-1"
+}, {
+  "word": "beaten",
+  "value": "-2"
+}, {
+  "word": "beatific",
+  "value": "3"
+}, {
+  "word": "beating",
+  "value": "-1"
+}, {
+  "word": "beauties",
+  "value": "3"
+}, {
+  "word": "beautiful",
+  "value": "3"
+}, {
+  "word": "beautifully",
+  "value": "3"
+}, {
+  "word": "beautify",
+  "value": "3"
+}, {
+  "word": "belittle",
+  "value": "-2"
+}, {
+  "word": "belittled",
+  "value": "-2"
+}, {
+  "word": "beloved",
+  "value": "3"
+}, {
+  "word": "benefit",
+  "value": "2"
+}, {
+  "word": "benefits",
+  "value": "2"
+}, {
+  "word": "benefitted",
+  "value": "2"
+}, {
+  "word": "benefitting",
+  "value": "2"
+}, {
+  "word": "bereave",
+  "value": "-2"
+}, {
+  "word": "bereaved",
+  "value": "-2"
+}, {
+  "word": "bereaves",
+  "value": "-2"
+}, {
+  "word": "bereaving",
+  "value": "-2"
+}, {
+  "word": "best",
+  "value": "3"
+}, {
+  "word": "betray",
+  "value": "-3"
+}, {
+  "word": "betrayal",
+  "value": "-3"
+}, {
+  "word": "betrayed",
+  "value": "-3"
+}, {
+  "word": "betraying",
+  "value": "-3"
+}, {
+  "word": "betrays",
+  "value": "-3"
+}, {
+  "word": "better",
+  "value": "2"
+}, {
+  "word": "bias",
+  "value": "-1"
+}, {
+  "word": "biased",
+  "value": "-2"
+}, {
+  "word": "big",
+  "value": "1"
+}, {
+  "word": "bitch",
+  "value": "-5"
+}, {
+  "word": "bitches",
+  "value": "-5"
+}, {
+  "word": "bitter",
+  "value": "-2"
+}, {
+  "word": "bitterly",
+  "value": "-2"
+}, {
+  "word": "bizarre",
+  "value": "-2"
+}, {
+  "word": "blah",
+  "value": "-2"
+}, {
+  "word": "blame",
+  "value": "-2"
+}, {
+  "word": "blamed",
+  "value": "-2"
+}, {
+  "word": "blames",
+  "value": "-2"
+}, {
+  "word": "blaming",
+  "value": "-2"
+}, {
+  "word": "bless",
+  "value": "2"
+}, {
+  "word": "blesses",
+  "value": "2"
+}, {
+  "word": "blessing",
+  "value": "3"
+}, {
+  "word": "blind",
+  "value": "-1"
+}, {
+  "word": "bliss",
+  "value": "3"
+}, {
+  "word": "blissful",
+  "value": "3"
+}, {
+  "word": "blithe",
+  "value": "2"
+}, {
+  "word": "block",
+  "value": "-1"
+}, {
+  "word": "blockbuster",
+  "value": "3"
+}, {
+  "word": "blocked",
+  "value": "-1"
+}, {
+  "word": "blocking",
+  "value": "-1"
+}, {
+  "word": "blocks",
+  "value": "-1"
+}, {
+  "word": "bloody",
+  "value": "-3"
+}, {
+  "word": "blurry",
+  "value": "-2"
+}, {
+  "word": "boastful",
+  "value": "-2"
+}, {
+  "word": "bold",
+  "value": "2"
+}, {
+  "word": "boldly",
+  "value": "2"
+}, {
+  "word": "bomb",
+  "value": "-1"
+}, {
+  "word": "boost",
+  "value": "1"
+}, {
+  "word": "boosted",
+  "value": "1"
+}, {
+  "word": "boosting",
+  "value": "1"
+}, {
+  "word": "boosts",
+  "value": "1"
+}, {
+  "word": "bore",
+  "value": "-2"
+}, {
+  "word": "bored",
+  "value": "-2"
+}, {
+  "word": "boring",
+  "value": "-3"
+}, {
+  "word": "bother",
+  "value": "-2"
+}, {
+  "word": "bothered",
+  "value": "-2"
+}, {
+  "word": "bothers",
+  "value": "-2"
+}, {
+  "word": "bothersome",
+  "value": "-2"
+}, {
+  "word": "boycott",
+  "value": "-2"
+}, {
+  "word": "boycotted",
+  "value": "-2"
+}, {
+  "word": "boycotting",
+  "value": "-2"
+}, {
+  "word": "boycotts",
+  "value": "-2"
+}, {
+  "word": "brainwashing",
+  "value": "-3"
+}, {
+  "word": "brave",
+  "value": "2"
+}, {
+  "word": "breakthrough",
+  "value": "3"
+}, {
+  "word": "breathtaking",
+  "value": "5"
+}, {
+  "word": "bribe",
+  "value": "-3"
+}, {
+  "word": "bright",
+  "value": "1"
+}, {
+  "word": "brightest",
+  "value": "2"
+}, {
+  "word": "brightness",
+  "value": "1"
+}, {
+  "word": "brilliant",
+  "value": "4"
+}, {
+  "word": "brisk",
+  "value": "2"
+}, {
+  "word": "broke",
+  "value": "-1"
+}, {
+  "word": "broken",
+  "value": "-1"
+}, {
+  "word": "brooding",
+  "value": "-2"
+}, {
+  "word": "bullied",
+  "value": "-2"
+}, {
+  "word": "bullshit",
+  "value": "-4"
+}, {
+  "word": "bully",
+  "value": "-2"
+}, {
+  "word": "bullying",
+  "value": "-2"
+}, {
+  "word": "bummer",
+  "value": "-2"
+}, {
+  "word": "buoyant",
+  "value": "2"
+}, {
+  "word": "burden",
+  "value": "-2"
+}, {
+  "word": "burdened",
+  "value": "-2"
+}, {
+  "word": "burdening",
+  "value": "-2"
+}, {
+  "word": "burdens",
+  "value": "-2"
+}, {
+  "word": "calm",
+  "value": "2"
+}, {
+  "word": "calmed",
+  "value": "2"
+}, {
+  "word": "calming",
+  "value": "2"
+}, {
+  "word": "calms",
+  "value": "2"
+}, {
+  "word": "can't stand",
+  "value": "-3"
+}, {
+  "word": "cancel",
+  "value": "-1"
+}, {
+  "word": "cancelled",
+  "value": "-1"
+}, {
+  "word": "cancelling",
+  "value": "-1"
+}, {
+  "word": "cancels",
+  "value": "-1"
+}, {
+  "word": "cancer",
+  "value": "-1"
+}, {
+  "word": "capable",
+  "value": "1"
+}, {
+  "word": "captivated",
+  "value": "3"
+}, {
+  "word": "care",
+  "value": "2"
+}, {
+  "word": "carefree",
+  "value": "1"
+}, {
+  "word": "careful",
+  "value": "2"
+}, {
+  "word": "carefully",
+  "value": "2"
+}, {
+  "word": "careless",
+  "value": "-2"
+}, {
+  "word": "cares",
+  "value": "2"
+}, {
+  "word": "cashing in",
+  "value": "-2"
+}, {
+  "word": "casualty",
+  "value": "-2"
+}, {
+  "word": "catastrophe",
+  "value": "-3"
+}, {
+  "word": "catastrophic",
+  "value": "-4"
+}, {
+  "word": "cautious",
+  "value": "-1"
+}, {
+  "word": "celebrate",
+  "value": "3"
+}, {
+  "word": "celebrated",
+  "value": "3"
+}, {
+  "word": "celebrates",
+  "value": "3"
+}, {
+  "word": "celebrating",
+  "value": "3"
+}, {
+  "word": "censor",
+  "value": "-2"
+}, {
+  "word": "censored",
+  "value": "-2"
+}, {
+  "word": "censors",
+  "value": "-2"
+}, {
+  "word": "certain",
+  "value": "1"
+}, {
+  "word": "chagrin",
+  "value": "-2"
+}, {
+  "word": "chagrined",
+  "value": "-2"
+}, {
+  "word": "challenge",
+  "value": "-1"
+}, {
+  "word": "chance",
+  "value": "2"
+}, {
+  "word": "chances",
+  "value": "2"
+}, {
+  "word": "chaos",
+  "value": "-2"
+}, {
+  "word": "chaotic",
+  "value": "-2"
+}, {
+  "word": "charged",
+  "value": "-3"
+}, {
+  "word": "charges",
+  "value": "-2"
+}, {
+  "word": "charm",
+  "value": "3"
+}, {
+  "word": "charming",
+  "value": "3"
+}, {
+  "word": "charmless",
+  "value": "-3"
+}, {
+  "word": "chastise",
+  "value": "-3"
+}, {
+  "word": "chastised",
+  "value": "-3"
+}, {
+  "word": "chastises",
+  "value": "-3"
+}, {
+  "word": "chastising",
+  "value": "-3"
+}, {
+  "word": "cheat",
+  "value": "-3"
+}, {
+  "word": "cheated",
+  "value": "-3"
+}, {
+  "word": "cheater",
+  "value": "-3"
+}, {
+  "word": "cheaters",
+  "value": "-3"
+}, {
+  "word": "cheats",
+  "value": "-3"
+}, {
+  "word": "cheer",
+  "value": "2"
+}, {
+  "word": "cheered",
+  "value": "2"
+}, {
+  "word": "cheerful",
+  "value": "2"
+}, {
+  "word": "cheering",
+  "value": "2"
+}, {
+  "word": "cheerless",
+  "value": "-2"
+}, {
+  "word": "cheers",
+  "value": "2"
+}, {
+  "word": "cheery",
+  "value": "3"
+}, {
+  "word": "cherish",
+  "value": "2"
+}, {
+  "word": "cherished",
+  "value": "2"
+}, {
+  "word": "cherishes",
+  "value": "2"
+}, {
+  "word": "cherishing",
+  "value": "2"
+}, {
+  "word": "chic",
+  "value": "2"
+}, {
+  "word": "childish",
+  "value": "-2"
+}, {
+  "word": "chilling",
+  "value": "-1"
+}, {
+  "word": "choke",
+  "value": "-2"
+}, {
+  "word": "choked",
+  "value": "-2"
+}, {
+  "word": "chokes",
+  "value": "-2"
+}, {
+  "word": "choking",
+  "value": "-2"
+}, {
+  "word": "clarifies",
+  "value": "2"
+}, {
+  "word": "clarity",
+  "value": "2"
+}, {
+  "word": "clash",
+  "value": "-2"
+}, {
+  "word": "classy",
+  "value": "3"
+}, {
+  "word": "clean",
+  "value": "2"
+}, {
+  "word": "cleaner",
+  "value": "2"
+}, {
+  "word": "clear",
+  "value": "1"
+}, {
+  "word": "cleared",
+  "value": "1"
+}, {
+  "word": "clearly",
+  "value": "1"
+}, {
+  "word": "clears",
+  "value": "1"
+}, {
+  "word": "clever",
+  "value": "2"
+}, {
+  "word": "clouded",
+  "value": "-1"
+}, {
+  "word": "clueless",
+  "value": "-2"
+}, {
+  "word": "cock",
+  "value": "-5"
+}, {
+  "word": "cocksucker",
+  "value": "-5"
+}, {
+  "word": "cocksuckers",
+  "value": "-5"
+}, {
+  "word": "cocky",
+  "value": "-2"
+}, {
+  "word": "coerced",
+  "value": "-2"
+}, {
+  "word": "collapse",
+  "value": "-2"
+}, {
+  "word": "collapsed",
+  "value": "-2"
+}, {
+  "word": "collapses",
+  "value": "-2"
+}, {
+  "word": "collapsing",
+  "value": "-2"
+}, {
+  "word": "collide",
+  "value": "-1"
+}, {
+  "word": "collides",
+  "value": "-1"
+}, {
+  "word": "colliding",
+  "value": "-1"
+}, {
+  "word": "collision",
+  "value": "-2"
+}, {
+  "word": "collisions",
+  "value": "-2"
+}, {
+  "word": "colluding",
+  "value": "-3"
+}, {
+  "word": "combat",
+  "value": "-1"
+}, {
+  "word": "combats",
+  "value": "-1"
+}, {
+  "word": "comedy",
+  "value": "1"
+}, {
+  "word": "comfort",
+  "value": "2"
+}, {
+  "word": "comfortable",
+  "value": "2"
+}, {
+  "word": "comforting",
+  "value": "2"
+}, {
+  "word": "comforts",
+  "value": "2"
+}, {
+  "word": "commend",
+  "value": "2"
+}, {
+  "word": "commended",
+  "value": "2"
+}, {
+  "word": "commit",
+  "value": "1"
+}, {
+  "word": "commitment",
+  "value": "2"
+}, {
+  "word": "commits",
+  "value": "1"
+}, {
+  "word": "committed",
+  "value": "1"
+}, {
+  "word": "committing",
+  "value": "1"
+}, {
+  "word": "compassionate",
+  "value": "2"
+}, {
+  "word": "compelled",
+  "value": "1"
+}, {
+  "word": "competent",
+  "value": "2"
+}, {
+  "word": "competitive",
+  "value": "2"
+}, {
+  "word": "complacent",
+  "value": "-2"
+}, {
+  "word": "complain",
+  "value": "-2"
+}, {
+  "word": "complained",
+  "value": "-2"
+}, {
+  "word": "complains",
+  "value": "-2"
+}, {
+  "word": "comprehensive",
+  "value": "2"
+}, {
+  "word": "conciliate",
+  "value": "2"
+}, {
+  "word": "conciliated",
+  "value": "2"
+}, {
+  "word": "conciliates",
+  "value": "2"
+}, {
+  "word": "conciliating",
+  "value": "2"
+}, {
+  "word": "condemn",
+  "value": "-2"
+}, {
+  "word": "condemnation",
+  "value": "-2"
+}, {
+  "word": "condemned",
+  "value": "-2"
+}, {
+  "word": "condemns",
+  "value": "-2"
+}, {
+  "word": "confidence",
+  "value": "2"
+}, {
+  "word": "confident",
+  "value": "2"
+}, {
+  "word": "conflict",
+  "value": "-2"
+}, {
+  "word": "conflicting",
+  "value": "-2"
+}, {
+  "word": "conflictive",
+  "value": "-2"
+}, {
+  "word": "conflicts",
+  "value": "-2"
+}, {
+  "word": "confuse",
+  "value": "-2"
+}, {
+  "word": "confused",
+  "value": "-2"
+}, {
+  "word": "confusing",
+  "value": "-2"
+}, {
+  "word": "congrats",
+  "value": "2"
+}, {
+  "word": "congratulate",
+  "value": "2"
+}, {
+  "word": "congratulation",
+  "value": "2"
+}, {
+  "word": "congratulations",
+  "value": "2"
+}, {
+  "word": "consent",
+  "value": "2"
+}, {
+  "word": "consents",
+  "value": "2"
+}, {
+  "word": "consolable",
+  "value": "2"
+}, {
+  "word": "conspiracy",
+  "value": "-3"
+}, {
+  "word": "constrained",
+  "value": "-2"
+}, {
+  "word": "contagion",
+  "value": "-2"
+}, {
+  "word": "contagions",
+  "value": "-2"
+}, {
+  "word": "contagious",
+  "value": "-1"
+}, {
+  "word": "contempt",
+  "value": "-2"
+}, {
+  "word": "contemptuous",
+  "value": "-2"
+}, {
+  "word": "contemptuously",
+  "value": "-2"
+}, {
+  "word": "contend",
+  "value": "-1"
+}, {
+  "word": "contender",
+  "value": "-1"
+}, {
+  "word": "contending",
+  "value": "-1"
+}, {
+  "word": "contentious",
+  "value": "-2"
+}, {
+  "word": "contestable",
+  "value": "-2"
+}, {
+  "word": "controversial",
+  "value": "-2"
+}, {
+  "word": "controversially",
+  "value": "-2"
+}, {
+  "word": "convince",
+  "value": "1"
+}, {
+  "word": "convinced",
+  "value": "1"
+}, {
+  "word": "convinces",
+  "value": "1"
+}, {
+  "word": "convivial",
+  "value": "2"
+}, {
+  "word": "cool",
+  "value": "1"
+}, {
+  "word": "cool stuff",
+  "value": "3"
+}, {
+  "word": "cornered",
+  "value": "-2"
+}, {
+  "word": "corpse",
+  "value": "-1"
+}, {
+  "word": "costly",
+  "value": "-2"
+}, {
+  "word": "courage",
+  "value": "2"
+}, {
+  "word": "courageous",
+  "value": "2"
+}, {
+  "word": "courteous",
+  "value": "2"
+}, {
+  "word": "courtesy",
+  "value": "2"
+}, {
+  "word": "cover-up",
+  "value": "-3"
+}, {
+  "word": "coward",
+  "value": "-2"
+}, {
+  "word": "cowardly",
+  "value": "-2"
+}, {
+  "word": "coziness",
+  "value": "2"
+}, {
+  "word": "cramp",
+  "value": "-1"
+}, {
+  "word": "crap",
+  "value": "-3"
+}, {
+  "word": "crash",
+  "value": "-2"
+}, {
+  "word": "crazier",
+  "value": "-2"
+}, {
+  "word": "craziest",
+  "value": "-2"
+}, {
+  "word": "crazy",
+  "value": "-2"
+}, {
+  "word": "creative",
+  "value": "2"
+}, {
+  "word": "crestfallen",
+  "value": "-2"
+}, {
+  "word": "cried",
+  "value": "-2"
+}, {
+  "word": "cries",
+  "value": "-2"
+}, {
+  "word": "crime",
+  "value": "-3"
+}, {
+  "word": "criminal",
+  "value": "-3"
+}, {
+  "word": "criminals",
+  "value": "-3"
+}, {
+  "word": "crisis",
+  "value": "-3"
+}, {
+  "word": "critic",
+  "value": "-2"
+}, {
+  "word": "criticism",
+  "value": "-2"
+}, {
+  "word": "criticize",
+  "value": "-2"
+}, {
+  "word": "criticized",
+  "value": "-2"
+}, {
+  "word": "criticizes",
+  "value": "-2"
+}, {
+  "word": "criticizing",
+  "value": "-2"
+}, {
+  "word": "critics",
+  "value": "-2"
+}, {
+  "word": "cruel",
+  "value": "-3"
+}, {
+  "word": "cruelty",
+  "value": "-3"
+}, {
+  "word": "crush",
+  "value": "-1"
+}, {
+  "word": "crushed",
+  "value": "-2"
+}, {
+  "word": "crushes",
+  "value": "-1"
+}, {
+  "word": "crushing",
+  "value": "-1"
+}, {
+  "word": "cry",
+  "value": "-1"
+}, {
+  "word": "crying",
+  "value": "-2"
+}, {
+  "word": "cunt",
+  "value": "-5"
+}, {
+  "word": "curious",
+  "value": "1"
+}, {
+  "word": "curse",
+  "value": "-1"
+}, {
+  "word": "cut",
+  "value": "-1"
+}, {
+  "word": "cute",
+  "value": "2"
+}, {
+  "word": "cuts",
+  "value": "-1"
+}, {
+  "word": "cutting",
+  "value": "-1"
+}, {
+  "word": "cynic",
+  "value": "-2"
+}, {
+  "word": "cynical",
+  "value": "-2"
+}, {
+  "word": "cynicism",
+  "value": "-2"
+}, {
+  "word": "damage",
+  "value": "-3"
+}, {
+  "word": "damages",
+  "value": "-3"
+}, {
+  "word": "damn",
+  "value": "-4"
+}, {
+  "word": "damned",
+  "value": "-4"
+}, {
+  "word": "damnit",
+  "value": "-4"
+}, {
+  "word": "danger",
+  "value": "-2"
+}, {
+  "word": "daredevil",
+  "value": "2"
+}, {
+  "word": "daring",
+  "value": "2"
+}, {
+  "word": "darkest",
+  "value": "-2"
+}, {
+  "word": "darkness",
+  "value": "-1"
+}, {
+  "word": "dauntless",
+  "value": "2"
+}, {
+  "word": "dead",
+  "value": "-3"
+}, {
+  "word": "deadlock",
+  "value": "-2"
+}, {
+  "word": "deafening",
+  "value": "-1"
+}, {
+  "word": "dear",
+  "value": "2"
+}, {
+  "word": "dearly",
+  "value": "3"
+}, {
+  "word": "death",
+  "value": "-2"
+}, {
+  "word": "debonair",
+  "value": "2"
+}, {
+  "word": "debt",
+  "value": "-2"
+}, {
+  "word": "deceit",
+  "value": "-3"
+}, {
+  "word": "deceitful",
+  "value": "-3"
+}, {
+  "word": "deceive",
+  "value": "-3"
+}, {
+  "word": "deceived",
+  "value": "-3"
+}, {
+  "word": "deceives",
+  "value": "-3"
+}, {
+  "word": "deceiving",
+  "value": "-3"
+}, {
+  "word": "deception",
+  "value": "-3"
+}, {
+  "word": "decisive",
+  "value": "1"
+}, {
+  "word": "dedicated",
+  "value": "2"
+}, {
+  "word": "defeated",
+  "value": "-2"
+}, {
+  "word": "defect",
+  "value": "-3"
+}, {
+  "word": "defects",
+  "value": "-3"
+}, {
+  "word": "defender",
+  "value": "2"
+}, {
+  "word": "defenders",
+  "value": "2"
+}, {
+  "word": "defenseless",
+  "value": "-2"
+}, {
+  "word": "defer",
+  "value": "-1"
+}, {
+  "word": "deferring",
+  "value": "-1"
+}, {
+  "word": "defiant",
+  "value": "-1"
+}, {
+  "word": "deficit",
+  "value": "-2"
+}, {
+  "word": "degrade",
+  "value": "-2"
+}, {
+  "word": "degraded",
+  "value": "-2"
+}, {
+  "word": "degrades",
+  "value": "-2"
+}, {
+  "word": "dehumanize",
+  "value": "-2"
+}, {
+  "word": "dehumanized",
+  "value": "-2"
+}, {
+  "word": "dehumanizes",
+  "value": "-2"
+}, {
+  "word": "dehumanizing",
+  "value": "-2"
+}, {
+  "word": "deject",
+  "value": "-2"
+}, {
+  "word": "dejected",
+  "value": "-2"
+}, {
+  "word": "dejecting",
+  "value": "-2"
+}, {
+  "word": "dejects",
+  "value": "-2"
+}, {
+  "word": "delay",
+  "value": "-1"
+}, {
+  "word": "delayed",
+  "value": "-1"
+}, {
+  "word": "delight",
+  "value": "3"
+}, {
+  "word": "delighted",
+  "value": "3"
+}, {
+  "word": "delighting",
+  "value": "3"
+}, {
+  "word": "delights",
+  "value": "3"
+}, {
+  "word": "demand",
+  "value": "-1"
+}, {
+  "word": "demanded",
+  "value": "-1"
+}, {
+  "word": "demanding",
+  "value": "-1"
+}, {
+  "word": "demands",
+  "value": "-1"
+}, {
+  "word": "demonstration",
+  "value": "-1"
+}, {
+  "word": "demoralized",
+  "value": "-2"
+}, {
+  "word": "denied",
+  "value": "-2"
+}, {
+  "word": "denier",
+  "value": "-2"
+}, {
+  "word": "deniers",
+  "value": "-2"
+}, {
+  "word": "denies",
+  "value": "-2"
+}, {
+  "word": "denounce",
+  "value": "-2"
+}, {
+  "word": "denounces",
+  "value": "-2"
+}, {
+  "word": "deny",
+  "value": "-2"
+}, {
+  "word": "denying",
+  "value": "-2"
+}, {
+  "word": "depressed",
+  "value": "-2"
+}, {
+  "word": "depressing",
+  "value": "-2"
+}, {
+  "word": "derail",
+  "value": "-2"
+}, {
+  "word": "derailed",
+  "value": "-2"
+}, {
+  "word": "derails",
+  "value": "-2"
+}, {
+  "word": "deride",
+  "value": "-2"
+}, {
+  "word": "derided",
+  "value": "-2"
+}, {
+  "word": "derides",
+  "value": "-2"
+}, {
+  "word": "deriding",
+  "value": "-2"
+}, {
+  "word": "derision",
+  "value": "-2"
+}, {
+  "word": "desirable",
+  "value": "2"
+}, {
+  "word": "desire",
+  "value": "1"
+}, {
+  "word": "desired",
+  "value": "2"
+}, {
+  "word": "desirous",
+  "value": "2"
+}, {
+  "word": "despair",
+  "value": "-3"
+}, {
+  "word": "despairing",
+  "value": "-3"
+}, {
+  "word": "despairs",
+  "value": "-3"
+}, {
+  "word": "desperate",
+  "value": "-3"
+}, {
+  "word": "desperately",
+  "value": "-3"
+}, {
+  "word": "despondent",
+  "value": "-3"
+}, {
+  "word": "destroy",
+  "value": "-3"
+}, {
+  "word": "destroyed",
+  "value": "-3"
+}, {
+  "word": "destroying",
+  "value": "-3"
+}, {
+  "word": "destroys",
+  "value": "-3"
+}, {
+  "word": "destruction",
+  "value": "-3"
+}, {
+  "word": "destructive",
+  "value": "-3"
+}, {
+  "word": "detached",
+  "value": "-1"
+}, {
+  "word": "detain",
+  "value": "-2"
+}, {
+  "word": "detained",
+  "value": "-2"
+}, {
+  "word": "detention",
+  "value": "-2"
+}, {
+  "word": "determined",
+  "value": "2"
+}, {
+  "word": "devastate",
+  "value": "-2"
+}, {
+  "word": "devastated",
+  "value": "-2"
+}, {
+  "word": "devastating",
+  "value": "-2"
+}, {
+  "word": "devoted",
+  "value": "3"
+}, {
+  "word": "diamond",
+  "value": "1"
+}, {
+  "word": "dick",
+  "value": "-4"
+}, {
+  "word": "dickhead",
+  "value": "-4"
+}, {
+  "word": "die",
+  "value": "-3"
+}, {
+  "word": "died",
+  "value": "-3"
+}, {
+  "word": "difficult",
+  "value": "-1"
+}, {
+  "word": "diffident",
+  "value": "-2"
+}, {
+  "word": "dilemma",
+  "value": "-1"
+}, {
+  "word": "dipshit",
+  "value": "-3"
+}, {
+  "word": "dire",
+  "value": "-3"
+}, {
+  "word": "direful",
+  "value": "-3"
+}, {
+  "word": "dirt",
+  "value": "-2"
+}, {
+  "word": "dirtier",
+  "value": "-2"
+}, {
+  "word": "dirtiest",
+  "value": "-2"
+}, {
+  "word": "dirty",
+  "value": "-2"
+}, {
+  "word": "disabling",
+  "value": "-1"
+}, {
+  "word": "disadvantage",
+  "value": "-2"
+}, {
+  "word": "disadvantaged",
+  "value": "-2"
+}, {
+  "word": "disappear",
+  "value": "-1"
+}, {
+  "word": "disappeared",
+  "value": "-1"
+}, {
+  "word": "disappears",
+  "value": "-1"
+}, {
+  "word": "disappoint",
+  "value": "-2"
+}, {
+  "word": "disappointed",
+  "value": "-2"
+}, {
+  "word": "disappointing",
+  "value": "-2"
+}, {
+  "word": "disappointment",
+  "value": "-2"
+}, {
+  "word": "disappointments",
+  "value": "-2"
+}, {
+  "word": "disappoints",
+  "value": "-2"
+}, {
+  "word": "disaster",
+  "value": "-2"
+}, {
+  "word": "disasters",
+  "value": "-2"
+}, {
+  "word": "disastrous",
+  "value": "-3"
+}, {
+  "word": "disbelieve",
+  "value": "-2"
+}, {
+  "word": "discard",
+  "value": "-1"
+}, {
+  "word": "discarded",
+  "value": "-1"
+}, {
+  "word": "discarding",
+  "value": "-1"
+}, {
+  "word": "discards",
+  "value": "-1"
+}, {
+  "word": "disconsolate",
+  "value": "-2"
+}, {
+  "word": "disconsolation",
+  "value": "-2"
+}, {
+  "word": "discontented",
+  "value": "-2"
+}, {
+  "word": "discord",
+  "value": "-2"
+}, {
+  "word": "discounted",
+  "value": "-1"
+}, {
+  "word": "discouraged",
+  "value": "-2"
+}, {
+  "word": "discredited",
+  "value": "-2"
+}, {
+  "word": "disdain",
+  "value": "-2"
+}, {
+  "word": "disgrace",
+  "value": "-2"
+}, {
+  "word": "disgraced",
+  "value": "-2"
+}, {
+  "word": "disguise",
+  "value": "-1"
+}, {
+  "word": "disguised",
+  "value": "-1"
+}, {
+  "word": "disguises",
+  "value": "-1"
+}, {
+  "word": "disguising",
+  "value": "-1"
+}, {
+  "word": "disgust",
+  "value": "-3"
+}, {
+  "word": "disgusted",
+  "value": "-3"
+}, {
+  "word": "disgusting",
+  "value": "-3"
+}, {
+  "word": "disheartened",
+  "value": "-2"
+}, {
+  "word": "dishonest",
+  "value": "-2"
+}, {
+  "word": "disillusioned",
+  "value": "-2"
+}, {
+  "word": "disinclined",
+  "value": "-2"
+}, {
+  "word": "disjointed",
+  "value": "-2"
+}, {
+  "word": "dislike",
+  "value": "-2"
+}, {
+  "word": "dismal",
+  "value": "-2"
+}, {
+  "word": "dismayed",
+  "value": "-2"
+}, {
+  "word": "disorder",
+  "value": "-2"
+}, {
+  "word": "disorganized",
+  "value": "-2"
+}, {
+  "word": "disoriented",
+  "value": "-2"
+}, {
+  "word": "disparage",
+  "value": "-2"
+}, {
+  "word": "disparaged",
+  "value": "-2"
+}, {
+  "word": "disparages",
+  "value": "-2"
+}, {
+  "word": "disparaging",
+  "value": "-2"
+}, {
+  "word": "displeased",
+  "value": "-2"
+}, {
+  "word": "dispute",
+  "value": "-2"
+}, {
+  "word": "disputed",
+  "value": "-2"
+}, {
+  "word": "disputes",
+  "value": "-2"
+}, {
+  "word": "disputing",
+  "value": "-2"
+}, {
+  "word": "disqualified",
+  "value": "-2"
+}, {
+  "word": "disquiet",
+  "value": "-2"
+}, {
+  "word": "disregard",
+  "value": "-2"
+}, {
+  "word": "disregarded",
+  "value": "-2"
+}, {
+  "word": "disregarding",
+  "value": "-2"
+}, {
+  "word": "disregards",
+  "value": "-2"
+}, {
+  "word": "disrespect",
+  "value": "-2"
+}, {
+  "word": "disrespected",
+  "value": "-2"
+}, {
+  "word": "disruption",
+  "value": "-2"
+}, {
+  "word": "disruptions",
+  "value": "-2"
+}, {
+  "word": "disruptive",
+  "value": "-2"
+}, {
+  "word": "dissatisfied",
+  "value": "-2"
+}, {
+  "word": "distort",
+  "value": "-2"
+}, {
+  "word": "distorted",
+  "value": "-2"
+}, {
+  "word": "distorting",
+  "value": "-2"
+}, {
+  "word": "distorts",
+  "value": "-2"
+}, {
+  "word": "distract",
+  "value": "-2"
+}, {
+  "word": "distracted",
+  "value": "-2"
+}, {
+  "word": "distraction",
+  "value": "-2"
+}, {
+  "word": "distracts",
+  "value": "-2"
+}, {
+  "word": "distress",
+  "value": "-2"
+}, {
+  "word": "distressed",
+  "value": "-2"
+}, {
+  "word": "distresses",
+  "value": "-2"
+}, {
+  "word": "distressing",
+  "value": "-2"
+}, {
+  "word": "distrust",
+  "value": "-3"
+}, {
+  "word": "distrustful",
+  "value": "-3"
+}, {
+  "word": "disturb",
+  "value": "-2"
+}, {
+  "word": "disturbed",
+  "value": "-2"
+}, {
+  "word": "disturbing",
+  "value": "-2"
+}, {
+  "word": "disturbs",
+  "value": "-2"
+}, {
+  "word": "dithering",
+  "value": "-2"
+}, {
+  "word": "dizzy",
+  "value": "-1"
+}, {
+  "word": "dodging",
+  "value": "-2"
+}, {
+  "word": "dodgy",
+  "value": "-2"
+}, {
+  "word": "does not work",
+  "value": "-3"
+}, {
+  "word": "dolorous",
+  "value": "-2"
+}, {
+  "word": "dont like",
+  "value": "-2"
+}, {
+  "word": "doom",
+  "value": "-2"
+}, {
+  "word": "doomed",
+  "value": "-2"
+}, {
+  "word": "doubt",
+  "value": "-1"
+}, {
+  "word": "doubted",
+  "value": "-1"
+}, {
+  "word": "doubtful",
+  "value": "-1"
+}, {
+  "word": "doubting",
+  "value": "-1"
+}, {
+  "word": "doubts",
+  "value": "-1"
+}, {
+  "word": "douche",
+  "value": "-3"
+}, {
+  "word": "douchebag",
+  "value": "-3"
+}, {
+  "word": "downcast",
+  "value": "-2"
+}, {
+  "word": "downhearted",
+  "value": "-2"
+}, {
+  "word": "downside",
+  "value": "-2"
+}, {
+  "word": "drag",
+  "value": "-1"
+}, {
+  "word": "dragged",
+  "value": "-1"
+}, {
+  "word": "drags",
+  "value": "-1"
+}, {
+  "word": "drained",
+  "value": "-2"
+}, {
+  "word": "dread",
+  "value": "-2"
+}, {
+  "word": "dreaded",
+  "value": "-2"
+}, {
+  "word": "dreadful",
+  "value": "-3"
+}, {
+  "word": "dreading",
+  "value": "-2"
+}, {
+  "word": "dream",
+  "value": "1"
+}, {
+  "word": "dreams",
+  "value": "1"
+}, {
+  "word": "dreary",
+  "value": "-2"
+}, {
+  "word": "droopy",
+  "value": "-2"
+}, {
+  "word": "drop",
+  "value": "-1"
+}, {
+  "word": "drown",
+  "value": "-2"
+}, {
+  "word": "drowned",
+  "value": "-2"
+}, {
+  "word": "drowns",
+  "value": "-2"
+}, {
+  "word": "drunk",
+  "value": "-2"
+}, {
+  "word": "dubious",
+  "value": "-2"
+}, {
+  "word": "dud",
+  "value": "-2"
+}, {
+  "word": "dull",
+  "value": "-2"
+}, {
+  "word": "dumb",
+  "value": "-3"
+}, {
+  "word": "dumbass",
+  "value": "-3"
+}, {
+  "word": "dump",
+  "value": "-1"
+}, {
+  "word": "dumped",
+  "value": "-2"
+}, {
+  "word": "dumps",
+  "value": "-1"
+}, {
+  "word": "dupe",
+  "value": "-2"
+}, {
+  "word": "duped",
+  "value": "-2"
+}, {
+  "word": "dysfunction",
+  "value": "-2"
+}, {
+  "word": "eager",
+  "value": "2"
+}, {
+  "word": "earnest",
+  "value": "2"
+}, {
+  "word": "ease",
+  "value": "2"
+}, {
+  "word": "easy",
+  "value": "1"
+}, {
+  "word": "ecstatic",
+  "value": "4"
+}, {
+  "word": "eerie",
+  "value": "-2"
+}, {
+  "word": "eery",
+  "value": "-2"
+}, {
+  "word": "effective",
+  "value": "2"
+}, {
+  "word": "effectively",
+  "value": "2"
+}, {
+  "word": "elated",
+  "value": "3"
+}, {
+  "word": "elation",
+  "value": "3"
+}, {
+  "word": "elegant",
+  "value": "2"
+}, {
+  "word": "elegantly",
+  "value": "2"
+}, {
+  "word": "embarrass",
+  "value": "-2"
+}, {
+  "word": "embarrassed",
+  "value": "-2"
+}, {
+  "word": "embarrasses",
+  "value": "-2"
+}, {
+  "word": "embarrassing",
+  "value": "-2"
+}, {
+  "word": "embarrassment",
+  "value": "-2"
+}, {
+  "word": "embittered",
+  "value": "-2"
+}, {
+  "word": "embrace",
+  "value": "1"
+}, {
+  "word": "emergency",
+  "value": "-2"
+}, {
+  "word": "empathetic",
+  "value": "2"
+}, {
+  "word": "emptiness",
+  "value": "-1"
+}, {
+  "word": "empty",
+  "value": "-1"
+}, {
+  "word": "enchanted",
+  "value": "2"
+}, {
+  "word": "encourage",
+  "value": "2"
+}, {
+  "word": "encouraged",
+  "value": "2"
+}, {
+  "word": "encouragement",
+  "value": "2"
+}, {
+  "word": "encourages",
+  "value": "2"
+}, {
+  "word": "endorse",
+  "value": "2"
+}, {
+  "word": "endorsed",
+  "value": "2"
+}, {
+  "word": "endorsement",
+  "value": "2"
+}, {
+  "word": "endorses",
+  "value": "2"
+}, {
+  "word": "enemies",
+  "value": "-2"
+}, {
+  "word": "enemy",
+  "value": "-2"
+}, {
+  "word": "energetic",
+  "value": "2"
+}, {
+  "word": "engage",
+  "value": "1"
+}, {
+  "word": "engages",
+  "value": "1"
+}, {
+  "word": "engrossed",
+  "value": "1"
+}, {
+  "word": "enjoy",
+  "value": "2"
+}, {
+  "word": "enjoying",
+  "value": "2"
+}, {
+  "word": "enjoys",
+  "value": "2"
+}, {
+  "word": "enlighten",
+  "value": "2"
+}, {
+  "word": "enlightened",
+  "value": "2"
+}, {
+  "word": "enlightening",
+  "value": "2"
+}, {
+  "word": "enlightens",
+  "value": "2"
+}, {
+  "word": "ennui",
+  "value": "-2"
+}, {
+  "word": "enrage",
+  "value": "-2"
+}, {
+  "word": "enraged",
+  "value": "-2"
+}, {
+  "word": "enrages",
+  "value": "-2"
+}, {
+  "word": "enraging",
+  "value": "-2"
+}, {
+  "word": "enrapture",
+  "value": "3"
+}, {
+  "word": "enslave",
+  "value": "-2"
+}, {
+  "word": "enslaved",
+  "value": "-2"
+}, {
+  "word": "enslaves",
+  "value": "-2"
+}, {
+  "word": "ensure",
+  "value": "1"
+}, {
+  "word": "ensuring",
+  "value": "1"
+}, {
+  "word": "enterprising",
+  "value": "1"
+}, {
+  "word": "entertaining",
+  "value": "2"
+}, {
+  "word": "enthral",
+  "value": "3"
+}, {
+  "word": "enthusiastic",
+  "value": "3"
+}, {
+  "word": "entitled",
+  "value": "1"
+}, {
+  "word": "entrusted",
+  "value": "2"
+}, {
+  "word": "envies",
+  "value": "-1"
+}, {
+  "word": "envious",
+  "value": "-2"
+}, {
+  "word": "envy",
+  "value": "-1"
+}, {
+  "word": "envying",
+  "value": "-1"
+}, {
+  "word": "erroneous",
+  "value": "-2"
+}, {
+  "word": "error",
+  "value": "-2"
+}, {
+  "word": "errors",
+  "value": "-2"
+}, {
+  "word": "escape",
+  "value": "-1"
+}, {
+  "word": "escapes",
+  "value": "-1"
+}, {
+  "word": "escaping",
+  "value": "-1"
+}, {
+  "word": "esteemed",
+  "value": "2"
+}, {
+  "word": "ethical",
+  "value": "2"
+}, {
+  "word": "euphoria",
+  "value": "3"
+}, {
+  "word": "euphoric",
+  "value": "4"
+}, {
+  "word": "eviction",
+  "value": "-1"
+}, {
+  "word": "evil",
+  "value": "-3"
+}, {
+  "word": "exaggerate",
+  "value": "-2"
+}, {
+  "word": "exaggerated",
+  "value": "-2"
+}, {
+  "word": "exaggerates",
+  "value": "-2"
+}, {
+  "word": "exaggerating",
+  "value": "-2"
+}, {
+  "word": "exasperated",
+  "value": "2"
+}, {
+  "word": "excellence",
+  "value": "3"
+}, {
+  "word": "excellent",
+  "value": "3"
+}, {
+  "word": "excite",
+  "value": "3"
+}, {
+  "word": "excited",
+  "value": "3"
+}, {
+  "word": "excitement",
+  "value": "3"
+}, {
+  "word": "exciting",
+  "value": "3"
+}, {
+  "word": "exclude",
+  "value": "-1"
+}, {
+  "word": "excluded",
+  "value": "-2"
+}, {
+  "word": "exclusion",
+  "value": "-1"
+}, {
+  "word": "exclusive",
+  "value": "2"
+}, {
+  "word": "excuse",
+  "value": "-1"
+}, {
+  "word": "exempt",
+  "value": "-1"
+}, {
+  "word": "exhausted",
+  "value": "-2"
+}, {
+  "word": "exhilarated",
+  "value": "3"
+}, {
+  "word": "exhilarates",
+  "value": "3"
+}, {
+  "word": "exhilarating",
+  "value": "3"
+}, {
+  "word": "exonerate",
+  "value": "2"
+}, {
+  "word": "exonerated",
+  "value": "2"
+}, {
+  "word": "exonerates",
+  "value": "2"
+}, {
+  "word": "exonerating",
+  "value": "2"
+}, {
+  "word": "expand",
+  "value": "1"
+}, {
+  "word": "expands",
+  "value": "1"
+}, {
+  "word": "expel",
+  "value": "-2"
+}, {
+  "word": "expelled",
+  "value": "-2"
+}, {
+  "word": "expelling",
+  "value": "-2"
+}, {
+  "word": "expels",
+  "value": "-2"
+}, {
+  "word": "exploit",
+  "value": "-2"
+}, {
+  "word": "exploited",
+  "value": "-2"
+}, {
+  "word": "exploiting",
+  "value": "-2"
+}, {
+  "word": "exploits",
+  "value": "-2"
+}, {
+  "word": "exploration",
+  "value": "1"
+}, {
+  "word": "explorations",
+  "value": "1"
+}, {
+  "word": "expose",
+  "value": "-1"
+}, {
+  "word": "exposed",
+  "value": "-1"
+}, {
+  "word": "exposes",
+  "value": "-1"
+}, {
+  "word": "exposing",
+  "value": "-1"
+}, {
+  "word": "extend",
+  "value": "1"
+}, {
+  "word": "extends",
+  "value": "1"
+}, {
+  "word": "exuberant",
+  "value": "4"
+}, {
+  "word": "exultant",
+  "value": "3"
+}, {
+  "word": "exultantly",
+  "value": "3"
+}, {
+  "word": "fabulous",
+  "value": "4"
+}, {
+  "word": "fad",
+  "value": "-2"
+}, {
+  "word": "fag",
+  "value": "-3"
+}, {
+  "word": "faggot",
+  "value": "-3"
+}, {
+  "word": "faggots",
+  "value": "-3"
+}, {
+  "word": "fail",
+  "value": "-2"
+}, {
+  "word": "failed",
+  "value": "-2"
+}, {
+  "word": "failing",
+  "value": "-2"
+}, {
+  "word": "fails",
+  "value": "-2"
+}, {
+  "word": "failure",
+  "value": "-2"
+}, {
+  "word": "failures",
+  "value": "-2"
+}, {
+  "word": "fainthearted",
+  "value": "-2"
+}, {
+  "word": "fair",
+  "value": "2"
+}, {
+  "word": "faith",
+  "value": "1"
+}, {
+  "word": "faithful",
+  "value": "3"
+}, {
+  "word": "fake",
+  "value": "-3"
+}, {
+  "word": "fakes",
+  "value": "-3"
+}, {
+  "word": "faking",
+  "value": "-3"
+}, {
+  "word": "fallen",
+  "value": "-2"
+}, {
+  "word": "falling",
+  "value": "-1"
+}, {
+  "word": "falsified",
+  "value": "-3"
+}, {
+  "word": "falsify",
+  "value": "-3"
+}, {
+  "word": "fame",
+  "value": "1"
+}, {
+  "word": "fan",
+  "value": "3"
+}, {
+  "word": "fantastic",
+  "value": "4"
+}, {
+  "word": "farce",
+  "value": "-1"
+}, {
+  "word": "fascinate",
+  "value": "3"
+}, {
+  "word": "fascinated",
+  "value": "3"
+}, {
+  "word": "fascinates",
+  "value": "3"
+}, {
+  "word": "fascinating",
+  "value": "3"
+}, {
+  "word": "fascist",
+  "value": "-2"
+}, {
+  "word": "fascists",
+  "value": "-2"
+}, {
+  "word": "fatalities",
+  "value": "-3"
+}, {
+  "word": "fatality",
+  "value": "-3"
+}, {
+  "word": "fatigue",
+  "value": "-2"
+}, {
+  "word": "fatigued",
+  "value": "-2"
+}, {
+  "word": "fatigues",
+  "value": "-2"
+}, {
+  "word": "fatiguing",
+  "value": "-2"
+}, {
+  "word": "favor",
+  "value": "2"
+}, {
+  "word": "favored",
+  "value": "2"
+}, {
+  "word": "favorite",
+  "value": "2"
+}, {
+  "word": "favorited",
+  "value": "2"
+}, {
+  "word": "favorites",
+  "value": "2"
+}, {
+  "word": "favors",
+  "value": "2"
+}, {
+  "word": "fear",
+  "value": "-2"
+}, {
+  "word": "fearful",
+  "value": "-2"
+}, {
+  "word": "fearing",
+  "value": "-2"
+}, {
+  "word": "fearless",
+  "value": "2"
+}, {
+  "word": "fearsome",
+  "value": "-2"
+}, {
+  "word": "fed up",
+  "value": "-3"
+}, {
+  "word": "feeble",
+  "value": "-2"
+}, {
+  "word": "feeling",
+  "value": "1"
+}, {
+  "word": "felonies",
+  "value": "-3"
+}, {
+  "word": "felony",
+  "value": "-3"
+}, {
+  "word": "fervent",
+  "value": "2"
+}, {
+  "word": "fervid",
+  "value": "2"
+}, {
+  "word": "festive",
+  "value": "2"
+}, {
+  "word": "fiasco",
+  "value": "-3"
+}, {
+  "word": "fidgety",
+  "value": "-2"
+}, {
+  "word": "fight",
+  "value": "-1"
+}, {
+  "word": "fine",
+  "value": "2"
+}, {
+  "word": "fire",
+  "value": "-2"
+}, {
+  "word": "fired",
+  "value": "-2"
+}, {
+  "word": "firing",
+  "value": "-2"
+}, {
+  "word": "fit",
+  "value": "1"
+}, {
+  "word": "fitness",
+  "value": "1"
+}, {
+  "word": "flagship",
+  "value": "2"
+}, {
+  "word": "flees",
+  "value": "-1"
+}, {
+  "word": "flop",
+  "value": "-2"
+}, {
+  "word": "flops",
+  "value": "-2"
+}, {
+  "word": "flu",
+  "value": "-2"
+}, {
+  "word": "flustered",
+  "value": "-2"
+}, {
+  "word": "focused",
+  "value": "2"
+}, {
+  "word": "fond",
+  "value": "2"
+}, {
+  "word": "fondness",
+  "value": "2"
+}, {
+  "word": "fool",
+  "value": "-2"
+}, {
+  "word": "foolish",
+  "value": "-2"
+}, {
+  "word": "fools",
+  "value": "-2"
+}, {
+  "word": "forced",
+  "value": "-1"
+}, {
+  "word": "foreclosure",
+  "value": "-2"
+}, {
+  "word": "foreclosures",
+  "value": "-2"
+}, {
+  "word": "forget",
+  "value": "-1"
+}, {
+  "word": "forgetful",
+  "value": "-2"
+}, {
+  "word": "forgive",
+  "value": "1"
+}, {
+  "word": "forgiving",
+  "value": "1"
+}, {
+  "word": "forgotten",
+  "value": "-1"
+}, {
+  "word": "fortunate",
+  "value": "2"
+}, {
+  "word": "frantic",
+  "value": "-1"
+}, {
+  "word": "fraud",
+  "value": "-4"
+}, {
+  "word": "frauds",
+  "value": "-4"
+}, {
+  "word": "fraudster",
+  "value": "-4"
+}, {
+  "word": "fraudsters",
+  "value": "-4"
+}, {
+  "word": "fraudulence",
+  "value": "-4"
+}, {
+  "word": "fraudulent",
+  "value": "-4"
+}, {
+  "word": "free",
+  "value": "1"
+}, {
+  "word": "freedom",
+  "value": "2"
+}, {
+  "word": "frenzy",
+  "value": "-3"
+}, {
+  "word": "fresh",
+  "value": "1"
+}, {
+  "word": "friendly",
+  "value": "2"
+}, {
+  "word": "fright",
+  "value": "-2"
+}, {
+  "word": "frightened",
+  "value": "-2"
+}, {
+  "word": "frightening",
+  "value": "-3"
+}, {
+  "word": "frikin",
+  "value": "-2"
+}, {
+  "word": "frisky",
+  "value": "2"
+}, {
+  "word": "frowning",
+  "value": "-1"
+}, {
+  "word": "frustrate",
+  "value": "-2"
+}, {
+  "word": "frustrated",
+  "value": "-2"
+}, {
+  "word": "frustrates",
+  "value": "-2"
+}, {
+  "word": "frustrating",
+  "value": "-2"
+}, {
+  "word": "frustration",
+  "value": "-2"
+}, {
+  "word": "ftw",
+  "value": "3"
+}, {
+  "word": "fuck",
+  "value": "-4"
+}, {
+  "word": "fucked",
+  "value": "-4"
+}, {
+  "word": "fucker",
+  "value": "-4"
+}, {
+  "word": "fuckers",
+  "value": "-4"
+}, {
+  "word": "fuckface",
+  "value": "-4"
+}, {
+  "word": "fuckhead",
+  "value": "-4"
+}, {
+  "word": "fucking",
+  "value": "-4"
+}, {
+  "word": "fucktard",
+  "value": "-4"
+}, {
+  "word": "fud",
+  "value": "-3"
+}, {
+  "word": "fuked",
+  "value": "-4"
+}, {
+  "word": "fuking",
+  "value": "-4"
+}, {
+  "word": "fulfill",
+  "value": "2"
+}, {
+  "word": "fulfilled",
+  "value": "2"
+}, {
+  "word": "fulfills",
+  "value": "2"
+}, {
+  "word": "fuming",
+  "value": "-2"
+}, {
+  "word": "fun",
+  "value": "4"
+}, {
+  "word": "funeral",
+  "value": "-1"
+}, {
+  "word": "funerals",
+  "value": "-1"
+}, {
+  "word": "funky",
+  "value": "2"
+}, {
+  "word": "funnier",
+  "value": "4"
+}, {
+  "word": "funny",
+  "value": "4"
+}, {
+  "word": "furious",
+  "value": "-3"
+}, {
+  "word": "futile",
+  "value": "2"
+}, {
+  "word": "gag",
+  "value": "-2"
+}, {
+  "word": "gagged",
+  "value": "-2"
+}, {
+  "word": "gain",
+  "value": "2"
+}, {
+  "word": "gained",
+  "value": "2"
+}, {
+  "word": "gaining",
+  "value": "2"
+}, {
+  "word": "gains",
+  "value": "2"
+}, {
+  "word": "gallant",
+  "value": "3"
+}, {
+  "word": "gallantly",
+  "value": "3"
+}, {
+  "word": "gallantry",
+  "value": "3"
+}, {
+  "word": "generous",
+  "value": "2"
+}, {
+  "word": "genial",
+  "value": "3"
+}, {
+  "word": "ghost",
+  "value": "-1"
+}, {
+  "word": "giddy",
+  "value": "-2"
+}, {
+  "word": "gift",
+  "value": "2"
+}, {
+  "word": "glad",
+  "value": "3"
+}, {
+  "word": "glamorous",
+  "value": "3"
+}, {
+  "word": "glamourous",
+  "value": "3"
+}, {
+  "word": "glee",
+  "value": "3"
+}, {
+  "word": "gleeful",
+  "value": "3"
+}, {
+  "word": "gloom",
+  "value": "-1"
+}, {
+  "word": "gloomy",
+  "value": "-2"
+}, {
+  "word": "glorious",
+  "value": "2"
+}, {
+  "word": "glory",
+  "value": "2"
+}, {
+  "word": "glum",
+  "value": "-2"
+}, {
+  "word": "god",
+  "value": "1"
+}, {
+  "word": "goddamn",
+  "value": "-3"
+}, {
+  "word": "godsend",
+  "value": "4"
+}, {
+  "word": "good",
+  "value": "3"
+}, {
+  "word": "goodness",
+  "value": "3"
+}, {
+  "word": "grace",
+  "value": "1"
+}, {
+  "word": "gracious",
+  "value": "3"
+}, {
+  "word": "grand",
+  "value": "3"
+}, {
+  "word": "grant",
+  "value": "1"
+}, {
+  "word": "granted",
+  "value": "1"
+}, {
+  "word": "granting",
+  "value": "1"
+}, {
+  "word": "grants",
+  "value": "1"
+}, {
+  "word": "grateful",
+  "value": "3"
+}, {
+  "word": "gratification",
+  "value": "2"
+}, {
+  "word": "grave",
+  "value": "-2"
+}, {
+  "word": "gray",
+  "value": "-1"
+}, {
+  "word": "great",
+  "value": "3"
+}, {
+  "word": "greater",
+  "value": "3"
+}, {
+  "word": "greatest",
+  "value": "3"
+}, {
+  "word": "greed",
+  "value": "-3"
+}, {
+  "word": "greedy",
+  "value": "-2"
+}, {
+  "word": "green wash",
+  "value": "-3"
+}, {
+  "word": "green washing",
+  "value": "-3"
+}, {
+  "word": "greenwash",
+  "value": "-3"
+}, {
+  "word": "greenwasher",
+  "value": "-3"
+}, {
+  "word": "greenwashers",
+  "value": "-3"
+}, {
+  "word": "greenwashing",
+  "value": "-3"
+}, {
+  "word": "greet",
+  "value": "1"
+}, {
+  "word": "greeted",
+  "value": "1"
+}, {
+  "word": "greeting",
+  "value": "1"
+}, {
+  "word": "greetings",
+  "value": "2"
+}, {
+  "word": "greets",
+  "value": "1"
+}, {
+  "word": "grey",
+  "value": "-1"
+}, {
+  "word": "grief",
+  "value": "-2"
+}, {
+  "word": "grieved",
+  "value": "-2"
+}, {
+  "word": "gross",
+  "value": "-2"
+}, {
+  "word": "growing",
+  "value": "1"
+}, {
+  "word": "growth",
+  "value": "2"
+}, {
+  "word": "guarantee",
+  "value": "1"
+}, {
+  "word": "guilt",
+  "value": "-3"
+}, {
+  "word": "guilty",
+  "value": "-3"
+}, {
+  "word": "gullibility",
+  "value": "-2"
+}, {
+  "word": "gullible",
+  "value": "-2"
+}, {
+  "word": "gun",
+  "value": "-1"
+}, {
+  "word": "ha",
+  "value": "2"
+}, {
+  "word": "hacked",
+  "value": "-1"
+}, {
+  "word": "haha",
+  "value": "3"
+}, {
+  "word": "hahaha",
+  "value": "3"
+}, {
+  "word": "hahahah",
+  "value": "3"
+}, {
+  "word": "hail",
+  "value": "2"
+}, {
+  "word": "hailed",
+  "value": "2"
+}, {
+  "word": "hapless",
+  "value": "-2"
+}, {
+  "word": "haplessness",
+  "value": "-2"
+}, {
+  "word": "happiness",
+  "value": "3"
+}, {
+  "word": "happy",
+  "value": "3"
+}, {
+  "word": "hard",
+  "value": "-1"
+}, {
+  "word": "hardier",
+  "value": "2"
+}, {
+  "word": "hardship",
+  "value": "-2"
+}, {
+  "word": "hardy",
+  "value": "2"
+}, {
+  "word": "harm",
+  "value": "-2"
+}, {
+  "word": "harmed",
+  "value": "-2"
+}, {
+  "word": "harmful",
+  "value": "-2"
+}, {
+  "word": "harming",
+  "value": "-2"
+}, {
+  "word": "harms",
+  "value": "-2"
+}, {
+  "word": "harried",
+  "value": "-2"
+}, {
+  "word": "harsh",
+  "value": "-2"
+}, {
+  "word": "harsher",
+  "value": "-2"
+}, {
+  "word": "harshest",
+  "value": "-2"
+}, {
+  "word": "hate",
+  "value": "-3"
+}, {
+  "word": "hated",
+  "value": "-3"
+}, {
+  "word": "haters",
+  "value": "-3"
+}, {
+  "word": "hates",
+  "value": "-3"
+}, {
+  "word": "hating",
+  "value": "-3"
+}, {
+  "word": "haunt",
+  "value": "-1"
+}, {
+  "word": "haunted",
+  "value": "-2"
+}, {
+  "word": "haunting",
+  "value": "1"
+}, {
+  "word": "haunts",
+  "value": "-1"
+}, {
+  "word": "havoc",
+  "value": "-2"
+}, {
+  "word": "healthy",
+  "value": "2"
+}, {
+  "word": "heartbreaking",
+  "value": "-3"
+}, {
+  "word": "heartbroken",
+  "value": "-3"
+}, {
+  "word": "heartfelt",
+  "value": "3"
+}, {
+  "word": "heaven",
+  "value": "2"
+}, {
+  "word": "heavenly",
+  "value": "4"
+}, {
+  "word": "heavyhearted",
+  "value": "-2"
+}, {
+  "word": "hell",
+  "value": "-4"
+}, {
+  "word": "help",
+  "value": "2"
+}, {
+  "word": "helpful",
+  "value": "2"
+}, {
+  "word": "helping",
+  "value": "2"
+}, {
+  "word": "helpless",
+  "value": "-2"
+}, {
+  "word": "helps",
+  "value": "2"
+}, {
+  "word": "hero",
+  "value": "2"
+}, {
+  "word": "heroes",
+  "value": "2"
+}, {
+  "word": "heroic",
+  "value": "3"
+}, {
+  "word": "hesitant",
+  "value": "-2"
+}, {
+  "word": "hesitate",
+  "value": "-2"
+}, {
+  "word": "hid",
+  "value": "-1"
+}, {
+  "word": "hide",
+  "value": "-1"
+}, {
+  "word": "hides",
+  "value": "-1"
+}, {
+  "word": "hiding",
+  "value": "-1"
+}, {
+  "word": "highlight",
+  "value": "2"
+}, {
+  "word": "hilarious",
+  "value": "2"
+}, {
+  "word": "hindrance",
+  "value": "-2"
+}, {
+  "word": "hoax",
+  "value": "-2"
+}, {
+  "word": "homesick",
+  "value": "-2"
+}, {
+  "word": "honest",
+  "value": "2"
+}, {
+  "word": "honor",
+  "value": "2"
+}, {
+  "word": "honored",
+  "value": "2"
+}, {
+  "word": "honoring",
+  "value": "2"
+}, {
+  "word": "honour",
+  "value": "2"
+}, {
+  "word": "honoured",
+  "value": "2"
+}, {
+  "word": "honouring",
+  "value": "2"
+}, {
+  "word": "hooligan",
+  "value": "-2"
+}, {
+  "word": "hooliganism",
+  "value": "-2"
+}, {
+  "word": "hooligans",
+  "value": "-2"
+}, {
+  "word": "hope",
+  "value": "2"
+}, {
+  "word": "hopeful",
+  "value": "2"
+}, {
+  "word": "hopefully",
+  "value": "2"
+}, {
+  "word": "hopeless",
+  "value": "-2"
+}, {
+  "word": "hopelessness",
+  "value": "-2"
+}, {
+  "word": "hopes",
+  "value": "2"
+}, {
+  "word": "hoping",
+  "value": "2"
+}, {
+  "word": "horrendous",
+  "value": "-3"
+}, {
+  "word": "horrible",
+  "value": "-3"
+}, {
+  "word": "horrific",
+  "value": "-3"
+}, {
+  "word": "horrified",
+  "value": "-3"
+}, {
+  "word": "hostile",
+  "value": "-2"
+}, {
+  "word": "huckster",
+  "value": "-2"
+}, {
+  "word": "hug",
+  "value": "2"
+}, {
+  "word": "huge",
+  "value": "1"
+}, {
+  "word": "hugs",
+  "value": "2"
+}, {
+  "word": "humerous",
+  "value": "3"
+}, {
+  "word": "humiliated",
+  "value": "-3"
+}, {
+  "word": "humiliation",
+  "value": "-3"
+}, {
+  "word": "humor",
+  "value": "2"
+}, {
+  "word": "humorous",
+  "value": "2"
+}, {
+  "word": "humour",
+  "value": "2"
+}, {
+  "word": "humourous",
+  "value": "2"
+}, {
+  "word": "hunger",
+  "value": "-2"
+}, {
+  "word": "hurrah",
+  "value": "5"
+}, {
+  "word": "hurt",
+  "value": "-2"
+}, {
+  "word": "hurting",
+  "value": "-2"
+}, {
+  "word": "hurts",
+  "value": "-2"
+}, {
+  "word": "hypocritical",
+  "value": "-2"
+}, {
+  "word": "hysteria",
+  "value": "-3"
+}, {
+  "word": "hysterical",
+  "value": "-3"
+}, {
+  "word": "hysterics",
+  "value": "-3"
+}, {
+  "word": "idiot",
+  "value": "-3"
+}, {
+  "word": "idiotic",
+  "value": "-3"
+}, {
+  "word": "ignorance",
+  "value": "-2"
+}, {
+  "word": "ignorant",
+  "value": "-2"
+}, {
+  "word": "ignore",
+  "value": "-1"
+}, {
+  "word": "ignored",
+  "value": "-2"
+}, {
+  "word": "ignores",
+  "value": "-1"
+}, {
+  "word": "ill",
+  "value": "-2"
+}, {
+  "word": "illegal",
+  "value": "-3"
+}, {
+  "word": "illiteracy",
+  "value": "-2"
+}, {
+  "word": "illness",
+  "value": "-2"
+}, {
+  "word": "illnesses",
+  "value": "-2"
+}, {
+  "word": "imbecile",
+  "value": "-3"
+}, {
+  "word": "immobilized",
+  "value": "-1"
+}, {
+  "word": "immortal",
+  "value": "2"
+}, {
+  "word": "immune",
+  "value": "1"
+}, {
+  "word": "impatient",
+  "value": "-2"
+}, {
+  "word": "imperfect",
+  "value": "-2"
+}, {
+  "word": "importance",
+  "value": "2"
+}, {
+  "word": "important",
+  "value": "2"
+}, {
+  "word": "impose",
+  "value": "-1"
+}, {
+  "word": "imposed",
+  "value": "-1"
+}, {
+  "word": "imposes",
+  "value": "-1"
+}, {
+  "word": "imposing",
+  "value": "-1"
+}, {
+  "word": "impotent",
+  "value": "-2"
+}, {
+  "word": "impress",
+  "value": "3"
+}, {
+  "word": "impressed",
+  "value": "3"
+}, {
+  "word": "impresses",
+  "value": "3"
+}, {
+  "word": "impressive",
+  "value": "3"
+}, {
+  "word": "imprisoned",
+  "value": "-2"
+}, {
+  "word": "improve",
+  "value": "2"
+}, {
+  "word": "improved",
+  "value": "2"
+}, {
+  "word": "improvement",
+  "value": "2"
+}, {
+  "word": "improves",
+  "value": "2"
+}, {
+  "word": "improving",
+  "value": "2"
+}, {
+  "word": "inability",
+  "value": "-2"
+}, {
+  "word": "inaction",
+  "value": "-2"
+}, {
+  "word": "inadequate",
+  "value": "-2"
+}, {
+  "word": "incapable",
+  "value": "-2"
+}, {
+  "word": "incapacitated",
+  "value": "-2"
+}, {
+  "word": "incensed",
+  "value": "-2"
+}, {
+  "word": "incompetence",
+  "value": "-2"
+}, {
+  "word": "incompetent",
+  "value": "-2"
+}, {
+  "word": "inconsiderate",
+  "value": "-2"
+}, {
+  "word": "inconvenience",
+  "value": "-2"
+}, {
+  "word": "inconvenient",
+  "value": "-2"
+}, {
+  "word": "increase",
+  "value": "1"
+}, {
+  "word": "increased",
+  "value": "1"
+}, {
+  "word": "indecisive",
+  "value": "-2"
+}, {
+  "word": "indestructible",
+  "value": "2"
+}, {
+  "word": "indifference",
+  "value": "-2"
+}, {
+  "word": "indifferent",
+  "value": "-2"
+}, {
+  "word": "indignant",
+  "value": "-2"
+}, {
+  "word": "indignation",
+  "value": "-2"
+}, {
+  "word": "indoctrinate",
+  "value": "-2"
+}, {
+  "word": "indoctrinated",
+  "value": "-2"
+}, {
+  "word": "indoctrinates",
+  "value": "-2"
+}, {
+  "word": "indoctrinating",
+  "value": "-2"
+}, {
+  "word": "ineffective",
+  "value": "-2"
+}, {
+  "word": "ineffectively",
+  "value": "-2"
+}, {
+  "word": "infatuated",
+  "value": "2"
+}, {
+  "word": "infatuation",
+  "value": "2"
+}, {
+  "word": "infected",
+  "value": "-2"
+}, {
+  "word": "inferior",
+  "value": "-2"
+}, {
+  "word": "inflamed",
+  "value": "-2"
+}, {
+  "word": "influential",
+  "value": "2"
+}, {
+  "word": "infringement",
+  "value": "-2"
+}, {
+  "word": "infuriate",
+  "value": "-2"
+}, {
+  "word": "infuriated",
+  "value": "-2"
+}, {
+  "word": "infuriates",
+  "value": "-2"
+}, {
+  "word": "infuriating",
+  "value": "-2"
+}, {
+  "word": "inhibit",
+  "value": "-1"
+}, {
+  "word": "injured",
+  "value": "-2"
+}, {
+  "word": "injury",
+  "value": "-2"
+}, {
+  "word": "injustice",
+  "value": "-2"
+}, {
+  "word": "innovate",
+  "value": "1"
+}, {
+  "word": "innovates",
+  "value": "1"
+}, {
+  "word": "innovation",
+  "value": "1"
+}, {
+  "word": "innovative",
+  "value": "2"
+}, {
+  "word": "inquisition",
+  "value": "-2"
+}, {
+  "word": "inquisitive",
+  "value": "2"
+}, {
+  "word": "insane",
+  "value": "-2"
+}, {
+  "word": "insanity",
+  "value": "-2"
+}, {
+  "word": "insecure",
+  "value": "-2"
+}, {
+  "word": "insensitive",
+  "value": "-2"
+}, {
+  "word": "insensitivity",
+  "value": "-2"
+}, {
+  "word": "insignificant",
+  "value": "-2"
+}, {
+  "word": "insipid",
+  "value": "-2"
+}, {
+  "word": "inspiration",
+  "value": "2"
+}, {
+  "word": "inspirational",
+  "value": "2"
+}, {
+  "word": "inspire",
+  "value": "2"
+}, {
+  "word": "inspired",
+  "value": "2"
+}, {
+  "word": "inspires",
+  "value": "2"
+}, {
+  "word": "inspiring",
+  "value": "3"
+}, {
+  "word": "insult",
+  "value": "-2"
+}, {
+  "word": "insulted",
+  "value": "-2"
+}, {
+  "word": "insulting",
+  "value": "-2"
+}, {
+  "word": "insults",
+  "value": "-2"
+}, {
+  "word": "intact",
+  "value": "2"
+}, {
+  "word": "integrity",
+  "value": "2"
+}, {
+  "word": "intelligent",
+  "value": "2"
+}, {
+  "word": "intense",
+  "value": "1"
+}, {
+  "word": "interest",
+  "value": "1"
+}, {
+  "word": "interested",
+  "value": "2"
+}, {
+  "word": "interesting",
+  "value": "2"
+}, {
+  "word": "interests",
+  "value": "1"
+}, {
+  "word": "interrogated",
+  "value": "-2"
+}, {
+  "word": "interrupt",
+  "value": "-2"
+}, {
+  "word": "interrupted",
+  "value": "-2"
+}, {
+  "word": "interrupting",
+  "value": "-2"
+}, {
+  "word": "interruption",
+  "value": "-2"
+}, {
+  "word": "interrupts",
+  "value": "-2"
+}, {
+  "word": "intimidate",
+  "value": "-2"
+}, {
+  "word": "intimidated",
+  "value": "-2"
+}, {
+  "word": "intimidates",
+  "value": "-2"
+}, {
+  "word": "intimidating",
+  "value": "-2"
+}, {
+  "word": "intimidation",
+  "value": "-2"
+}, {
+  "word": "intricate",
+  "value": "2"
+}, {
+  "word": "intrigues",
+  "value": "1"
+}, {
+  "word": "invincible",
+  "value": "2"
+}, {
+  "word": "invite",
+  "value": "1"
+}, {
+  "word": "inviting",
+  "value": "1"
+}, {
+  "word": "invulnerable",
+  "value": "2"
+}, {
+  "word": "irate",
+  "value": "-3"
+}, {
+  "word": "ironic",
+  "value": "-1"
+}, {
+  "word": "irony",
+  "value": "-1"
+}, {
+  "word": "irrational",
+  "value": "-1"
+}, {
+  "word": "irresistible",
+  "value": "2"
+}, {
+  "word": "irresolute",
+  "value": "-2"
+}, {
+  "word": "irresponsible",
+  "value": "2"
+}, {
+  "word": "irreversible",
+  "value": "-1"
+}, {
+  "word": "irritate",
+  "value": "-3"
+}, {
+  "word": "irritated",
+  "value": "-3"
+}, {
+  "word": "irritating",
+  "value": "-3"
+}, {
+  "word": "isolated",
+  "value": "-1"
+}, {
+  "word": "itchy",
+  "value": "-2"
+}, {
+  "word": "jackass",
+  "value": "-4"
+}, {
+  "word": "jackasses",
+  "value": "-4"
+}, {
+  "word": "jailed",
+  "value": "-2"
+}, {
+  "word": "jaunty",
+  "value": "2"
+}, {
+  "word": "jealous",
+  "value": "-2"
+}, {
+  "word": "jeopardy",
+  "value": "-2"
+}, {
+  "word": "jerk",
+  "value": "-3"
+}, {
+  "word": "jesus",
+  "value": "1"
+}, {
+  "word": "jewel",
+  "value": "1"
+}, {
+  "word": "jewels",
+  "value": "1"
+}, {
+  "word": "jocular",
+  "value": "2"
+}, {
+  "word": "join",
+  "value": "1"
+}, {
+  "word": "joke",
+  "value": "2"
+}, {
+  "word": "jokes",
+  "value": "2"
+}, {
+  "word": "jolly",
+  "value": "2"
+}, {
+  "word": "jovial",
+  "value": "2"
+}, {
+  "word": "joy",
+  "value": "3"
+}, {
+  "word": "joyful",
+  "value": "3"
+}, {
+  "word": "joyfully",
+  "value": "3"
+}, {
+  "word": "joyless",
+  "value": "-2"
+}, {
+  "word": "joyous",
+  "value": "3"
+}, {
+  "word": "jubilant",
+  "value": "3"
+}, {
+  "word": "jumpy",
+  "value": "-1"
+}, {
+  "word": "justice",
+  "value": "2"
+}, {
+  "word": "justifiably",
+  "value": "2"
+}, {
+  "word": "justified",
+  "value": "2"
+}, {
+  "word": "keen",
+  "value": "1"
+}, {
+  "word": "kill",
+  "value": "-3"
+}, {
+  "word": "killed",
+  "value": "-3"
+}, {
+  "word": "killing",
+  "value": "-3"
+}, {
+  "word": "kills",
+  "value": "-3"
+}, {
+  "word": "kind",
+  "value": "2"
+}, {
+  "word": "kinder",
+  "value": "2"
+}, {
+  "word": "kiss",
+  "value": "2"
+}, {
+  "word": "kudos",
+  "value": "3"
+}, {
+  "word": "lack",
+  "value": "-2"
+}, {
+  "word": "lackadaisical",
+  "value": "-2"
+}, {
+  "word": "lag",
+  "value": "-1"
+}, {
+  "word": "lagged",
+  "value": "-2"
+}, {
+  "word": "lagging",
+  "value": "-2"
+}, {
+  "word": "lags",
+  "value": "-2"
+}, {
+  "word": "lame",
+  "value": "-2"
+}, {
+  "word": "landmark",
+  "value": "2"
+}, {
+  "word": "laugh",
+  "value": "1"
+}, {
+  "word": "laughed",
+  "value": "1"
+}, {
+  "word": "laughing",
+  "value": "1"
+}, {
+  "word": "laughs",
+  "value": "1"
+}, {
+  "word": "laughting",
+  "value": "1"
+}, {
+  "word": "launched",
+  "value": "1"
+}, {
+  "word": "lawl",
+  "value": "3"
+}, {
+  "word": "lawsuit",
+  "value": "-2"
+}, {
+  "word": "lawsuits",
+  "value": "-2"
+}, {
+  "word": "lazy",
+  "value": "-1"
+}, {
+  "word": "leak",
+  "value": "-1"
+}, {
+  "word": "leaked",
+  "value": "-1"
+}, {
+  "word": "leave",
+  "value": "-1"
+}, {
+  "word": "legal",
+  "value": "1"
+}, {
+  "word": "legally",
+  "value": "1"
+}, {
+  "word": "lenient",
+  "value": "1"
+}, {
+  "word": "lethargic",
+  "value": "-2"
+}, {
+  "word": "lethargy",
+  "value": "-2"
+}, {
+  "word": "liar",
+  "value": "-3"
+}, {
+  "word": "liars",
+  "value": "-3"
+}, {
+  "word": "libelous",
+  "value": "-2"
+}, {
+  "word": "lied",
+  "value": "-2"
+}, {
+  "word": "lifesaver",
+  "value": "4"
+}, {
+  "word": "lighthearted",
+  "value": "1"
+}, {
+  "word": "like",
+  "value": "2"
+}, {
+  "word": "liked",
+  "value": "2"
+}, {
+  "word": "likes",
+  "value": "2"
+}, {
+  "word": "limitation",
+  "value": "-1"
+}, {
+  "word": "limited",
+  "value": "-1"
+}, {
+  "word": "limits",
+  "value": "-1"
+}, {
+  "word": "litigation",
+  "value": "-1"
+}, {
+  "word": "litigious",
+  "value": "-2"
+}, {
+  "word": "lively",
+  "value": "2"
+}, {
+  "word": "livid",
+  "value": "-2"
+}, {
+  "word": "lmao",
+  "value": "4"
+}, {
+  "word": "lmfao",
+  "value": "4"
+}, {
+  "word": "loathe",
+  "value": "-3"
+}, {
+  "word": "loathed",
+  "value": "-3"
+}, {
+  "word": "loathes",
+  "value": "-3"
+}, {
+  "word": "loathing",
+  "value": "-3"
+}, {
+  "word": "lobby",
+  "value": "-2"
+}, {
+  "word": "lobbying",
+  "value": "-2"
+}, {
+  "word": "lol",
+  "value": "3"
+}, {
+  "word": "lonely",
+  "value": "-2"
+}, {
+  "word": "lonesome",
+  "value": "-2"
+}, {
+  "word": "longing",
+  "value": "-1"
+}, {
+  "word": "loom",
+  "value": "-1"
+}, {
+  "word": "loomed",
+  "value": "-1"
+}, {
+  "word": "looming",
+  "value": "-1"
+}, {
+  "word": "looms",
+  "value": "-1"
+}, {
+  "word": "loose",
+  "value": "-3"
+}, {
+  "word": "looses",
+  "value": "-3"
+}, {
+  "word": "loser",
+  "value": "-3"
+}, {
+  "word": "losing",
+  "value": "-3"
+}, {
+  "word": "loss",
+  "value": "-3"
+}, {
+  "word": "lost",
+  "value": "-3"
+}, {
+  "word": "lovable",
+  "value": "3"
+}, {
+  "word": "love",
+  "value": "3"
+}, {
+  "word": "loved",
+  "value": "3"
+}, {
+  "word": "lovelies",
+  "value": "3"
+}, {
+  "word": "lovely",
+  "value": "3"
+}, {
+  "word": "loving",
+  "value": "2"
+}, {
+  "word": "lowest",
+  "value": "-1"
+}, {
+  "word": "loyal",
+  "value": "3"
+}, {
+  "word": "loyalty",
+  "value": "3"
+}, {
+  "word": "luck",
+  "value": "3"
+}, {
+  "word": "luckily",
+  "value": "3"
+}, {
+  "word": "lucky",
+  "value": "3"
+}, {
+  "word": "lugubrious",
+  "value": "-2"
+}, {
+  "word": "lunatic",
+  "value": "-3"
+}, {
+  "word": "lunatics",
+  "value": "-3"
+}, {
+  "word": "lurk",
+  "value": "-1"
+}, {
+  "word": "lurking",
+  "value": "-1"
+}, {
+  "word": "lurks",
+  "value": "-1"
+}, {
+  "word": "mad",
+  "value": "-3"
+}, {
+  "word": "maddening",
+  "value": "-3"
+}, {
+  "word": "made-up",
+  "value": "-1"
+}, {
+  "word": "madly",
+  "value": "-3"
+}, {
+  "word": "madness",
+  "value": "-3"
+}, {
+  "word": "mandatory",
+  "value": "-1"
+}, {
+  "word": "manipulated",
+  "value": "-1"
+}, {
+  "word": "manipulating",
+  "value": "-1"
+}, {
+  "word": "manipulation",
+  "value": "-1"
+}, {
+  "word": "marvel",
+  "value": "3"
+}, {
+  "word": "marvelous",
+  "value": "3"
+}, {
+  "word": "marvels",
+  "value": "3"
+}, {
+  "word": "masterpiece",
+  "value": "4"
+}, {
+  "word": "masterpieces",
+  "value": "4"
+}, {
+  "word": "matter",
+  "value": "1"
+}, {
+  "word": "matters",
+  "value": "1"
+}, {
+  "word": "mature",
+  "value": "2"
+}, {
+  "word": "meaningful",
+  "value": "2"
+}, {
+  "word": "meaningless",
+  "value": "-2"
+}, {
+  "word": "medal",
+  "value": "3"
+}, {
+  "word": "mediocrity",
+  "value": "-3"
+}, {
+  "word": "meditative",
+  "value": "1"
+}, {
+  "word": "melancholy",
+  "value": "-2"
+}, {
+  "word": "menace",
+  "value": "-2"
+}, {
+  "word": "menaced",
+  "value": "-2"
+}, {
+  "word": "mercy",
+  "value": "2"
+}, {
+  "word": "merry",
+  "value": "3"
+}, {
+  "word": "mess",
+  "value": "-2"
+}, {
+  "word": "messed",
+  "value": "-2"
+}, {
+  "word": "messing up",
+  "value": "-2"
+}, {
+  "word": "methodical",
+  "value": "2"
+}, {
+  "word": "mindless",
+  "value": "-2"
+}, {
+  "word": "miracle",
+  "value": "4"
+}, {
+  "word": "mirth",
+  "value": "3"
+}, {
+  "word": "mirthful",
+  "value": "3"
+}, {
+  "word": "mirthfully",
+  "value": "3"
+}, {
+  "word": "misbehave",
+  "value": "-2"
+}, {
+  "word": "misbehaved",
+  "value": "-2"
+}, {
+  "word": "misbehaves",
+  "value": "-2"
+}, {
+  "word": "misbehaving",
+  "value": "-2"
+}, {
+  "word": "mischief",
+  "value": "-1"
+}, {
+  "word": "mischiefs",
+  "value": "-1"
+}, {
+  "word": "miserable",
+  "value": "-3"
+}, {
+  "word": "misery",
+  "value": "-2"
+}, {
+  "word": "misgiving",
+  "value": "-2"
+}, {
+  "word": "misinformation",
+  "value": "-2"
+}, {
+  "word": "misinformed",
+  "value": "-2"
+}, {
+  "word": "misinterpreted",
+  "value": "-2"
+}, {
+  "word": "misleading",
+  "value": "-3"
+}, {
+  "word": "misread",
+  "value": "-1"
+}, {
+  "word": "misreporting",
+  "value": "-2"
+}, {
+  "word": "misrepresentation",
+  "value": "-2"
+}, {
+  "word": "miss",
+  "value": "-2"
+}, {
+  "word": "missed",
+  "value": "-2"
+}, {
+  "word": "missing",
+  "value": "-2"
+}, {
+  "word": "mistake",
+  "value": "-2"
+}, {
+  "word": "mistaken",
+  "value": "-2"
+}, {
+  "word": "mistakes",
+  "value": "-2"
+}, {
+  "word": "mistaking",
+  "value": "-2"
+}, {
+  "word": "misunderstand",
+  "value": "-2"
+}, {
+  "word": "misunderstanding",
+  "value": "-2"
+}, {
+  "word": "misunderstands",
+  "value": "-2"
+}, {
+  "word": "misunderstood",
+  "value": "-2"
+}, {
+  "word": "moan",
+  "value": "-2"
+}, {
+  "word": "moaned",
+  "value": "-2"
+}, {
+  "word": "moaning",
+  "value": "-2"
+}, {
+  "word": "moans",
+  "value": "-2"
+}, {
+  "word": "mock",
+  "value": "-2"
+}, {
+  "word": "mocked",
+  "value": "-2"
+}, {
+  "word": "mocking",
+  "value": "-2"
+}, {
+  "word": "mocks",
+  "value": "-2"
+}, {
+  "word": "mongering",
+  "value": "-2"
+}, {
+  "word": "monopolize",
+  "value": "-2"
+}, {
+  "word": "monopolized",
+  "value": "-2"
+}, {
+  "word": "monopolizes",
+  "value": "-2"
+}, {
+  "word": "monopolizing",
+  "value": "-2"
+}, {
+  "word": "moody",
+  "value": "-1"
+}, {
+  "word": "mope",
+  "value": "-1"
+}, {
+  "word": "moping",
+  "value": "-1"
+}, {
+  "word": "moron",
+  "value": "-3"
+}, {
+  "word": "motherfucker",
+  "value": "-5"
+}, {
+  "word": "motherfucking",
+  "value": "-5"
+}, {
+  "word": "motivate",
+  "value": "1"
+}, {
+  "word": "motivated",
+  "value": "2"
+}, {
+  "word": "motivating",
+  "value": "2"
+}, {
+  "word": "motivation",
+  "value": "1"
+}, {
+  "word": "mourn",
+  "value": "-2"
+}, {
+  "word": "mourned",
+  "value": "-2"
+}, {
+  "word": "mournful",
+  "value": "-2"
+}, {
+  "word": "mourning",
+  "value": "-2"
+}, {
+  "word": "mourns",
+  "value": "-2"
+}, {
+  "word": "mumpish",
+  "value": "-2"
+}, {
+  "word": "murder",
+  "value": "-2"
+}, {
+  "word": "murderer",
+  "value": "-2"
+}, {
+  "word": "murdering",
+  "value": "-3"
+}, {
+  "word": "murderous",
+  "value": "-3"
+}, {
+  "word": "murders",
+  "value": "-2"
+}, {
+  "word": "myth",
+  "value": "-1"
+}, {
+  "word": "n00b",
+  "value": "-2"
+}, {
+  "word": "naive",
+  "value": "-2"
+}, {
+  "word": "nasty",
+  "value": "-3"
+}, {
+  "word": "natural",
+  "value": "1"
+}, {
+  "word": "naïve",
+  "value": "-2"
+}, {
+  "word": "needy",
+  "value": "-2"
+}, {
+  "word": "negative",
+  "value": "-2"
+}, {
+  "word": "negativity",
+  "value": "-2"
+}, {
+  "word": "neglect",
+  "value": "-2"
+}, {
+  "word": "neglected",
+  "value": "-2"
+}, {
+  "word": "neglecting",
+  "value": "-2"
+}, {
+  "word": "neglects",
+  "value": "-2"
+}, {
+  "word": "nerves",
+  "value": "-1"
+}, {
+  "word": "nervous",
+  "value": "-2"
+}, {
+  "word": "nervously",
+  "value": "-2"
+}, {
+  "word": "nice",
+  "value": "3"
+}, {
+  "word": "nifty",
+  "value": "2"
+}, {
+  "word": "niggas",
+  "value": "-5"
+}, {
+  "word": "nigger",
+  "value": "-5"
+}, {
+  "word": "no",
+  "value": "-1"
+}, {
+  "word": "no fun",
+  "value": "-3"
+}, {
+  "word": "noble",
+  "value": "2"
+}, {
+  "word": "noisy",
+  "value": "-1"
+}, {
+  "word": "nonsense",
+  "value": "-2"
+}, {
+  "word": "noob",
+  "value": "-2"
+}, {
+  "word": "nosey",
+  "value": "-2"
+}, {
+  "word": "not good",
+  "value": "-2"
+}, {
+  "word": "not working",
+  "value": "-3"
+}, {
+  "word": "notorious",
+  "value": "-2"
+}, {
+  "word": "novel",
+  "value": "2"
+}, {
+  "word": "numb",
+  "value": "-1"
+}, {
+  "word": "nuts",
+  "value": "-3"
+}, {
+  "word": "obliterate",
+  "value": "-2"
+}, {
+  "word": "obliterated",
+  "value": "-2"
+}, {
+  "word": "obnoxious",
+  "value": "-3"
+}, {
+  "word": "obscene",
+  "value": "-2"
+}, {
+  "word": "obsessed",
+  "value": "2"
+}, {
+  "word": "obsolete",
+  "value": "-2"
+}, {
+  "word": "obstacle",
+  "value": "-2"
+}, {
+  "word": "obstacles",
+  "value": "-2"
+}, {
+  "word": "obstinate",
+  "value": "-2"
+}, {
+  "word": "odd",
+  "value": "-2"
+}, {
+  "word": "offend",
+  "value": "-2"
+}, {
+  "word": "offended",
+  "value": "-2"
+}, {
+  "word": "offender",
+  "value": "-2"
+}, {
+  "word": "offending",
+  "value": "-2"
+}, {
+  "word": "offends",
+  "value": "-2"
+}, {
+  "word": "offline",
+  "value": "-1"
+}, {
+  "word": "oks",
+  "value": "2"
+}, {
+  "word": "ominous",
+  "value": "3"
+}, {
+  "word": "once-in-a-lifetime",
+  "value": "3"
+}, {
+  "word": "opportunities",
+  "value": "2"
+}, {
+  "word": "opportunity",
+  "value": "2"
+}, {
+  "word": "oppressed",
+  "value": "-2"
+}, {
+  "word": "oppressive",
+  "value": "-2"
+}, {
+  "word": "optimism",
+  "value": "2"
+}, {
+  "word": "optimistic",
+  "value": "2"
+}, {
+  "word": "optionless",
+  "value": "-2"
+}, {
+  "word": "outcry",
+  "value": "-2"
+}, {
+  "word": "outmaneuvered",
+  "value": "-2"
+}, {
+  "word": "outrage",
+  "value": "-3"
+}, {
+  "word": "outraged",
+  "value": "-3"
+}, {
+  "word": "outreach",
+  "value": "2"
+}, {
+  "word": "outstanding",
+  "value": "5"
+}, {
+  "word": "overjoyed",
+  "value": "4"
+}, {
+  "word": "overload",
+  "value": "-1"
+}, {
+  "word": "overlooked",
+  "value": "-1"
+}, {
+  "word": "overreact",
+  "value": "-2"
+}, {
+  "word": "overreacted",
+  "value": "-2"
+}, {
+  "word": "overreaction",
+  "value": "-2"
+}, {
+  "word": "overreacts",
+  "value": "-2"
+}, {
+  "word": "oversell",
+  "value": "-2"
+}, {
+  "word": "overselling",
+  "value": "-2"
+}, {
+  "word": "oversells",
+  "value": "-2"
+}, {
+  "word": "oversimplification",
+  "value": "-2"
+}, {
+  "word": "oversimplified",
+  "value": "-2"
+}, {
+  "word": "oversimplifies",
+  "value": "-2"
+}, {
+  "word": "oversimplify",
+  "value": "-2"
+}, {
+  "word": "overstatement",
+  "value": "-2"
+}, {
+  "word": "overstatements",
+  "value": "-2"
+}, {
+  "word": "overweight",
+  "value": "-1"
+}, {
+  "word": "oxymoron",
+  "value": "-1"
+}, {
+  "word": "pain",
+  "value": "-2"
+}, {
+  "word": "pained",
+  "value": "-2"
+}, {
+  "word": "panic",
+  "value": "-3"
+}, {
+  "word": "panicked",
+  "value": "-3"
+}, {
+  "word": "panics",
+  "value": "-3"
+}, {
+  "word": "paradise",
+  "value": "3"
+}, {
+  "word": "paradox",
+  "value": "-1"
+}, {
+  "word": "pardon",
+  "value": "2"
+}, {
+  "word": "pardoned",
+  "value": "2"
+}, {
+  "word": "pardoning",
+  "value": "2"
+}, {
+  "word": "pardons",
+  "value": "2"
+}, {
+  "word": "parley",
+  "value": "-1"
+}, {
+  "word": "passionate",
+  "value": "2"
+}, {
+  "word": "passive",
+  "value": "-1"
+}, {
+  "word": "passively",
+  "value": "-1"
+}, {
+  "word": "pathetic",
+  "value": "-2"
+}, {
+  "word": "pay",
+  "value": "-1"
+}, {
+  "word": "peace",
+  "value": "2"
+}, {
+  "word": "peaceful",
+  "value": "2"
+}, {
+  "word": "peacefully",
+  "value": "2"
+}, {
+  "word": "penalty",
+  "value": "-2"
+}, {
+  "word": "pensive",
+  "value": "-1"
+}, {
+  "word": "perfect",
+  "value": "3"
+}, {
+  "word": "perfected",
+  "value": "2"
+}, {
+  "word": "perfectly",
+  "value": "3"
+}, {
+  "word": "perfects",
+  "value": "2"
+}, {
+  "word": "peril",
+  "value": "-2"
+}, {
+  "word": "perjury",
+  "value": "-3"
+}, {
+  "word": "perpetrator",
+  "value": "-2"
+}, {
+  "word": "perpetrators",
+  "value": "-2"
+}, {
+  "word": "perplexed",
+  "value": "-2"
+}, {
+  "word": "persecute",
+  "value": "-2"
+}, {
+  "word": "persecuted",
+  "value": "-2"
+}, {
+  "word": "persecutes",
+  "value": "-2"
+}, {
+  "word": "persecuting",
+  "value": "-2"
+}, {
+  "word": "perturbed",
+  "value": "-2"
+}, {
+  "word": "pesky",
+  "value": "-2"
+}, {
+  "word": "pessimism",
+  "value": "-2"
+}, {
+  "word": "pessimistic",
+  "value": "-2"
+}, {
+  "word": "petrified",
+  "value": "-2"
+}, {
+  "word": "phobic",
+  "value": "-2"
+}, {
+  "word": "picturesque",
+  "value": "2"
+}, {
+  "word": "pileup",
+  "value": "-1"
+}, {
+  "word": "pique",
+  "value": "-2"
+}, {
+  "word": "piqued",
+  "value": "-2"
+}, {
+  "word": "piss",
+  "value": "-4"
+}, {
+  "word": "pissed",
+  "value": "-4"
+}, {
+  "word": "pissing",
+  "value": "-3"
+}, {
+  "word": "piteous",
+  "value": "-2"
+}, {
+  "word": "pitied",
+  "value": "-1"
+}, {
+  "word": "pity",
+  "value": "-2"
+}, {
+  "word": "playful",
+  "value": "2"
+}, {
+  "word": "pleasant",
+  "value": "3"
+}, {
+  "word": "please",
+  "value": "1"
+}, {
+  "word": "pleased",
+  "value": "3"
+}, {
+  "word": "pleasure",
+  "value": "3"
+}, {
+  "word": "poised",
+  "value": "-2"
+}, {
+  "word": "poison",
+  "value": "-2"
+}, {
+  "word": "poisoned",
+  "value": "-2"
+}, {
+  "word": "poisons",
+  "value": "-2"
+}, {
+  "word": "pollute",
+  "value": "-2"
+}, {
+  "word": "polluted",
+  "value": "-2"
+}, {
+  "word": "polluter",
+  "value": "-2"
+}, {
+  "word": "polluters",
+  "value": "-2"
+}, {
+  "word": "pollutes",
+  "value": "-2"
+}, {
+  "word": "poor",
+  "value": "-2"
+}, {
+  "word": "poorer",
+  "value": "-2"
+}, {
+  "word": "poorest",
+  "value": "-2"
+}, {
+  "word": "popular",
+  "value": "3"
+}, {
+  "word": "positive",
+  "value": "2"
+}, {
+  "word": "positively",
+  "value": "2"
+}, {
+  "word": "possessive",
+  "value": "-2"
+}, {
+  "word": "postpone",
+  "value": "-1"
+}, {
+  "word": "postponed",
+  "value": "-1"
+}, {
+  "word": "postpones",
+  "value": "-1"
+}, {
+  "word": "postponing",
+  "value": "-1"
+}, {
+  "word": "poverty",
+  "value": "-1"
+}, {
+  "word": "powerful",
+  "value": "2"
+}, {
+  "word": "powerless",
+  "value": "-2"
+}, {
+  "word": "praise",
+  "value": "3"
+}, {
+  "word": "praised",
+  "value": "3"
+}, {
+  "word": "praises",
+  "value": "3"
+}, {
+  "word": "praising",
+  "value": "3"
+}, {
+  "word": "pray",
+  "value": "1"
+}, {
+  "word": "praying",
+  "value": "1"
+}, {
+  "word": "prays",
+  "value": "1"
+}, {
+  "word": "prblm",
+  "value": "-2"
+}, {
+  "word": "prblms",
+  "value": "-2"
+}, {
+  "word": "prepared",
+  "value": "1"
+}, {
+  "word": "pressure",
+  "value": "-1"
+}, {
+  "word": "pressured",
+  "value": "-2"
+}, {
+  "word": "pretend",
+  "value": "-1"
+}, {
+  "word": "pretending",
+  "value": "-1"
+}, {
+  "word": "pretends",
+  "value": "-1"
+}, {
+  "word": "pretty",
+  "value": "1"
+}, {
+  "word": "prevent",
+  "value": "-1"
+}, {
+  "word": "prevented",
+  "value": "-1"
+}, {
+  "word": "preventing",
+  "value": "-1"
+}, {
+  "word": "prevents",
+  "value": "-1"
+}, {
+  "word": "prick",
+  "value": "-5"
+}, {
+  "word": "prison",
+  "value": "-2"
+}, {
+  "word": "prisoner",
+  "value": "-2"
+}, {
+  "word": "prisoners",
+  "value": "-2"
+}, {
+  "word": "privileged",
+  "value": "2"
+}, {
+  "word": "proactive",
+  "value": "2"
+}, {
+  "word": "problem",
+  "value": "-2"
+}, {
+  "word": "problems",
+  "value": "-2"
+}, {
+  "word": "profiteer",
+  "value": "-2"
+}, {
+  "word": "progress",
+  "value": "2"
+}, {
+  "word": "prominent",
+  "value": "2"
+}, {
+  "word": "promise",
+  "value": "1"
+}, {
+  "word": "promised",
+  "value": "1"
+}, {
+  "word": "promises",
+  "value": "1"
+}, {
+  "word": "promote",
+  "value": "1"
+}, {
+  "word": "promoted",
+  "value": "1"
+}, {
+  "word": "promotes",
+  "value": "1"
+}, {
+  "word": "promoting",
+  "value": "1"
+}, {
+  "word": "propaganda",
+  "value": "-2"
+}, {
+  "word": "prosecute",
+  "value": "-1"
+}, {
+  "word": "prosecuted",
+  "value": "-2"
+}, {
+  "word": "prosecutes",
+  "value": "-1"
+}, {
+  "word": "prosecution",
+  "value": "-1"
+}, {
+  "word": "prospect",
+  "value": "1"
+}, {
+  "word": "prospects",
+  "value": "1"
+}, {
+  "word": "prosperous",
+  "value": "3"
+}, {
+  "word": "protect",
+  "value": "1"
+}, {
+  "word": "protected",
+  "value": "1"
+}, {
+  "word": "protects",
+  "value": "1"
+}, {
+  "word": "protest",
+  "value": "-2"
+}, {
+  "word": "protesters",
+  "value": "-2"
+}, {
+  "word": "protesting",
+  "value": "-2"
+}, {
+  "word": "protests",
+  "value": "-2"
+}, {
+  "word": "proud",
+  "value": "2"
+}, {
+  "word": "proudly",
+  "value": "2"
+}, {
+  "word": "provoke",
+  "value": "-1"
+}, {
+  "word": "provoked",
+  "value": "-1"
+}, {
+  "word": "provokes",
+  "value": "-1"
+}, {
+  "word": "provoking",
+  "value": "-1"
+}, {
+  "word": "pseudoscience",
+  "value": "-3"
+}, {
+  "word": "punish",
+  "value": "-2"
+}, {
+  "word": "punished",
+  "value": "-2"
+}, {
+  "word": "punishes",
+  "value": "-2"
+}, {
+  "word": "punitive",
+  "value": "-2"
+}, {
+  "word": "pushy",
+  "value": "-1"
+}, {
+  "word": "puzzled",
+  "value": "-2"
+}, {
+  "word": "quaking",
+  "value": "-2"
+}, {
+  "word": "questionable",
+  "value": "-2"
+}, {
+  "word": "questioned",
+  "value": "-1"
+}, {
+  "word": "questioning",
+  "value": "-1"
+}, {
+  "word": "racism",
+  "value": "-3"
+}, {
+  "word": "racist",
+  "value": "-3"
+}, {
+  "word": "racists",
+  "value": "-3"
+}, {
+  "word": "rage",
+  "value": "-2"
+}, {
+  "word": "rageful",
+  "value": "-2"
+}, {
+  "word": "rainy",
+  "value": "-1"
+}, {
+  "word": "rant",
+  "value": "-3"
+}, {
+  "word": "ranter",
+  "value": "-3"
+}, {
+  "word": "ranters",
+  "value": "-3"
+}, {
+  "word": "rants",
+  "value": "-3"
+}, {
+  "word": "rape",
+  "value": "-4"
+}, {
+  "word": "rapist",
+  "value": "-4"
+}, {
+  "word": "rapture",
+  "value": "2"
+}, {
+  "word": "raptured",
+  "value": "2"
+}, {
+  "word": "raptures",
+  "value": "2"
+}, {
+  "word": "rapturous",
+  "value": "4"
+}, {
+  "word": "rash",
+  "value": "-2"
+}, {
+  "word": "ratified",
+  "value": "2"
+}, {
+  "word": "reach",
+  "value": "1"
+}, {
+  "word": "reached",
+  "value": "1"
+}, {
+  "word": "reaches",
+  "value": "1"
+}, {
+  "word": "reaching",
+  "value": "1"
+}, {
+  "word": "reassure",
+  "value": "1"
+}, {
+  "word": "reassured",
+  "value": "1"
+}, {
+  "word": "reassures",
+  "value": "1"
+}, {
+  "word": "reassuring",
+  "value": "2"
+}, {
+  "word": "rebellion",
+  "value": "-2"
+}, {
+  "word": "recession",
+  "value": "-2"
+}, {
+  "word": "reckless",
+  "value": "-2"
+}, {
+  "word": "recommend",
+  "value": "2"
+}, {
+  "word": "recommended",
+  "value": "2"
+}, {
+  "word": "recommends",
+  "value": "2"
+}, {
+  "word": "redeemed",
+  "value": "2"
+}, {
+  "word": "refuse",
+  "value": "-2"
+}, {
+  "word": "refused",
+  "value": "-2"
+}, {
+  "word": "refusing",
+  "value": "-2"
+}, {
+  "word": "regret",
+  "value": "-2"
+}, {
+  "word": "regretful",
+  "value": "-2"
+}, {
+  "word": "regrets",
+  "value": "-2"
+}, {
+  "word": "regretted",
+  "value": "-2"
+}, {
+  "word": "regretting",
+  "value": "-2"
+}, {
+  "word": "reject",
+  "value": "-1"
+}, {
+  "word": "rejected",
+  "value": "-1"
+}, {
+  "word": "rejecting",
+  "value": "-1"
+}, {
+  "word": "rejects",
+  "value": "-1"
+}, {
+  "word": "rejoice",
+  "value": "4"
+}, {
+  "word": "rejoiced",
+  "value": "4"
+}, {
+  "word": "rejoices",
+  "value": "4"
+}, {
+  "word": "rejoicing",
+  "value": "4"
+}, {
+  "word": "relaxed",
+  "value": "2"
+}, {
+  "word": "relentless",
+  "value": "-1"
+}, {
+  "word": "reliant",
+  "value": "2"
+}, {
+  "word": "relieve",
+  "value": "1"
+}, {
+  "word": "relieved",
+  "value": "2"
+}, {
+  "word": "relieves",
+  "value": "1"
+}, {
+  "word": "relieving",
+  "value": "2"
+}, {
+  "word": "relishing",
+  "value": "2"
+}, {
+  "word": "remarkable",
+  "value": "2"
+}, {
+  "word": "remorse",
+  "value": "-2"
+}, {
+  "word": "repulse",
+  "value": "-1"
+}, {
+  "word": "repulsed",
+  "value": "-2"
+}, {
+  "word": "rescue",
+  "value": "2"
+}, {
+  "word": "rescued",
+  "value": "2"
+}, {
+  "word": "rescues",
+  "value": "2"
+}, {
+  "word": "resentful",
+  "value": "-2"
+}, {
+  "word": "resign",
+  "value": "-1"
+}, {
+  "word": "resigned",
+  "value": "-1"
+}, {
+  "word": "resigning",
+  "value": "-1"
+}, {
+  "word": "resigns",
+  "value": "-1"
+}, {
+  "word": "resolute",
+  "value": "2"
+}, {
+  "word": "resolve",
+  "value": "2"
+}, {
+  "word": "resolved",
+  "value": "2"
+}, {
+  "word": "resolves",
+  "value": "2"
+}, {
+  "word": "resolving",
+  "value": "2"
+}, {
+  "word": "respected",
+  "value": "2"
+}, {
+  "word": "responsible",
+  "value": "2"
+}, {
+  "word": "responsive",
+  "value": "2"
+}, {
+  "word": "restful",
+  "value": "2"
+}, {
+  "word": "restless",
+  "value": "-2"
+}, {
+  "word": "restore",
+  "value": "1"
+}, {
+  "word": "restored",
+  "value": "1"
+}, {
+  "word": "restores",
+  "value": "1"
+}, {
+  "word": "restoring",
+  "value": "1"
+}, {
+  "word": "restrict",
+  "value": "-2"
+}, {
+  "word": "restricted",
+  "value": "-2"
+}, {
+  "word": "restricting",
+  "value": "-2"
+}, {
+  "word": "restriction",
+  "value": "-2"
+}, {
+  "word": "restricts",
+  "value": "-2"
+}, {
+  "word": "retained",
+  "value": "-1"
+}, {
+  "word": "retard",
+  "value": "-2"
+}, {
+  "word": "retarded",
+  "value": "-2"
+}, {
+  "word": "retreat",
+  "value": "-1"
+}, {
+  "word": "revenge",
+  "value": "-2"
+}, {
+  "word": "revengeful",
+  "value": "-2"
+}, {
+  "word": "revered",
+  "value": "2"
+}, {
+  "word": "revive",
+  "value": "2"
+}, {
+  "word": "revives",
+  "value": "2"
+}, {
+  "word": "reward",
+  "value": "2"
+}, {
+  "word": "rewarded",
+  "value": "2"
+}, {
+  "word": "rewarding",
+  "value": "2"
+}, {
+  "word": "rewards",
+  "value": "2"
+}, {
+  "word": "rich",
+  "value": "2"
+}, {
+  "word": "ridiculous",
+  "value": "-3"
+}, {
+  "word": "rig",
+  "value": "-1"
+}, {
+  "word": "rigged",
+  "value": "-1"
+}, {
+  "word": "right direction",
+  "value": "3"
+}, {
+  "word": "rigorous",
+  "value": "3"
+}, {
+  "word": "rigorously",
+  "value": "3"
+}, {
+  "word": "riot",
+  "value": "-2"
+}, {
+  "word": "riots",
+  "value": "-2"
+}, {
+  "word": "risk",
+  "value": "-2"
+}, {
+  "word": "risks",
+  "value": "-2"
+}, {
+  "word": "rob",
+  "value": "-2"
+}, {
+  "word": "robber",
+  "value": "-2"
+}, {
+  "word": "robed",
+  "value": "-2"
+}, {
+  "word": "robing",
+  "value": "-2"
+}, {
+  "word": "robs",
+  "value": "-2"
+}, {
+  "word": "robust",
+  "value": "2"
+}, {
+  "word": "rofl",
+  "value": "4"
+}, {
+  "word": "roflcopter",
+  "value": "4"
+}, {
+  "word": "roflmao",
+  "value": "4"
+}, {
+  "word": "romance",
+  "value": "2"
+}, {
+  "word": "rotfl",
+  "value": "4"
+}, {
+  "word": "rotflmfao",
+  "value": "4"
+}, {
+  "word": "rotflol",
+  "value": "4"
+}, {
+  "word": "ruin",
+  "value": "-2"
+}, {
+  "word": "ruined",
+  "value": "-2"
+}, {
+  "word": "ruining",
+  "value": "-2"
+}, {
+  "word": "ruins",
+  "value": "-2"
+}, {
+  "word": "sabotage",
+  "value": "-2"
+}, {
+  "word": "sad",
+  "value": "-2"
+}, {
+  "word": "sadden",
+  "value": "-2"
+}, {
+  "word": "saddened",
+  "value": "-2"
+}, {
+  "word": "sadly",
+  "value": "-2"
+}, {
+  "word": "safe",
+  "value": "1"
+}, {
+  "word": "safely",
+  "value": "1"
+}, {
+  "word": "safety",
+  "value": "1"
+}, {
+  "word": "salient",
+  "value": "1"
+}, {
+  "word": "sappy",
+  "value": "-1"
+}, {
+  "word": "sarcastic",
+  "value": "-2"
+}, {
+  "word": "satisfied",
+  "value": "2"
+}, {
+  "word": "save",
+  "value": "2"
+}, {
+  "word": "saved",
+  "value": "2"
+}, {
+  "word": "scam",
+  "value": "-2"
+}, {
+  "word": "scams",
+  "value": "-2"
+}, {
+  "word": "scandal",
+  "value": "-3"
+}, {
+  "word": "scandalous",
+  "value": "-3"
+}, {
+  "word": "scandals",
+  "value": "-3"
+}, {
+  "word": "scapegoat",
+  "value": "-2"
+}, {
+  "word": "scapegoats",
+  "value": "-2"
+}, {
+  "word": "scare",
+  "value": "-2"
+}, {
+  "word": "scared",
+  "value": "-2"
+}, {
+  "word": "scary",
+  "value": "-2"
+}, {
+  "word": "sceptical",
+  "value": "-2"
+}, {
+  "word": "scold",
+  "value": "-2"
+}, {
+  "word": "scoop",
+  "value": "3"
+}, {
+  "word": "scorn",
+  "value": "-2"
+}, {
+  "word": "scornful",
+  "value": "-2"
+}, {
+  "word": "scream",
+  "value": "-2"
+}, {
+  "word": "screamed",
+  "value": "-2"
+}, {
+  "word": "screaming",
+  "value": "-2"
+}, {
+  "word": "screams",
+  "value": "-2"
+}, {
+  "word": "screwed",
+  "value": "-2"
+}, {
+  "word": "screwed up",
+  "value": "-3"
+}, {
+  "word": "scumbag",
+  "value": "-4"
+}, {
+  "word": "secure",
+  "value": "2"
+}, {
+  "word": "secured",
+  "value": "2"
+}, {
+  "word": "secures",
+  "value": "2"
+}, {
+  "word": "sedition",
+  "value": "-2"
+}, {
+  "word": "seditious",
+  "value": "-2"
+}, {
+  "word": "seduced",
+  "value": "-1"
+}, {
+  "word": "self-confident",
+  "value": "2"
+}, {
+  "word": "self-deluded",
+  "value": "-2"
+}, {
+  "word": "selfish",
+  "value": "-3"
+}, {
+  "word": "selfishness",
+  "value": "-3"
+}, {
+  "word": "sentence",
+  "value": "-2"
+}, {
+  "word": "sentenced",
+  "value": "-2"
+}, {
+  "word": "sentences",
+  "value": "-2"
+}, {
+  "word": "sentencing",
+  "value": "-2"
+}, {
+  "word": "serene",
+  "value": "2"
+}, {
+  "word": "severe",
+  "value": "-2"
+}, {
+  "word": "sexy",
+  "value": "3"
+}, {
+  "word": "shaky",
+  "value": "-2"
+}, {
+  "word": "shame",
+  "value": "-2"
+}, {
+  "word": "shamed",
+  "value": "-2"
+}, {
+  "word": "shameful",
+  "value": "-2"
+}, {
+  "word": "share",
+  "value": "1"
+}, {
+  "word": "shared",
+  "value": "1"
+}, {
+  "word": "shares",
+  "value": "1"
+}, {
+  "word": "shattered",
+  "value": "-2"
+}, {
+  "word": "shit",
+  "value": "-4"
+}, {
+  "word": "shithead",
+  "value": "-4"
+}, {
+  "word": "shitty",
+  "value": "-3"
+}, {
+  "word": "shock",
+  "value": "-2"
+}, {
+  "word": "shocked",
+  "value": "-2"
+}, {
+  "word": "shocking",
+  "value": "-2"
+}, {
+  "word": "shocks",
+  "value": "-2"
+}, {
+  "word": "shoot",
+  "value": "-1"
+}, {
+  "word": "short-sighted",
+  "value": "-2"
+}, {
+  "word": "short-sightedness",
+  "value": "-2"
+}, {
+  "word": "shortage",
+  "value": "-2"
+}, {
+  "word": "shortages",
+  "value": "-2"
+}, {
+  "word": "shrew",
+  "value": "-4"
+}, {
+  "word": "shy",
+  "value": "-1"
+}, {
+  "word": "sick",
+  "value": "-2"
+}, {
+  "word": "sigh",
+  "value": "-2"
+}, {
+  "word": "significance",
+  "value": "1"
+}, {
+  "word": "significant",
+  "value": "1"
+}, {
+  "word": "silencing",
+  "value": "-1"
+}, {
+  "word": "silly",
+  "value": "-1"
+}, {
+  "word": "sincere",
+  "value": "2"
+}, {
+  "word": "sincerely",
+  "value": "2"
+}, {
+  "word": "sincerest",
+  "value": "2"
+}, {
+  "word": "sincerity",
+  "value": "2"
+}, {
+  "word": "sinful",
+  "value": "-3"
+}, {
+  "word": "singleminded",
+  "value": "-2"
+}, {
+  "word": "skeptic",
+  "value": "-2"
+}, {
+  "word": "skeptical",
+  "value": "-2"
+}, {
+  "word": "skepticism",
+  "value": "-2"
+}, {
+  "word": "skeptics",
+  "value": "-2"
+}, {
+  "word": "slam",
+  "value": "-2"
+}, {
+  "word": "slash",
+  "value": "-2"
+}, {
+  "word": "slashed",
+  "value": "-2"
+}, {
+  "word": "slashes",
+  "value": "-2"
+}, {
+  "word": "slashing",
+  "value": "-2"
+}, {
+  "word": "slavery",
+  "value": "-3"
+}, {
+  "word": "sleeplessness",
+  "value": "-2"
+}, {
+  "word": "slick",
+  "value": "2"
+}, {
+  "word": "slicker",
+  "value": "2"
+}, {
+  "word": "slickest",
+  "value": "2"
+}, {
+  "word": "sluggish",
+  "value": "-2"
+}, {
+  "word": "slut",
+  "value": "-5"
+}, {
+  "word": "smart",
+  "value": "1"
+}, {
+  "word": "smarter",
+  "value": "2"
+}, {
+  "word": "smartest",
+  "value": "2"
+}, {
+  "word": "smear",
+  "value": "-2"
+}, {
+  "word": "smile",
+  "value": "2"
+}, {
+  "word": "smiled",
+  "value": "2"
+}, {
+  "word": "smiles",
+  "value": "2"
+}, {
+  "word": "smiling",
+  "value": "2"
+}, {
+  "word": "smog",
+  "value": "-2"
+}, {
+  "word": "sneaky",
+  "value": "-1"
+}, {
+  "word": "snub",
+  "value": "-2"
+}, {
+  "word": "snubbed",
+  "value": "-2"
+}, {
+  "word": "snubbing",
+  "value": "-2"
+}, {
+  "word": "snubs",
+  "value": "-2"
+}, {
+  "word": "sobering",
+  "value": "1"
+}, {
+  "word": "solemn",
+  "value": "-1"
+}, {
+  "word": "solid",
+  "value": "2"
+}, {
+  "word": "solidarity",
+  "value": "2"
+}, {
+  "word": "solution",
+  "value": "1"
+}, {
+  "word": "solutions",
+  "value": "1"
+}, {
+  "word": "solve",
+  "value": "1"
+}, {
+  "word": "solved",
+  "value": "1"
+}, {
+  "word": "solves",
+  "value": "1"
+}, {
+  "word": "solving",
+  "value": "1"
+}, {
+  "word": "somber",
+  "value": "-2"
+}, {
+  "word": "some kind",
+  "value": "0"
+}, {
+  "word": "son-of-a-bitch",
+  "value": "-5"
+}, {
+  "word": "soothe",
+  "value": "3"
+}, {
+  "word": "soothed",
+  "value": "3"
+}, {
+  "word": "soothing",
+  "value": "3"
+}, {
+  "word": "sophisticated",
+  "value": "2"
+}, {
+  "word": "sore",
+  "value": "-1"
+}, {
+  "word": "sorrow",
+  "value": "-2"
+}, {
+  "word": "sorrowful",
+  "value": "-2"
+}, {
+  "word": "sorry",
+  "value": "-1"
+}, {
+  "word": "spam",
+  "value": "-2"
+}, {
+  "word": "spammer",
+  "value": "-3"
+}, {
+  "word": "spammers",
+  "value": "-3"
+}, {
+  "word": "spamming",
+  "value": "-2"
+}, {
+  "word": "spark",
+  "value": "1"
+}, {
+  "word": "sparkle",
+  "value": "3"
+}, {
+  "word": "sparkles",
+  "value": "3"
+}, {
+  "word": "sparkling",
+  "value": "3"
+}, {
+  "word": "speculative",
+  "value": "-2"
+}, {
+  "word": "spirit",
+  "value": "1"
+}, {
+  "word": "spirited",
+  "value": "2"
+}, {
+  "word": "spiritless",
+  "value": "-2"
+}, {
+  "word": "spiteful",
+  "value": "-2"
+}, {
+  "word": "splendid",
+  "value": "3"
+}, {
+  "word": "sprightly",
+  "value": "2"
+}, {
+  "word": "squelched",
+  "value": "-1"
+}, {
+  "word": "stab",
+  "value": "-2"
+}, {
+  "word": "stabbed",
+  "value": "-2"
+}, {
+  "word": "stable",
+  "value": "2"
+}, {
+  "word": "stabs",
+  "value": "-2"
+}, {
+  "word": "stall",
+  "value": "-2"
+}, {
+  "word": "stalled",
+  "value": "-2"
+}, {
+  "word": "stalling",
+  "value": "-2"
+}, {
+  "word": "stamina",
+  "value": "2"
+}, {
+  "word": "stampede",
+  "value": "-2"
+}, {
+  "word": "startled",
+  "value": "-2"
+}, {
+  "word": "starve",
+  "value": "-2"
+}, {
+  "word": "starved",
+  "value": "-2"
+}, {
+  "word": "starves",
+  "value": "-2"
+}, {
+  "word": "starving",
+  "value": "-2"
+}, {
+  "word": "steadfast",
+  "value": "2"
+}, {
+  "word": "steal",
+  "value": "-2"
+}, {
+  "word": "steals",
+  "value": "-2"
+}, {
+  "word": "stereotype",
+  "value": "-2"
+}, {
+  "word": "stereotyped",
+  "value": "-2"
+}, {
+  "word": "stifled",
+  "value": "-1"
+}, {
+  "word": "stimulate",
+  "value": "1"
+}, {
+  "word": "stimulated",
+  "value": "1"
+}, {
+  "word": "stimulates",
+  "value": "1"
+}, {
+  "word": "stimulating",
+  "value": "2"
+}, {
+  "word": "stingy",
+  "value": "-2"
+}, {
+  "word": "stolen",
+  "value": "-2"
+}, {
+  "word": "stop",
+  "value": "-1"
+}, {
+  "word": "stopped",
+  "value": "-1"
+}, {
+  "word": "stopping",
+  "value": "-1"
+}, {
+  "word": "stops",
+  "value": "-1"
+}, {
+  "word": "stout",
+  "value": "2"
+}, {
+  "word": "straight",
+  "value": "1"
+}, {
+  "word": "strange",
+  "value": "-1"
+}, {
+  "word": "strangely",
+  "value": "-1"
+}, {
+  "word": "strangled",
+  "value": "-2"
+}, {
+  "word": "strength",
+  "value": "2"
+}, {
+  "word": "strengthen",
+  "value": "2"
+}, {
+  "word": "strengthened",
+  "value": "2"
+}, {
+  "word": "strengthening",
+  "value": "2"
+}, {
+  "word": "strengthens",
+  "value": "2"
+}, {
+  "word": "stressed",
+  "value": "-2"
+}, {
+  "word": "stressor",
+  "value": "-2"
+}, {
+  "word": "stressors",
+  "value": "-2"
+}, {
+  "word": "stricken",
+  "value": "-2"
+}, {
+  "word": "strike",
+  "value": "-1"
+}, {
+  "word": "strikers",
+  "value": "-2"
+}, {
+  "word": "strikes",
+  "value": "-1"
+}, {
+  "word": "strong",
+  "value": "2"
+}, {
+  "word": "stronger",
+  "value": "2"
+}, {
+  "word": "strongest",
+  "value": "2"
+}, {
+  "word": "struck",
+  "value": "-1"
+}, {
+  "word": "struggle",
+  "value": "-2"
+}, {
+  "word": "struggled",
+  "value": "-2"
+}, {
+  "word": "struggles",
+  "value": "-2"
+}, {
+  "word": "struggling",
+  "value": "-2"
+}, {
+  "word": "stubborn",
+  "value": "-2"
+}, {
+  "word": "stuck",
+  "value": "-2"
+}, {
+  "word": "stunned",
+  "value": "-2"
+}, {
+  "word": "stunning",
+  "value": "4"
+}, {
+  "word": "stupid",
+  "value": "-2"
+}, {
+  "word": "stupidly",
+  "value": "-2"
+}, {
+  "word": "suave",
+  "value": "2"
+}, {
+  "word": "substantial",
+  "value": "1"
+}, {
+  "word": "substantially",
+  "value": "1"
+}, {
+  "word": "subversive",
+  "value": "-2"
+}, {
+  "word": "success",
+  "value": "2"
+}, {
+  "word": "successful",
+  "value": "3"
+}, {
+  "word": "suck",
+  "value": "-3"
+}, {
+  "word": "sucks",
+  "value": "-3"
+}, {
+  "word": "suffer",
+  "value": "-2"
+}, {
+  "word": "suffering",
+  "value": "-2"
+}, {
+  "word": "suffers",
+  "value": "-2"
+}, {
+  "word": "suicidal",
+  "value": "-2"
+}, {
+  "word": "suicide",
+  "value": "-2"
+}, {
+  "word": "suing",
+  "value": "-2"
+}, {
+  "word": "sulking",
+  "value": "-2"
+}, {
+  "word": "sulky",
+  "value": "-2"
+}, {
+  "word": "sullen",
+  "value": "-2"
+}, {
+  "word": "sunshine",
+  "value": "2"
+}, {
+  "word": "super",
+  "value": "3"
+}, {
+  "word": "superb",
+  "value": "5"
+}, {
+  "word": "superior",
+  "value": "2"
+}, {
+  "word": "support",
+  "value": "2"
+}, {
+  "word": "supported",
+  "value": "2"
+}, {
+  "word": "supporter",
+  "value": "1"
+}, {
+  "word": "supporters",
+  "value": "1"
+}, {
+  "word": "supporting",
+  "value": "1"
+}, {
+  "word": "supportive",
+  "value": "2"
+}, {
+  "word": "supports",
+  "value": "2"
+}, {
+  "word": "survived",
+  "value": "2"
+}, {
+  "word": "surviving",
+  "value": "2"
+}, {
+  "word": "survivor",
+  "value": "2"
+}, {
+  "word": "suspect",
+  "value": "-1"
+}, {
+  "word": "suspected",
+  "value": "-1"
+}, {
+  "word": "suspecting",
+  "value": "-1"
+}, {
+  "word": "suspects",
+  "value": "-1"
+}, {
+  "word": "suspend",
+  "value": "-1"
+}, {
+  "word": "suspended",
+  "value": "-1"
+}, {
+  "word": "suspicious",
+  "value": "-2"
+}, {
+  "word": "swear",
+  "value": "-2"
+}, {
+  "word": "swearing",
+  "value": "-2"
+}, {
+  "word": "swears",
+  "value": "-2"
+}, {
+  "word": "sweet",
+  "value": "2"
+}, {
+  "word": "swift",
+  "value": "2"
+}, {
+  "word": "swiftly",
+  "value": "2"
+}, {
+  "word": "swindle",
+  "value": "-3"
+}, {
+  "word": "swindles",
+  "value": "-3"
+}, {
+  "word": "swindling",
+  "value": "-3"
+}, {
+  "word": "sympathetic",
+  "value": "2"
+}, {
+  "word": "sympathy",
+  "value": "2"
+}, {
+  "word": "tard",
+  "value": "-2"
+}, {
+  "word": "tears",
+  "value": "-2"
+}, {
+  "word": "tender",
+  "value": "2"
+}, {
+  "word": "tense",
+  "value": "-2"
+}, {
+  "word": "tension",
+  "value": "-1"
+}, {
+  "word": "terrible",
+  "value": "-3"
+}, {
+  "word": "terribly",
+  "value": "-3"
+}, {
+  "word": "terrific",
+  "value": "4"
+}, {
+  "word": "terrified",
+  "value": "-3"
+}, {
+  "word": "terror",
+  "value": "-3"
+}, {
+  "word": "terrorize",
+  "value": "-3"
+}, {
+  "word": "terrorized",
+  "value": "-3"
+}, {
+  "word": "terrorizes",
+  "value": "-3"
+}, {
+  "word": "thank",
+  "value": "2"
+}, {
+  "word": "thankful",
+  "value": "2"
+}, {
+  "word": "thanks",
+  "value": "2"
+}, {
+  "word": "thorny",
+  "value": "-2"
+}, {
+  "word": "thoughtful",
+  "value": "2"
+}, {
+  "word": "thoughtless",
+  "value": "-2"
+}, {
+  "word": "threat",
+  "value": "-2"
+}, {
+  "word": "threaten",
+  "value": "-2"
+}, {
+  "word": "threatened",
+  "value": "-2"
+}, {
+  "word": "threatening",
+  "value": "-2"
+}, {
+  "word": "threatens",
+  "value": "-2"
+}, {
+  "word": "threats",
+  "value": "-2"
+}, {
+  "word": "thrilled",
+  "value": "5"
+}, {
+  "word": "thwart",
+  "value": "-2"
+}, {
+  "word": "thwarted",
+  "value": "-2"
+}, {
+  "word": "thwarting",
+  "value": "-2"
+}, {
+  "word": "thwarts",
+  "value": "-2"
+}, {
+  "word": "timid",
+  "value": "-2"
+}, {
+  "word": "timorous",
+  "value": "-2"
+}, {
+  "word": "tired",
+  "value": "-2"
+}, {
+  "word": "tits",
+  "value": "-2"
+}, {
+  "word": "tolerant",
+  "value": "2"
+}, {
+  "word": "toothless",
+  "value": "-2"
+}, {
+  "word": "top",
+  "value": "2"
+}, {
+  "word": "tops",
+  "value": "2"
+}, {
+  "word": "torn",
+  "value": "-2"
+}, {
+  "word": "torture",
+  "value": "-4"
+}, {
+  "word": "tortured",
+  "value": "-4"
+}, {
+  "word": "tortures",
+  "value": "-4"
+}, {
+  "word": "torturing",
+  "value": "-4"
+}, {
+  "word": "totalitarian",
+  "value": "-2"
+}, {
+  "word": "totalitarianism",
+  "value": "-2"
+}, {
+  "word": "tout",
+  "value": "-2"
+}, {
+  "word": "touted",
+  "value": "-2"
+}, {
+  "word": "touting",
+  "value": "-2"
+}, {
+  "word": "touts",
+  "value": "-2"
+}, {
+  "word": "tragedy",
+  "value": "-2"
+}, {
+  "word": "tragic",
+  "value": "-2"
+}, {
+  "word": "tranquil",
+  "value": "2"
+}, {
+  "word": "trap",
+  "value": "-1"
+}, {
+  "word": "trapped",
+  "value": "-2"
+}, {
+  "word": "trauma",
+  "value": "-3"
+}, {
+  "word": "traumatic",
+  "value": "-3"
+}, {
+  "word": "travesty",
+  "value": "-2"
+}, {
+  "word": "treason",
+  "value": "-3"
+}, {
+  "word": "treasonous",
+  "value": "-3"
+}, {
+  "word": "treasure",
+  "value": "2"
+}, {
+  "word": "treasures",
+  "value": "2"
+}, {
+  "word": "trembling",
+  "value": "-2"
+}, {
+  "word": "tremulous",
+  "value": "-2"
+}, {
+  "word": "tricked",
+  "value": "-2"
+}, {
+  "word": "trickery",
+  "value": "-2"
+}, {
+  "word": "triumph",
+  "value": "4"
+}, {
+  "word": "triumphant",
+  "value": "4"
+}, {
+  "word": "trouble",
+  "value": "-2"
+}, {
+  "word": "troubled",
+  "value": "-2"
+}, {
+  "word": "troubles",
+  "value": "-2"
+}, {
+  "word": "true",
+  "value": "2"
+}, {
+  "word": "trust",
+  "value": "1"
+}, {
+  "word": "trusted",
+  "value": "2"
+}, {
+  "word": "tumor",
+  "value": "-2"
+}, {
+  "word": "twat",
+  "value": "-5"
+}, {
+  "word": "ugly",
+  "value": "-3"
+}, {
+  "word": "unacceptable",
+  "value": "-2"
+}, {
+  "word": "unappreciated",
+  "value": "-2"
+}, {
+  "word": "unapproved",
+  "value": "-2"
+}, {
+  "word": "unaware",
+  "value": "-2"
+}, {
+  "word": "unbelievable",
+  "value": "-1"
+}, {
+  "word": "unbelieving",
+  "value": "-1"
+}, {
+  "word": "unbiased",
+  "value": "2"
+}, {
+  "word": "uncertain",
+  "value": "-1"
+}, {
+  "word": "unclear",
+  "value": "-1"
+}, {
+  "word": "uncomfortable",
+  "value": "-2"
+}, {
+  "word": "unconcerned",
+  "value": "-2"
+}, {
+  "word": "unconfirmed",
+  "value": "-1"
+}, {
+  "word": "unconvinced",
+  "value": "-1"
+}, {
+  "word": "uncredited",
+  "value": "-1"
+}, {
+  "word": "undecided",
+  "value": "-1"
+}, {
+  "word": "underestimate",
+  "value": "-1"
+}, {
+  "word": "underestimated",
+  "value": "-1"
+}, {
+  "word": "underestimates",
+  "value": "-1"
+}, {
+  "word": "underestimating",
+  "value": "-1"
+}, {
+  "word": "undermine",
+  "value": "-2"
+}, {
+  "word": "undermined",
+  "value": "-2"
+}, {
+  "word": "undermines",
+  "value": "-2"
+}, {
+  "word": "undermining",
+  "value": "-2"
+}, {
+  "word": "undeserving",
+  "value": "-2"
+}, {
+  "word": "undesirable",
+  "value": "-2"
+}, {
+  "word": "uneasy",
+  "value": "-2"
+}, {
+  "word": "unemployment",
+  "value": "-2"
+}, {
+  "word": "unequal",
+  "value": "-1"
+}, {
+  "word": "unequaled",
+  "value": "2"
+}, {
+  "word": "unethical",
+  "value": "-2"
+}, {
+  "word": "unfair",
+  "value": "-2"
+}, {
+  "word": "unfocused",
+  "value": "-2"
+}, {
+  "word": "unfulfilled",
+  "value": "-2"
+}, {
+  "word": "unhappy",
+  "value": "-2"
+}, {
+  "word": "unhealthy",
+  "value": "-2"
+}, {
+  "word": "unified",
+  "value": "1"
+}, {
+  "word": "unimpressed",
+  "value": "-2"
+}, {
+  "word": "unintelligent",
+  "value": "-2"
+}, {
+  "word": "united",
+  "value": "1"
+}, {
+  "word": "unjust",
+  "value": "-2"
+}, {
+  "word": "unlovable",
+  "value": "-2"
+}, {
+  "word": "unloved",
+  "value": "-2"
+}, {
+  "word": "unmatched",
+  "value": "1"
+}, {
+  "word": "unmotivated",
+  "value": "-2"
+}, {
+  "word": "unprofessional",
+  "value": "-2"
+}, {
+  "word": "unresearched",
+  "value": "-2"
+}, {
+  "word": "unsatisfied",
+  "value": "-2"
+}, {
+  "word": "unsecured",
+  "value": "-2"
+}, {
+  "word": "unsettled",
+  "value": "-1"
+}, {
+  "word": "unsophisticated",
+  "value": "-2"
+}, {
+  "word": "unstable",
+  "value": "-2"
+}, {
+  "word": "unstoppable",
+  "value": "2"
+}, {
+  "word": "unsupported",
+  "value": "-2"
+}, {
+  "word": "unsure",
+  "value": "-1"
+}, {
+  "word": "untarnished",
+  "value": "2"
+}, {
+  "word": "unwanted",
+  "value": "-2"
+}, {
+  "word": "unworthy",
+  "value": "-2"
+}, {
+  "word": "upset",
+  "value": "-2"
+}, {
+  "word": "upsets",
+  "value": "-2"
+}, {
+  "word": "upsetting",
+  "value": "-2"
+}, {
+  "word": "uptight",
+  "value": "-2"
+}, {
+  "word": "urgent",
+  "value": "-1"
+}, {
+  "word": "useful",
+  "value": "2"
+}, {
+  "word": "usefulness",
+  "value": "2"
+}, {
+  "word": "useless",
+  "value": "-2"
+}, {
+  "word": "uselessness",
+  "value": "-2"
+}, {
+  "word": "vague",
+  "value": "-2"
+}, {
+  "word": "validate",
+  "value": "1"
+}, {
+  "word": "validated",
+  "value": "1"
+}, {
+  "word": "validates",
+  "value": "1"
+}, {
+  "word": "validating",
+  "value": "1"
+}, {
+  "word": "verdict",
+  "value": "-1"
+}, {
+  "word": "verdicts",
+  "value": "-1"
+}, {
+  "word": "vested",
+  "value": "1"
+}, {
+  "word": "vexation",
+  "value": "-2"
+}, {
+  "word": "vexing",
+  "value": "-2"
+}, {
+  "word": "vibrant",
+  "value": "3"
+}, {
+  "word": "vicious",
+  "value": "-2"
+}, {
+  "word": "victim",
+  "value": "-3"
+}, {
+  "word": "victimize",
+  "value": "-3"
+}, {
+  "word": "victimized",
+  "value": "-3"
+}, {
+  "word": "victimizes",
+  "value": "-3"
+}, {
+  "word": "victimizing",
+  "value": "-3"
+}, {
+  "word": "victims",
+  "value": "-3"
+}, {
+  "word": "vigilant",
+  "value": "3"
+}, {
+  "word": "vile",
+  "value": "-3"
+}, {
+  "word": "vindicate",
+  "value": "2"
+}, {
+  "word": "vindicated",
+  "value": "2"
+}, {
+  "word": "vindicates",
+  "value": "2"
+}, {
+  "word": "vindicating",
+  "value": "2"
+}, {
+  "word": "violate",
+  "value": "-2"
+}, {
+  "word": "violated",
+  "value": "-2"
+}, {
+  "word": "violates",
+  "value": "-2"
+}, {
+  "word": "violating",
+  "value": "-2"
+}, {
+  "word": "violence",
+  "value": "-3"
+}, {
+  "word": "violent",
+  "value": "-3"
+}, {
+  "word": "virtuous",
+  "value": "2"
+}, {
+  "word": "virulent",
+  "value": "-2"
+}, {
+  "word": "vision",
+  "value": "1"
+}, {
+  "word": "visionary",
+  "value": "3"
+}, {
+  "word": "visioning",
+  "value": "1"
+}, {
+  "word": "visions",
+  "value": "1"
+}, {
+  "word": "vitality",
+  "value": "3"
+}, {
+  "word": "vitamin",
+  "value": "1"
+}, {
+  "word": "vitriolic",
+  "value": "-3"
+}, {
+  "word": "vivacious",
+  "value": "3"
+}, {
+  "word": "vociferous",
+  "value": "-1"
+}, {
+  "word": "vulnerability",
+  "value": "-2"
+}, {
+  "word": "vulnerable",
+  "value": "-2"
+}, {
+  "word": "walkout",
+  "value": "-2"
+}, {
+  "word": "walkouts",
+  "value": "-2"
+}, {
+  "word": "wanker",
+  "value": "-3"
+}, {
+  "word": "want",
+  "value": "1"
+}, {
+  "word": "war",
+  "value": "-2"
+}, {
+  "word": "warfare",
+  "value": "-2"
+}, {
+  "word": "warm",
+  "value": "1"
+}, {
+  "word": "warmth",
+  "value": "2"
+}, {
+  "word": "warn",
+  "value": "-2"
+}, {
+  "word": "warned",
+  "value": "-2"
+}, {
+  "word": "warning",
+  "value": "-3"
+}, {
+  "word": "warnings",
+  "value": "-3"
+}, {
+  "word": "warns",
+  "value": "-2"
+}, {
+  "word": "waste",
+  "value": "-1"
+}, {
+  "word": "wasted",
+  "value": "-2"
+}, {
+  "word": "wasting",
+  "value": "-2"
+}, {
+  "word": "wavering",
+  "value": "-1"
+}, {
+  "word": "weak",
+  "value": "-2"
+}, {
+  "word": "weakness",
+  "value": "-2"
+}, {
+  "word": "wealth",
+  "value": "3"
+}, {
+  "word": "wealthy",
+  "value": "2"
+}, {
+  "word": "weary",
+  "value": "-2"
+}, {
+  "word": "weep",
+  "value": "-2"
+}, {
+  "word": "weeping",
+  "value": "-2"
+}, {
+  "word": "weird",
+  "value": "-2"
+}, {
+  "word": "welcome",
+  "value": "2"
+}, {
+  "word": "welcomed",
+  "value": "2"
+}, {
+  "word": "welcomes",
+  "value": "2"
+}, {
+  "word": "whimsical",
+  "value": "1"
+}, {
+  "word": "whitewash",
+  "value": "-3"
+}, {
+  "word": "whore",
+  "value": "-4"
+}, {
+  "word": "wicked",
+  "value": "-2"
+}, {
+  "word": "widowed",
+  "value": "-1"
+}, {
+  "word": "willingness",
+  "value": "2"
+}, {
+  "word": "win",
+  "value": "4"
+}, {
+  "word": "winner",
+  "value": "4"
+}, {
+  "word": "winning",
+  "value": "4"
+}, {
+  "word": "wins",
+  "value": "4"
+}, {
+  "word": "winwin",
+  "value": "3"
+}, {
+  "word": "wish",
+  "value": "1"
+}, {
+  "word": "wishes",
+  "value": "1"
+}, {
+  "word": "wishing",
+  "value": "1"
+}, {
+  "word": "withdrawal",
+  "value": "-3"
+}, {
+  "word": "woebegone",
+  "value": "-2"
+}, {
+  "word": "woeful",
+  "value": "-3"
+}, {
+  "word": "won",
+  "value": "3"
+}, {
+  "word": "wonderful",
+  "value": "4"
+}, {
+  "word": "woo",
+  "value": "3"
+}, {
+  "word": "woohoo",
+  "value": "3"
+}, {
+  "word": "wooo",
+  "value": "4"
+}, {
+  "word": "woow",
+  "value": "4"
+}, {
+  "word": "worn",
+  "value": "-1"
+}, {
+  "word": "worried",
+  "value": "-3"
+}, {
+  "word": "worry",
+  "value": "-3"
+}, {
+  "word": "worrying",
+  "value": "-3"
+}, {
+  "word": "worse",
+  "value": "-3"
+}, {
+  "word": "worsen",
+  "value": "-3"
+}, {
+  "word": "worsened",
+  "value": "-3"
+}, {
+  "word": "worsening",
+  "value": "-3"
+}, {
+  "word": "worsens",
+  "value": "-3"
+}, {
+  "word": "worshiped",
+  "value": "3"
+}, {
+  "word": "worst",
+  "value": "-3"
+}, {
+  "word": "worth",
+  "value": "2"
+}, {
+  "word": "worthless",
+  "value": "-2"
+}, {
+  "word": "worthy",
+  "value": "2"
+}, {
+  "word": "wow",
+  "value": "4"
+}, {
+  "word": "wowow",
+  "value": "4"
+}, {
+  "word": "wowww",
+  "value": "4"
+}, {
+  "word": "wrathful",
+  "value": "-3"
+}, {
+  "word": "wreck",
+  "value": "-2"
+}, {
+  "word": "wrong",
+  "value": "-2"
+}, {
+  "word": "wronged",
+  "value": "-2"
+}, {
+  "word": "wtf",
+  "value": "-4"
+}, {
+  "word": "yeah",
+  "value": "1"
+}, {
+  "word": "yearning",
+  "value": "1"
+}, {
+  "word": "yeees",
+  "value": "2"
+}, {
+  "word": "yes",
+  "value": "1"
+}, {
+  "word": "youthful",
+  "value": "2"
+}, {
+  "word": "yucky",
+  "value": "-2"
+}, {
+  "word": "yummy",
+  "value": "3"
+}, {
+  "word": "zealot",
+  "value": "-2"
+}, {
+  "word": "zealots",
+  "value": "-2"
+}, {
+  "word": "zealous",
+  "value": "2"
+}]

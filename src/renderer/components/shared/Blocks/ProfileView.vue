@@ -1,0 +1,86 @@
+<template>
+  <v-card>
+    <v-toolbar dark>
+      <v-list-tile-avatar>
+        <img :src="profile.profile_image_url" :alt="profile.screen_name">
+      </v-list-tile-avatar>
+      <v-toolbar-title>{{profile.name}}</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>remove_circle</v-icon>
+      </v-btn>
+    </v-toolbar>
+    <v-list two-line dark>
+      <template v-for="(item, i) in items">
+        <v-subheader v-if="item.header" v-text="item.header" v-bind:key="i"></v-subheader>
+        <v-divider v-else-if="item.divider" inset v-bind:key="i"></v-divider>
+        <v-list-tile avatar v-else v-bind:key="item.title">
+          <v-list-tile-avatar>
+            <v-icon large color="blue darken-2">{{item.avatar}}</v-icon>
+          </v-list-tile-avatar>
+          <v-list-tile-content>
+            <v-list-tile-title v-html="item.title"></v-list-tile-title>
+            <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </template>
+    </v-list>
+  </v-card>
+</template>
+
+<script>
+  import {mapGetters} from 'vuex'
+  export default {
+    name: 'profile-view',
+    computed: {
+      ...mapGetters({
+        profile: 'getTwitterProfile'
+      })
+    },
+    data () {
+      return {
+        items: []
+      }
+    },
+    watch: {
+      profile: function (data) {
+        this.buildArray(data)
+      }
+    },
+    methods: {
+      buildArray: function (data) {
+        this.items = [{
+            header: 'Profile Information'
+          }, {
+            avatar: 'people',
+            title: 'Followers',
+            subtitle: `<span class="grey--text text--lighten-2">Total followers:</span> ${data.followers_count}`
+          }, {
+            divider: true,
+            inset: true
+          }, {
+            avatar: 'person',
+            title: 'Friends',
+            subtitle: `<span class="grey--text text--lighten-2">Total friends:</span> ${data.friends_count}`
+          }, {
+            divider: true,
+            inset: true
+          }, {
+            avatar: 'chats',
+            title: 'Tweets',
+            subtitle: `<span class="grey--text text--lighten-2">Total tweets:</span> ${data.statuses_count}`
+          }, {
+            divider: true,
+            inset: true
+          }, {
+            avatar: 'favorite',
+            title: 'Favorites',
+            subtitle: `<span class="grey--text text--lighten-2">Total favorites:</span> ${data.favourites_count}`
+          }]
+      }
+    },
+    created () {
+      this.buildArray(this.profile)
+    }
+  }
+</script>
