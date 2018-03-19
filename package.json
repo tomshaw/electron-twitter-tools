@@ -5,6 +5,15 @@
   "description": "An Electron/Vue Twitter client for the power user.",
   "license": "MIT",
   "main": "./dist/electron/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomshaw/electron-twitter-tools.git"
+  },
+  "keywords": [
+    "electron",
+    "twitter",
+    "vue"
+  ],
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
     "build:dir": "node .electron-vue/build.js && electron-builder --dir",
