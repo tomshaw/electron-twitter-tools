@@ -10,7 +10,7 @@
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-> A cross platfom [Electron](https://electronjs.org) application that allows users to backup and restore lists. A powerful multi-user lookup feature that returns most of the relevant API metadata. A highly customized streaming search that harvests a litany of data including languages used, geographic locations, user markers and rudimentary sentiment analysis. Supports mulitple storage backends thanks to [Knex.js](http://knexjs.org/) including Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift.
+> A cross platfom [Electron](https://electronjs.org) application that allows users to backup and restore lists. A powerful multi-user lookup feature that returns most of the relevant API metadata. A highly customized streaming search that harvests a litany of data including languages used, geographic locations, user markers and rudimentary sentiment analysis. Supports mulitple storage backends thanks to [Knex.js](http://knexjs.org/).
 
 ## Overview
 
@@ -61,7 +61,7 @@ npm run lint
 + [Knex.js](http://knexjs.org/) - An SQL query builder designed to be flexible, portable, and fun to use.
 
 ## Contributing
-This project was developed to learn the basics of Electron and Vue.js. The project was developed rather hastily. Many of the components are incomplete or could use vast improvements. Any pull requests, suggestions or ideas to enhance the project are highly welcomed. Please read the contributing guide thoroughly before issuing pull requests.
+This project was developed to learn the basics of Electron and Vue.js and was developed rather hastily. Many of the components are incomplete or could use vast improvements. Any pull requests, suggestions or ideas to enhance the project are highly welcomed. Please read the contributing guide thoroughly before issuing pull requests.
 
 ## AFINN
 
