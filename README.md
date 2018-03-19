@@ -1,4 +1,4 @@
-<h1><img src="https://raw.github.com/tomshaw/electron-twitter-tools/master/docs/logo.png" alt="Electron Twitter Tools" width="80%"></h1>
+<h1><img src="https://raw.github.com/tomshaw/electron-twitter-tools/master/docs/logo.png" alt="Electron Twitter Tools"></h1>
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
