@@ -27,7 +27,7 @@ Functionality you'll find in this application include:
 - Supports multiple storage backends special thanks to [Knex.js](http://knexjs.org/)
 
 ## Build Setup
-Once the application is launched you will need to provide your own Twitter API keys in the application configuration panel. An Sqlite3 database comes pre-installed and ready to use by default. If you wish to use an alternative storage solution [Knex.js](http://knexjs.org/) currently supports Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift. At this time only Sqlite3 and MySQL have been tested. The system is designed to easily test the others.
+Once the application is launched you will need to provide your own Twitter API keys in the application configuration panel. An Sqlite3 database comes pre-installed and ready to use by default. If you wish to use an alternative storage solution [Knex.js](http://knexjs.org/) currently supports Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift. At this time only Sqlite3 and MySQL have been tested. The system is designed to easily test the others and will be on a time permitting basis. A Google Maps API key is also required and can also be added in the application settings control panel.
 
 ``` bash
 # install dependencies
