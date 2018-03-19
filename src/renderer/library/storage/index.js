@@ -1,6 +1,3 @@
-/**
- * Target
- */
 import MariaDb from './adapter/mariadb'
 import MSSQL from './adapter/mssql'
 import MySql from './adapter/mysql'

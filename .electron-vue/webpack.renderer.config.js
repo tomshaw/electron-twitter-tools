@@ -12,6 +12,12 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 /**
+ * Separate Issues.
+ * 
+ * https://github.com/webpack/webpack/issues/4603
+ */
+
+/**
  * List of node_modules to include in webpack bundle
  *
  * Required for specific packages like Vue UI libraries
@@ -101,8 +107,17 @@ let rendererConfig = {
             name: 'fonts/[name]--[folder].[ext]'
           }
         }
+      },
+      {
+        test: /\.js$/,
+        use: ["remove-hashbag-loader"]
       }
     ]
+  },
+  resolveLoader: {
+    alias: {
+      "remove-hashbag-loader": path.join(__dirname, "./loaders/remove-hashbag-loader")
+    }
   },
   node: {
     __dirname: process.env.NODE_ENV !== 'production',

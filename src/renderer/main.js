@@ -1,5 +1,5 @@
 /*!
- * ETT - Electron Twitter Tools
+ * Electron Twitter Tools
  * Copyright (c) 2018 Tom Shaw. https://github.com/tomshaw
  * MIT Licensed
  */

@@ -1,6 +1,3 @@
-/**
- * Adapter
- */
 import Adapter from './adapter'
 
 export default class extends Adapter {
