@@ -1,5 +1,8 @@
 <h1><img src="https://raw.github.com/tomshaw/electron-twitter-tools/master/docs/logo.png" alt="Electron Twitter Tools"></h1>
 
+[![Downloads npm](https://img.shields.io/npm/dt/electron-twitter-tools.svg)](https://www.npmjs.com/package/electron-twitter-tools)
+[![MIT license](https://img.shields.io/npm/l/electron-twitter-tools.svg)](https://opensource.org/licenses/MIT)
+
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 > A cross platfom [Electron](https://electronjs.org) application that allows users to backup and restore lists. A powerful multi-user lookup feature that returns most of the relevant API metadata. A highly customized streaming search that harvests a litany of data including languages used, geographic locations, user markers and rudimentary sentiment analysis. Supports mulitple storage backends thanks to [Knex.js](http://knexjs.org/) including Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift.
@@ -68,7 +71,7 @@ of words is copyright protected and distributed under:
 
 (The MIT License)
 
-Copyright (c) 2018 Tom Shaw https://github.com/tomshaw
+Copyright (c) 2018 Tom Shaw 
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
