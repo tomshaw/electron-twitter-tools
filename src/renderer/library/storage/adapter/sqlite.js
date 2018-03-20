@@ -1,4 +1,5 @@
 import Adapter from './adapter'
+const os = require('os');
 
 export default class extends Adapter {
 
@@ -7,7 +8,7 @@ export default class extends Adapter {
     this.api = require('knex')({
       client: connection.client,
       connection: {
-        filename: './src/config/database/maindb.sqlite'
+        filename: os.tmpdir() + '/maindb.sqlite'
       },
       useNullAsDefault: true,
       debug: false

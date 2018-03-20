@@ -130,7 +130,7 @@
         if (typeof google !== 'object') {
           let apiKey = this.$settings.get('google.maps.key')
           let script = document.createElement('script')
-          script.setAttribute('src', `//maps.google.com/maps/api/js?libraries=places&key=${apiKey}`)
+          script.setAttribute('src', `http://maps.google.com/maps/api/js?libraries=places&key=${apiKey}`)
           let head = document.getElementsByTagName('head')[0]
           head.appendChild(script)
         }

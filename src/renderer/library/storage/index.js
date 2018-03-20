@@ -19,7 +19,11 @@ from '../../config/constants'
 
 export default class Database {
 
-  constructor(connection) {
+  constructor(options) {
+
+    const connection = (typeof options === 'undefined') ? { 
+      client: 'sqlite3' 
+    } : options
 
     const adapter = connection.client
 
