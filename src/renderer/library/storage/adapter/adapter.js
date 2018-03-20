@@ -88,8 +88,8 @@ export default class Adapter {
     this.api.schema.createTableIfNotExists('lists_store', table => {
       table.collate('utf8mb4_general_ci')
       table.increments().unsigned().primary()
-      table.bigInteger('user_id').unsigned()
       table.bigInteger('list_id').unsigned()
+      table.bigInteger('user_id').unsigned()
       table.text('name').nullable().collate('utf8mb4_general_ci')
       table.text('screen_name').nullable().collate('utf8mb4_general_ci')
       table.text('location').nullable().collate('utf8mb4_general_ci')

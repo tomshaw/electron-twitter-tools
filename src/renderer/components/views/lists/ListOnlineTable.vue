@@ -140,8 +140,10 @@
           let nextCursor = response.next_cursor
           let nextCursorString = response.next_cursor_str
           let users = response.users
+          let total = users.length
+          let completed = 0
 
-          if (users.length) {
+          if (total) {
             users.forEach((user, index) => {
 
               let insert = {}
@@ -164,6 +166,15 @@
 
               this.db.api('lists_store').insert([insert]).then(response => {
                 this.$store.commit('TASKS_SET_PROGRESS', { id: 'save', done: counter })
+                completed++
+              }).then(() => {
+                if (nextCursor === 0 && completed === total - 1) {
+                  setTimeout(() => {
+                    this.loadSavedLists()
+                    this.$store.commit('TASKS_RESET_PROGRESS')
+                    this.$toastr('success', 'Operation successfully completed.', 'Success')
+                  }, 2e3)
+                }
               }).catch(err => {
                 console.log(err)
               })
@@ -174,15 +185,11 @@
           }
 
           if (nextCursor > 0) {
-            return this.createBackup(backupId, listId, slug, ownerId, ownerScreenName, counter, nextCursorString)
-          } else {
-            this.loadSavedLists()
             setTimeout(() => {
-              this.$store.dispatch('loadSavedLists')
-              this.$store.commit('TASKS_RESET_PROGRESS')
-              this.$toastr('success', 'Operation successfully completed.', 'Success')
-            }, 1e3)
+              this.createBackup(backupId, listId, slug, ownerId, ownerScreenName, counter, nextCursorString)
+            }, 2e3)
           }
+
         })
       }
     }
