@@ -22,9 +22,6 @@ Once the application is launched you will need to provide your own Twitter API k
 # install dependencies
 npm install
 
-# step is required for sqlite3 module
-npm run rebuild
-
 # serve with hot reload at localhost:9080
 npm run dev
 
