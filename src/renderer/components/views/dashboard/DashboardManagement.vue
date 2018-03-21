@@ -38,7 +38,7 @@
     data () {
       return {
         stats: [{
-          title: 'Total Followers',
+          title: 'Total Friends',
           icon: 'home',
           style: 'stats blue',
           count: 5424,
@@ -47,7 +47,7 @@
             style: 'more blue lighten-1'
           }
         }, {
-          title: 'Total Friendships',
+          title: 'Total Followers',
           icon: 'visibility',
           style: 'stats teal',
           count: 1743,
@@ -56,7 +56,7 @@
             style: 'more teal lighten-1'
           }
         }, {
-          title: 'Total Friendships',
+          title: 'Tweet Count',
           icon: 'touch_app',
           style: 'stats green',
           count: 3943,
@@ -65,7 +65,7 @@
             style: 'more green lighten-1'
           }
         }, {
-          title: 'Total Friendships',
+          title: 'Favorites Count',
           icon: 'store',
           style: 'stats deep-purple',
           count: 3456,
