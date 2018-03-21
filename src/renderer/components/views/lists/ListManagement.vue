@@ -1,7 +1,8 @@
 <template>
-  <v-container grid-list-md text-xs-center>
+  <v-container grid-list-md>
     <v-layout row wrap>
       <v-flex xs12>
+        <page-title main-title="List Management" sub-title="public and private"></page-title>
         <breadcrumbs page="lists"></breadcrumbs>
       </v-flex>
     </v-layout>
@@ -17,12 +18,14 @@
 </template>
 
 <script>
+  import PageTitle from '@/components/shared/PageTitle'
   import Breadcrumbs from '@/components/shared/Breadcrumbs'
   import ListBackup from './ListBackup'
   import ListOnline from './ListOnline'
   export default {
     name: 'list-management',
     components: {
+      'page-title': PageTitle,
       'breadcrumbs': Breadcrumbs,
       'list-backup': ListBackup,
       'list-online': ListOnline

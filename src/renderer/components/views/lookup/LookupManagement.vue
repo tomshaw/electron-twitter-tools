@@ -1,8 +1,9 @@
 <template>
-  <v-container grid-list-md text-xs-center>
+  <v-container grid-list-md>
     <v-layout row wrap>
       <v-flex xs12>
-        <breadcrumbs page="lists"></breadcrumbs>
+        <page-title main-title="Lookup Users" sub-title="search user information"></page-title>
+        <breadcrumbs page="lookup"></breadcrumbs>
       </v-flex>
     </v-layout>
     <v-layout row wrap>
@@ -18,12 +19,14 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  import PageTitle from '@/components/shared/PageTitle'
   import Breadcrumbs from '@/components/shared/Breadcrumbs'
   import LookupForm from '@/components/shared/Blocks/LookupForm'
   import LookupResults from './LookupResults'
   export default {
     name: 'lookup-management',
     components: {
+      'page-title': PageTitle,
       'breadcrumbs': Breadcrumbs,
       'lookup-form': LookupForm,
       'lookup-results': LookupResults

@@ -42,7 +42,7 @@
         <td class="text-xs-right">{{ props.item.tweet_count }}</td>
         <td class="text-xs-right">{{ props.item.start_time }}</td>
         <td class="text-xs-right">{{ props.item.end_time }}</td>
-        <td class="justify-center">
+        <td class="text-xs-center">
           <v-btn icon class="mx-0" @click="editItem(props.item)">
             <v-icon color="teal">edit</v-icon>
           </v-btn>

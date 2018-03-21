@@ -3,17 +3,13 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const routerHome = [{
+const routerDashboard = [{
   path: '/',
-  name: 'home-page',
-  redirect: { name: 'welcome-page' },
-  component: require('@/components/pages/Home').default
-}]
-
-const routerWelcome = [{
-  path: '/welcome',
-  name: 'welcome-page',
-  component: require('@/components/pages/Welcome').default
+  name: 'dashboard-page',
+  component: require('@/components/pages/Dashboard').default,
+  props: { 
+    sidebar: true 
+  }
 }]
 
 const routerLists = [{
@@ -102,8 +98,7 @@ const redirectAll = [{
 }]
 
 const routes = [
-  ...routerHome,
-  ...routerWelcome,
+  ...routerDashboard,
   ...routerLists,
   ...routerStatus,
   ...routerExpunge,

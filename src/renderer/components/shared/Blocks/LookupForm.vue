@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-toolbar dark>
-      <v-toolbar-title>Lookup Users</v-toolbar-title>
+      <v-toolbar-title>Search Options</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon><v-icon dark>search</v-icon></v-btn>
     </v-toolbar>

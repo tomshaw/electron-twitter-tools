@@ -1,8 +1,9 @@
 <template>
-  <v-container grid-list-md text-xs-center>
+  <v-container grid-list-md>
     <v-layout row wrap>
       <v-flex xs12>
-        <breadcrumbs page="lists"></breadcrumbs>
+        <page-title main-title="Expunge" sub-title="delete statuses"></page-title>
+        <breadcrumbs page="expunge"></breadcrumbs>
       </v-flex>
     </v-layout>
     <v-layout row wrap>
@@ -17,12 +18,14 @@
 </template>
 
 <script>
+  import PageTitle from '@/components/shared/PageTitle'
   import Breadcrumbs from '@/components/shared/Breadcrumbs'
   import ProfileView from '@/components/shared/Blocks/ProfileView'
   import ExpungeStatus from './ExpungeStatus'
   export default {
     name: 'expunge-management',
     components: {
+      'page-title': PageTitle,
       'breadcrumbs': Breadcrumbs,
       'profile-view': ProfileView,
       'expunge-status': ExpungeStatus

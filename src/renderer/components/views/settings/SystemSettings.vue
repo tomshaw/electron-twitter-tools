@@ -1,7 +1,8 @@
 <template>
-  <v-container grid-list-md text-xs-center>
+  <v-container grid-list-md>
     <v-layout row wrap>
       <v-flex xs12>
+        <page-title main-title="System Settings" sub-title="configuration information"></page-title>
         <breadcrumbs page="settings"></breadcrumbs>
       </v-flex>
     </v-layout>
@@ -180,6 +181,7 @@
 </template>
 
 <script>
+  import PageTitle from '@/components/shared/PageTitle'
   import {mapActions, mapGetters} from 'vuex'
   import {adapters, tokens} from '@/config/settings'
   import {
@@ -188,6 +190,10 @@
   import Breadcrumbs from '@/components/shared/Breadcrumbs'
   export default {
     name: 'system-settings',
+    components: {
+      'page-title': PageTitle,
+      'breadcrumbs': Breadcrumbs
+    },
     computed: {
       adapter: {
         get: function () {
@@ -203,9 +209,6 @@
         connection: 'getConnection',
         connections: 'getConnections'
       })
-    },
-    components: {
-      'breadcrumbs': Breadcrumbs
     },
     data() {
       return {

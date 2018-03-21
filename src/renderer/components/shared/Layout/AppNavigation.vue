@@ -133,10 +133,6 @@
           text: 'System Settings',
           icon: 'settings',
           to: '/settings'
-        }, {
-          text: 'About',
-          icon: 'add_circle_outline',
-          to: '/inspire'
         }]
       }
     }
