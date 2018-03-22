@@ -15,6 +15,8 @@
 
 > Electron Twitter Tools a cross platfom [Electron](https://electronjs.org) application that allows users to effortlessly backup and restore user lists, seamlessly manage friends and followers, perform powerful multi account user searches and finally execute highly customized streaming searches that index a litany of data including languages used, geographic locations and rudimentary sentiment analysis. The project was originaly developed to learn the basics of [Electron](https://electronjs.org), [Vue](https://vuejs.org), [Vuex](https://vuex.vuejs.org/en) and [Vuetify](https://vuetifyjs.com/en) but has evolved into much more. Thanks to Twitter's powerful programming API that offers developers the unique ability to develop exciting features not currently offered out of the box. At this time there is a feature freeze but much more functionalty is planned for the future.
 
+## Screenshot
+
 <img src="https://raw.github.com/tomshaw/electron-twitter-tools/master/docs/screen-grab1.png" alt="Screen Grab Electron Twitter Tools" title="Screen Grab Electron Twitter Tools">
 
 ## Build Setup
