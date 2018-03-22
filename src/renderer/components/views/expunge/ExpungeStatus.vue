@@ -67,14 +67,19 @@
       }
     },
     created() {
-      const lessThan24HourAgo = (date) => {
-        return moment(date).isAfter(moment().subtract(24, 'hours'));
+      
+      const moreThan24HourAgo = (date) => {
+        return moment(date).isBefore(moment().subtract(24, 'hours'))
+      }
+
+      if (this.$settings.has('expunge.refresh')) {
+        this.refreshTime = this.$settings.get('expunge.refresh')
       }
 
       if (this.refreshTime === null) {
         this.handleRefresh()
       } else {
-        if (!lessThan24HourAgo(this.refreshTime)) {
+        if (moreThan24HourAgo(this.refreshTime)) {
           this.handleRefresh()
         }
       }
@@ -92,7 +97,9 @@
             this.$toastr('success', `${this.favorites.length} favorites loaded successfully.`, 'Success')
           }
         })
-        this.refreshTime = new Date().getTime()
+        let refreshTime = new Date().getTime()
+        this.$settings.set('expunge.refresh', refreshTime)
+        this.refreshTime = refreshTime
       }
     }
   }

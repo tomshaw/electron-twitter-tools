@@ -68,6 +68,12 @@ const actions = {
 
       let totalStatuses = (type === 'tweets') ? account.statuses_count : account.favourites_count
 
+      if (type === 'tweets') {
+        commit(types.EXPUNGE_RESET_TWEETS)
+      } else {
+        commit(types.EXPUNGE_RESET_FAVORITES)
+      }
+
       const initialize = (next) => {
         let counter = 0
         client.api.get(endPoint, options, (error, data, response) => {
