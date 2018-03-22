@@ -1,4 +1,4 @@
-<h1><img src="https://raw.github.com/tomshaw/electron-twitter-tools/master/docs/logo.png" alt="Electron Twitter Tools"></h1>
+<h1><img src="https://raw.github.com/tomshaw/electron-twitter-tools/master/docs/logo.png" alt="Electron Twitter Tools" title="Electron Twitter Tools"></h1>
 
 [![Build Status](https://travis-ci.org/tomshaw/electron-twitter-tools.svg?branch=master)](https://travis-ci.org/tomshaw/electron-twitter-tools)
 [![Tag](https://img.shields.io/github/tag/tomshaw/electron-twitter-tools.svg)](https://github.com/tomshaw/electron-twitter-tools/tags)
