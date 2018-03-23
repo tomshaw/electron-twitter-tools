@@ -6,8 +6,8 @@
       </v-list-tile-avatar>
       <v-toolbar-title>{{profile.name}}</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>remove_circle</v-icon>
+      <v-btn icon :loading="loading" :disabled="loading" @click="handleRefresh">
+        <v-icon dark>refresh</v-icon>
       </v-btn>
     </v-toolbar>
     <v-list two-line dark>
@@ -29,7 +29,7 @@
 </template>
 
 <script>
-  import {mapGetters} from 'vuex'
+  import {mapActions, mapGetters} from 'vuex'
   export default {
     name: 'profile-view',
     computed: {
@@ -39,15 +39,37 @@
     },
     data () {
       return {
-        items: []
+        items: [],
+        loader: null,
+        loading: false
       }
     },
     watch: {
       profile: function (data) {
         this.buildArray(data)
+      },
+      loader () {
+        const loader = this.loader
+        this[loader] = !this[loader]
+        setTimeout(() => {
+          this[loader] = false
+        }, 3000)
+        this.loader = null
       }
     },
+    created () {
+      this.buildArray(this.profile)
+    },
     methods: {
+      ...mapActions(['loadProfile']),
+      handleRefresh() {
+        this.loader = 'loading'
+        setTimeout(() => {
+          this.loadProfile().then(() => {
+            this.$toastr('success', 'System profile updated successfully.', 'Success')
+          })
+        }, 1e3)
+      },
       buildArray: function (data) {
         this.items = [{
             header: 'Profile Information'
@@ -78,9 +100,6 @@
             subtitle: `<span class="grey--text text--lighten-2">Total favorites:</span> ${data.favourites_count}`
           }]
       }
-    },
-    created () {
-      this.buildArray(this.profile)
     }
   }
 </script>

@@ -105,6 +105,7 @@
       this.$electron.ipcRenderer.on(IPC_RESPONSE_TWITTER_SETTINGS, (event, response) => {
         if (response.hasOwnProperty('errors')) {
           // @TODO
+          console.log('IPC_RESPONSE_TWITTER_SETTINGS', response.errors)
         }
       })
 
@@ -118,7 +119,9 @@
         // console.log('IPC_RESPONSE_TWITTER_CREDENTIALS', response)
         if (response.hasOwnProperty('errors')) {
           // @TODO send notice...
+          console.log('IPC_RESPONSE_TWITTER_CREDENTIALS', response.errors)
         } else {
+          console.log('IPC_RESPONSE_TWITTER_CREDENTIALS', response)
           this.$settings.set('twitter.validated', true)
           this.$settings.set('twitter.profile', response)
           this.$store.dispatch('setValidated', true)
@@ -156,5 +159,41 @@
 .toast-title,
 .toast-message {
   font-family: Roboto, 'Helvetica Neue', sans-serif
+}
+.custom-loader {
+  animation: loader 1s infinite;
+  display: flex;
+}
+@-moz-keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 </style>

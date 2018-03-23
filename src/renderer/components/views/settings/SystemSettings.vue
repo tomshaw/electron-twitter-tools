@@ -8,61 +8,7 @@
     </v-layout>
     <v-layout row wrap>
       <v-flex xs3>
-        <v-card>
-          <v-toolbar dark dense>
-            <v-toolbar-title>System Information</v-toolbar-title>
-          </v-toolbar>
-          <v-list one-line subheader>
-            <v-list-tile>
-              <v-list-tile-content>
-                <v-list-tile-title>Path</v-list-tile-title>
-                <v-list-tile-sub-title>{{ setup.path }}</v-list-tile-sub-title>
-              </v-list-tile-content>
-            </v-list-tile>
-            <v-list-tile>
-              <v-list-tile-content>
-                <v-list-tile-title>Route</v-list-tile-title>
-                <v-list-tile-sub-title>{{ setup.name }}</v-list-tile-sub-title>
-              </v-list-tile-content>
-            </v-list-tile>
-            <v-list-tile>
-              <v-list-tile-content>
-                <v-list-tile-title>Vue.js</v-list-tile-title>
-                <v-list-tile-sub-title>{{ setup.vue }}</v-list-tile-sub-title>
-              </v-list-tile-content>
-            </v-list-tile>
-            <v-list-tile>
-              <v-list-tile-content>
-                <v-list-tile-title>Electron</v-list-tile-title>
-                <v-list-tile-sub-title>{{ setup.electron }}</v-list-tile-sub-title>
-              </v-list-tile-content>
-            </v-list-tile>
-            <v-list-tile>
-              <v-list-tile-content>
-                <v-list-tile-title>Node</v-list-tile-title>
-                <v-list-tile-sub-title>{{ setup.node }}</v-list-tile-sub-title>
-              </v-list-tile-content>
-            </v-list-tile>
-            <v-list-tile>
-              <v-list-tile-content>
-                <v-list-tile-title>Platform</v-list-tile-title>
-                <v-list-tile-sub-title>{{ setup.platform }}</v-list-tile-sub-title>
-              </v-list-tile-content>
-            </v-list-tile>
-          </v-list>
-          <v-divider></v-divider>
-
-          <v-list two-line subheader>
-            <v-subheader>Selected Storage</v-subheader>
-
-            <v-radio-group v-model="adapter" column style="margin-left:15px;">
-              <v-radio label="sqlite3" value="sqlite3" ></v-radio>
-              <v-radio label="mysql" value="mysql"></v-radio>
-            </v-radio-group>
-
-          </v-list>
-
-        </v-card>
+        <system-info></system-info>
       </v-flex>
       <v-flex xs9>
         <v-tabs v-model="active" dark slider-color="yellow" :scrollable="false">
@@ -181,30 +127,22 @@
 </template>
 
 <script>
-  import PageTitle from '@/components/shared/PageTitle'
   import {mapActions, mapGetters} from 'vuex'
   import {adapters, tokens} from '@/config/settings'
   import {
     IPC_REQUEST_TWITTER_CREDENTIALS
   } from '@/config/constants'
+  import PageTitle from '@/components/shared/PageTitle'
   import Breadcrumbs from '@/components/shared/Breadcrumbs'
+  import SystemInfo from '@/components/shared/blocks/SystemInfo'
   export default {
     name: 'system-settings',
     components: {
       'page-title': PageTitle,
-      'breadcrumbs': Breadcrumbs
+      'breadcrumbs': Breadcrumbs,
+      'system-info': SystemInfo
     },
     computed: {
-      adapter: {
-        get: function () {
-          return this.$store.getters.getAdapter
-        },
-        set: function (selected) {
-          this.setAdapter(selected)
-          this.$settings.set('storage.adapter', selected)
-          this.$settings.set('storage.connection', this.connection)
-        }
-      },
       ...mapGetters({
         connection: 'getConnection',
         connections: 'getConnections'
@@ -258,7 +196,7 @@
       }
     },
     methods: {
-      ...mapActions(['setAdapter', 'setValidated', 'addConnection']),
+      ...mapActions(['setValidated', 'addConnection']),
       handleAdapterSubmit(type) {
         const adapter = type;
         this.addConnection(this.adapters[adapter])

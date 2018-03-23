@@ -1,4 +1,16 @@
 import * as types from '../mutation-types'
+import Twitter from '@/library/twitter'
+const settings = require('electron-settings')
+
+function getClient () {
+  let client
+  if (client === undefined) {
+    client = new Twitter(settings.get('twitter.tokens'))
+  }
+  return client
+}
+
+const client = getClient()
 
 const state = {
   validated: false, 
@@ -27,6 +39,22 @@ const mutations = {
   },
   [types.TWITTER_SET_PROFILE] (state, payload) {
     state.profile = payload
+  },
+  [types.TWITTER_UPDATE_PROFILE] (state, payload) {
+    // state.profile = payload
+    console.log('payload', payload)
+    state.profile = Object.assign({}, {
+      id: payload.id_str,
+      name: payload.name,
+      screen_name: payload.screen_name,
+      description: payload.description,
+      friends_count: payload.friends_count,
+      followers_count: payload.followers_count,
+      statuses_count: payload.statuses_count,
+      favourites_count: payload.favourites_count,
+      profile_image_url: payload.profile_image_url,
+      profile_background_image_url: payload.profile_background_image_url
+    })
   },
   [types.TWITTER_SET_FRIENDS_COUNT] (state, payload) {
     if (payload.type === 'increment') {
@@ -65,6 +93,14 @@ const mutations = {
 const actions = {
   setValidated: ({commit}, status) => {
     commit(types.TWITTER_SET_VALIDATED, status)
+  },
+  loadProfile({ commit }) {
+    return new Promise((resolve, reject) => {
+      client.verifyCredentials(payload => {
+        commit(types.TWITTER_UPDATE_PROFILE, payload)
+        resolve(payload)
+      })
+    })
   },
   setProfile: ({commit}, payload) => {
     commit(types.TWITTER_SET_PROFILE, payload)

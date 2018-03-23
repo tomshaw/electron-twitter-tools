@@ -2,7 +2,7 @@
   <v-container grid-list-md>
     <v-layout row wrap>
       <v-flex xs12>
-        <page-title main-title="List Management" sub-title="public and private"></page-title>
+        <page-title main-title="List Management" sub-title="saved and active"></page-title>
         <breadcrumbs page="lists"></breadcrumbs>
       </v-flex>
     </v-layout>
