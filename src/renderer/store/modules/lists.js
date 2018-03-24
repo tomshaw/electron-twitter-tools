@@ -1,27 +1,5 @@
 import * as types from '../mutation-types'
-import Database from '@/library/storage'
-import Twitter from '@/library/twitter'
-const settings = require('electron-settings')
-
-function getDb () {
-  let db
-  if (db === undefined) {
-    db = new Database(settings.get('storage.connection'))
-  }
-  return db
-}
-
-function getClient () {
-  let client
-  if (client === undefined) {
-    client = new Twitter(settings.get('twitter.tokens'))
-  }
-  return client
-}
-
-const db = getDb()
-const client = getClient()
-const account = settings.get('twitter.profile')
+import {db, client, account} from '@/store/connect'
 
 const state = {
   saved: [],
@@ -71,43 +49,63 @@ const mutations = {
 
 const actions = {
   loadSavedLists({ commit }) {
-    let select = db.api.select('lists.id', 'lists.slug', 'lists.created_at', 'lists_store.screen_name')
-      .from('lists')
-      .count('lists_store.list_id AS member_count')
-      .leftJoin('lists_store', 'lists.id', 'lists_store.list_id')
-      .groupBy('lists.id')
-      .orderBy('lists.created_at', 'DESC')
-    select.then(rows => {
-      commit(types.TWITTER_LISTS_SAVED, rows)
+    return new Promise((resolve, reject) => {
+      let select = db.api.select('lists.id', 'lists.slug', 'lists.created_at', 'lists_store.screen_name')
+        .from('lists')
+        .count('lists_store.list_id AS member_count')
+        .leftJoin('lists_store', 'lists.id', 'lists_store.list_id')
+        .groupBy('lists.id')
+        .orderBy('lists.created_at', 'DESC')
+      select.then(rows => {
+        commit(types.TWITTER_LISTS_SAVED, rows)
+        resolve()
+      })
     })
   },
   loadActiveLists({ commit }) {
-    client.userLists(account, response => {
-      if (response.length) {
-        commit(types.TWITTER_LISTS_ACTIVE, response)
-      }
+    return new Promise((resolve, reject) => {
+      client.userLists(account, response => {
+        if (response.length) {
+          commit(types.TWITTER_LISTS_ACTIVE, response)
+          resolve(response)
+        } else {
+          reject(response)
+        }
+      })
     })
   },
   deleteListLocal({ commit }, id) {
-    db.api('lists').where('id', id).del().then((resp) => {
-      db.api('lists_store').where('list_id', id).del().then((resp) => {
-        commit(types.TWITTER_LISTS_DELETE_LOCAL, id)
+    return new Promise((resolve, reject) => {
+      db.api('lists').where('id', id).del().then((resp) => {
+        db.api('lists_store').where('list_id', id).del().then((resp) => {
+          commit(types.TWITTER_LISTS_DELETE_LOCAL, id)
+          resolve(id)
+        })
       })
     })
   },
   deleteListRemote({ commit }, options) {
-    client.postListDestroy(options, response => {
-      commit(types.TWITTER_LISTS_DELETE_REMOTE, options.list_id)
+    return new Promise((resolve, reject) => {
+      client.postListDestroy(options, response => {
+        commit(types.TWITTER_LISTS_DELETE_REMOTE, options.list_id)
+        resolve(response)
+      })
     })
   },
   updateListLocal({ commit }, data) {
-    db.api('lists').update('slug', data.slug).where('id', '=', data.id).then((resp) => {
-      commit(types.TWITTER_LISTS_UPDATE_LOCAL, data)
+    return new Promise((resolve, reject) => {
+      db.api('lists').update('slug', data.slug).where('id', '=', data.id).then((resp) => {
+        commit(types.TWITTER_LISTS_UPDATE_LOCAL, data)
+        resolve(data)
+      })
     })
   },
   updateListRemote({ commit }, options) {
-    client.postListUpdate(options, response => {
-      commit(types.TWITTER_LISTS_UPDATE_REMOTE, options)
+    return new Promise((resolve, reject) => {
+      client.postListUpdate(options, response => {
+        commit(types.TWITTER_LISTS_UPDATE_REMOTE, options)
+        resolve(response)
+      })
     })
   }
 }

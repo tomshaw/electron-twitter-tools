@@ -71,6 +71,8 @@
             list_id: item.id_str,
             slug: item.slug,
             name: slug
+          }).then((response) => {
+            this.$toastr('success', 'List successfully updated.', 'Success')
           })
         }
       },
@@ -86,7 +88,9 @@
             slug: item.slug
           }
           target.innerHTML = 'delete'
-          this.deleteListRemote(options)
+          this.deleteListRemote(options).then((response) => {
+            this.$toastr('success', 'List successfully deleted.', 'Success')
+          })
         }
       },
       selectList: function (item, event) {

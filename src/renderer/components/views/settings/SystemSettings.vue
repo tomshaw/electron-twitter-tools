@@ -209,8 +209,7 @@
         this.$settings.set('twitter.tokens', this.tokens)
       },
       handleGoogleSubmit() {
-        const apiKey = this.google.maps.key
-        this.$settings.set('google.maps.key', apiKey)
+        this.$settings.set('google.maps.key', this.google.maps.key)
       }
     }
   }

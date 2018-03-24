@@ -1,18 +1,6 @@
 import * as types from '../mutation-types'
 import bigInt from 'big-integer'
-import Twitter from '@/library/twitter'
-const settings = require('electron-settings')
-const account = settings.get('twitter.profile')
-
-function getClient () {
-  let client
-  if (client === undefined) {
-    client = new Twitter(settings.get('twitter.tokens'))
-  }
-  return client
-}
-
-const client = getClient()
+import {client, account} from '@/store/connect'
 
 const state = {
   tweets: [],

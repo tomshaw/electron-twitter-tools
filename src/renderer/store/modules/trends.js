@@ -1,17 +1,5 @@
 import * as types from '../mutation-types'
-import Twitter from '@/library/twitter'
-const settings = require('electron-settings')
-
-function getClient () {
-  let client
-  if (client === undefined) {
-    client = new Twitter(settings.get('twitter.tokens'))
-  }
-  return client
-}
-
-const client = getClient()
-// const account = settings.get('twitter.profile')
+import {client} from '@/store/connect'
 
 const state = {
   dialog: false,

@@ -71,6 +71,8 @@
           this.updateListLocal({
             id: item.id,
             slug: slug
+          }).then((response) => {
+            this.$toastr('success', 'List successfully updated.', 'Success')
           })
         }
       },
@@ -93,7 +95,9 @@
           target.innerHTML = 'delete_forever'
         } else {
           target.innerHTML = 'delete'
-          this.deleteListLocal(item.id)
+          this.deleteListLocal(item.id).then((response) => {
+            this.$toastr('success', 'List successfully deleted.', 'Success')
+          })
         }
       },
       updateList: function (item, event) {

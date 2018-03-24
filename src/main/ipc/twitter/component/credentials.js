@@ -1,6 +1,5 @@
 import TwitterClient from '../../../../renderer/library/twitter'
-
-let _ = require('lodash')
+import _ from 'lodash'
 
 export default class Credentials {
 

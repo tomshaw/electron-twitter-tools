@@ -1,34 +1,9 @@
-import {
-  SEARCH_SETTINGS_INCLUDE,
-  SEARCH_SETTINGS_EXCLUDE,
-  SEARCH_SETTINGS_LIMITED
-} from '@/config/constants'
 import * as types from '../mutation-types'
+import * as constants from '@/config/constants'
 import initialState from './state/search'
-import Database from '@/library/storage'
-import Twitter from '@/library/twitter'
+import {db, client} from '@/store/connect'
 import availableLanguages from '@/config/languages'
 import SentimentAnalysis from '@/library/sentiment/bagofwords'
-const settings = require('electron-settings')
-
-function getDb () {
-  let db
-  if (db === undefined) {
-    db = new Database(settings.get('storage.connection'))
-  }
-  return db
-}
-
-function getClient () {
-  let client
-  if (client === undefined) {
-    client = new Twitter(settings.get('twitter.tokens'))
-  }
-  return client
-}
-
-const db = getDb()
-const client = getClient()
 
 const state = initialState()
 
@@ -213,7 +188,7 @@ const actions = {
       const isVerified = response.user.verified
 
       const includeQuotes = options.include_quotes
-      const includeReplies = SEARCH_SETTINGS_INCLUDE
+      const includeReplies = constants.SEARCH_SETTINGS_INCLUDE
       const includeRetweets = options.include_retweets
       const includeVerified = options.verified_accounts
 
@@ -227,38 +202,38 @@ const actions = {
       let limitedRetweets = false
       let limitedVerified = false
 
-      if (includeQuotes !== SEARCH_SETTINGS_INCLUDE) {
-        if (includeQuotes === SEARCH_SETTINGS_EXCLUDE) {
+      if (includeQuotes !== constants.SEARCH_SETTINGS_INCLUDE) {
+        if (includeQuotes === constants.SEARCH_SETTINGS_EXCLUDE) {
           excludeQuotes = true
         }
-        if (includeQuotes === SEARCH_SETTINGS_LIMITED) {
+        if (includeQuotes === constants.SEARCH_SETTINGS_LIMITED) {
           limitedQuotes = true
         }
       }
 
-      if (includeReplies !== SEARCH_SETTINGS_INCLUDE) {
-        if (includeReplies === SEARCH_SETTINGS_EXCLUDE) {
+      if (includeReplies !== constants.SEARCH_SETTINGS_INCLUDE) {
+        if (includeReplies === constants.SEARCH_SETTINGS_EXCLUDE) {
           excludeReplies = true
         } 
-        if (includeReplies === SEARCH_SETTINGS_LIMITED) {
+        if (includeReplies === constants.SEARCH_SETTINGS_LIMITED) {
           limitedRetweets = true
         }
       }
 
-      if (includeRetweets !== SEARCH_SETTINGS_INCLUDE) {
-        if (includeRetweets === SEARCH_SETTINGS_EXCLUDE) {
+      if (includeRetweets !== constants.SEARCH_SETTINGS_INCLUDE) {
+        if (includeRetweets === constants.SEARCH_SETTINGS_EXCLUDE) {
           excludeRetweets = true
         } 
-        if (includeRetweets === SEARCH_SETTINGS_LIMITED) {
+        if (includeRetweets === constants.SEARCH_SETTINGS_LIMITED) {
           limitedRetweets = true
         }
       }
 
-      if (includeVerified !== SEARCH_SETTINGS_INCLUDE) {
-        if (includeVerified === SEARCH_SETTINGS_EXCLUDE) {
+      if (includeVerified !== constants.SEARCH_SETTINGS_INCLUDE) {
+        if (includeVerified === constants.SEARCH_SETTINGS_EXCLUDE) {
           excludeVerified = true
         } 
-        if (includeVerified === SEARCH_SETTINGS_LIMITED) {
+        if (includeVerified === constants.SEARCH_SETTINGS_LIMITED) {
           limitedVerified = true
         }
       }

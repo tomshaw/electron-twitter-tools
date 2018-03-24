@@ -51,13 +51,14 @@
       }
     },
     created() {
-      this.$store.dispatch('loadSavedLists')
+      this.handleRefresh()
     },
     methods: {
       handleRefresh() {
         this.loader = 'loading'
-        this.$store.dispatch('loadSavedLists')
-        this.$toastr('success', 'Refreshing saved lists.', 'Success')
+        this.$store.dispatch('loadSavedLists').then((response) => {
+          this.$toastr('success', 'Refreshing saved lists.', 'Success')
+        })
       }
     }
   }
