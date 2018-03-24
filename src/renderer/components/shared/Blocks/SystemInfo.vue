@@ -25,11 +25,8 @@
         <v-card-text>
           <v-container fluid>
             <v-layout row wrap>
-              <v-flex xs12>
-                <v-switch label="Sqlite3" v-model="adapter" color="red" value="sqlite3" hide-details></v-switch>
-              </v-flex>
-              <v-flex xs12>
-                <v-switch label="MySQL" v-model="adapter" color="red" value="mysql" hide-details></v-switch>
+              <v-flex xs12 v-for="(item, i) in connections" :key="i">
+                <v-switch :label="formatTitle(item.client)" v-model="adapter" color="red" :value="item.client" hide-details></v-switch>
               </v-flex>
             </v-layout>
           </v-container>
@@ -40,13 +37,19 @@
 </template>
 
 <script>
+  import {mapGetters} from 'vuex'
+  import * as types from '@/config/constants'
   export default {
     name: 'system-info',
+    computed: {
+      ...mapGetters({
+        connections: 'getConnections'
+      })
+    },
     watch: {
       adapter: function (newAdapter, oldAdapter) {
         this.$store.dispatch('setAdapter', newAdapter)
-        this.$settings.set('storage.adapter', newAdapter)
-        this.$toastr('success', `System storage updated using ${newAdapter}.`, 'Success')
+        this.$electron.ipcRenderer.send(types.IPC_REQUEST_SCHEMA_CREATE, this.$store.getters.getConnection)
       }
     },
     data() {
@@ -66,7 +69,19 @@
       this.buildArray(this.setup)
     },
     methods: {
-      buildArray: function (data) {
+      formatTitle(adapter) {
+        let title = adapter
+        switch (adapter) {
+          case 'sqlite3':
+            title = 'Sqlite3'
+            break
+          case 'mysql':
+            title = 'MySQL'
+            break
+        }
+        return title
+      },
+      buildArray(data) {
         this.items = [{
           header: 'Application Settings'
         }, {

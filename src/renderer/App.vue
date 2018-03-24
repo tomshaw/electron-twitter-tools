@@ -20,18 +20,7 @@
   import AppToolbar from '@/components/shared/Layout/AppToolbar'
   import AppContent from '@/components/shared/Layout/AppContent'
   import AppFooter from '@/components/shared/Layout/AppFooter'
-
-  import {
-    IPC_REQUEST_SCHEMA_CREATE,
-    IPC_RESPONSE_SCHEMA_CREATE,
-    IPC_REQUEST_SCHEMA_CONFIG,
-    IPC_RESPONSE_SCHEMA_CONFIG,
-    //IPC_REQUEST_TWITTER_SETTINGS,
-    IPC_RESPONSE_TWITTER_SETTINGS,
-    IPC_REQUEST_TWITTER_CREDENTIALS,
-    IPC_RESPONSE_TWITTER_CREDENTIALS
-  } from '@/config/constants'
-
+  import * as types from '@/config/constants'
   export default {
     name: 'electron-twitter-tools',
     data: () => ({
@@ -53,79 +42,74 @@
       this.$settings.watch('storage', (newValue, oldValue) => {})
       this.$settings.watch('twitter', (newValue, oldValue) => {})
       this.$settings.watch('twitter.profile', (newValue, oldValue) => {})
-      this.$settings.watch('google.maps.key', (newValue, oldValue) => {
-        // Application will need to restart to take effect.
-      })
-
-      if (this.$settings.has('google.maps.loaded')) {
-        this.$settings.delete('google.maps.loaded')
-      }
+      this.$settings.watch('google.maps.key', (newValue, oldValue) => {})
 
       //this.$settings.deleteAll()
       //this.$settings.delete('storage')
 
       if (this.$settings.has('storage.connections')) {
         this.$store.dispatch('addConnections', this.$settings.get('storage.connections'))
-      }
-
-      if (this.$settings.get('twitter.validated') === false) {
-        this.$router.push({ name: 'settings-page' })
-      }
-
-      if (!this.$settings.has('storage.adapter')) {
-         this.$settings.set('storage.adapter', this.$store.getters.getAdapter)
       } else {
+        this.$settings.set('storage.connections', this.$store.getters.getConnections)
+      }
+
+      if (this.$settings.has('storage.adapter')) {
         this.$store.dispatch('setAdapter', this.$settings.get('storage.adapter'))
+      } else {
+        this.$settings.set('storage.adapter', this.$store.getters.getAdapter)
       }
 
       if (!this.$settings.has('storage.connection')) {
         this.$settings.set('storage.connection', this.$store.getters.getConnection)
       }
       
-      this.$electron.ipcRenderer.send(IPC_REQUEST_SCHEMA_CREATE, this.$settings.get('storage.connection'))
-      this.$electron.ipcRenderer.on(IPC_RESPONSE_SCHEMA_CREATE, (event, response) => {
-        if (response.hasOwnProperty('errors')) {
+      this.$electron.ipcRenderer.send(types.IPC_REQUEST_SCHEMA_CREATE, this.$store.getters.getConnection)
+      this.$electron.ipcRenderer.on(types.IPC_RESPONSE_SCHEMA_CREATE, (event, response) => {
+        let hasError = response.find(item => item.status === 'error')
+        if (hasError) {
+          this.$toastr('error', hasError.message, 'Error Message')
           this.$router.push({ name: 'settings-page' })
         } else {
-          if (!this.$settings.has('storage.hasconfig')) {
-            this.$electron.ipcRenderer.send(IPC_REQUEST_SCHEMA_CONFIG, this.$settings.get('storage.connection'))
-          }
+          this.$electron.ipcRenderer.send(types.IPC_REQUEST_SCHEMA_CONFIG, this.$store.getters.getConnection)
         }
       })
 
-      this.$electron.ipcRenderer.on(IPC_RESPONSE_SCHEMA_CONFIG, (event, response) => {
-        if (response.hasOwnProperty('errors')) {
+      this.$electron.ipcRenderer.on(types.IPC_RESPONSE_SCHEMA_CONFIG, (event, response) => {
+        let hasError = response.find(item => item.status === 'error')
+        if (hasError) {
+          this.$toastr('error', hasError.message, 'Error Message')
           this.$router.push({ name: 'settings-page' })
         } else {
-          this.$settings.set('storage.hasconfig', true)
+          this.$settings.set('storage.adapter', this.$store.getters.getAdapter)
+          this.$settings.set('storage.connection', this.$store.getters.getConnection)
+          this.$toastr('success', `Adapter ${this.$store.getters.getAdapter} has been setup successfully.`, 'Success Message')
         }
       })
+      
+      /*
+       * Start Twitter
+       */
 
-      //this.$electron.ipcRenderer.send(IPC_REQUEST_TWITTER_SETTINGS, this.$settings.get('twitter.tokens'))
-      this.$electron.ipcRenderer.on(IPC_RESPONSE_TWITTER_SETTINGS, (event, response) => {
-        if (response.hasOwnProperty('errors')) {
-          // @TODO
-          console.log('IPC_RESPONSE_TWITTER_SETTINGS', response.errors)
-        }
-      })
+      if (this.$settings.get('twitter.validated') === false) {
+        this.$router.push({ name: 'settings-page' })
+      }
 
       if (this.$settings.has('twitter.profile')) {
         this.$store.dispatch('setValidated', true)
         this.$store.dispatch('setProfile', this.$settings.get('twitter.profile'))
       } 
 
-      this.$electron.ipcRenderer.send(IPC_REQUEST_TWITTER_CREDENTIALS, this.$settings.get('twitter.tokens'))
-      this.$electron.ipcRenderer.on(IPC_RESPONSE_TWITTER_CREDENTIALS, (event, response) => {
-        // console.log('IPC_RESPONSE_TWITTER_CREDENTIALS', response)
-        if (response.hasOwnProperty('errors')) {
-          // @TODO send notice...
-          console.log('IPC_RESPONSE_TWITTER_CREDENTIALS', response.errors)
+      this.$electron.ipcRenderer.send(types.IPC_REQUEST_TWITTER_CREDENTIALS, this.$settings.get('twitter.tokens'))
+      this.$electron.ipcRenderer.on(types.IPC_RESPONSE_TWITTER_CREDENTIALS, (event, response) => {
+        if (!response.hasOwnProperty('id')) {
+          this.$toastr('error', 'Twitter authentication failed.', 'Error Message')
+          this.$router.push({ name: 'settings-page' })
         } else {
-          console.log('IPC_RESPONSE_TWITTER_CREDENTIALS', response)
           this.$settings.set('twitter.validated', true)
           this.$settings.set('twitter.profile', response)
           this.$store.dispatch('setValidated', true)
           this.$store.dispatch('setProfile', response)
+          this.$toastr('success', `The Twitter account for ${response.name} has been setup successfully.`, 'Success Message')
         }
       })
 

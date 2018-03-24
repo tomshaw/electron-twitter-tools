@@ -129,9 +129,7 @@
 <script>
   import {mapActions, mapGetters} from 'vuex'
   import {adapters, tokens} from '@/config/settings'
-  import {
-    IPC_REQUEST_TWITTER_CREDENTIALS
-  } from '@/config/constants'
+  import * as types from '@/config/constants'
   import PageTitle from '@/components/shared/PageTitle'
   import Breadcrumbs from '@/components/shared/Breadcrumbs'
   import SystemInfo from '@/components/shared/blocks/SystemInfo'
@@ -196,17 +194,19 @@
       }
     },
     methods: {
-      ...mapActions(['setValidated', 'addConnection']),
+      ...mapActions(['setValidated']),
       handleAdapterSubmit(type) {
-        const adapter = type;
-        this.addConnection(this.adapters[adapter])
-        this.$settings.set(`adapters.${adapter}`, this.adapters[adapter])
+        const connection = this.adapters[type]
+        this.$store.commit('STORAGE_SET_ADAPTER', type)
+        this.$settings.set(`adapters.${type}`, connection)
         this.$settings.set('storage.connections', this.connections)
+        this.$electron.ipcRenderer.send(types.IPC_REQUEST_SCHEMA_CREATE, connection)        
       },
       handleTwitterSubmit() {
-        this.setValidated(false)
-        this.$electron.ipcRenderer.send(IPC_REQUEST_TWITTER_CREDENTIALS, this.tokens)
+        this.$store.commit('TWITTER_SET_VALIDATED', false)
+        this.$settings.set('twitter.validated', false)
         this.$settings.set('twitter.tokens', this.tokens)
+        this.$electron.ipcRenderer.send(types.IPC_REQUEST_TWITTER_CREDENTIALS, this.tokens)
       },
       handleGoogleSubmit() {
         this.$settings.set('google.maps.key', this.google.maps.key)

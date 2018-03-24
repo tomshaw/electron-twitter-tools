@@ -191,7 +191,7 @@
           if (nextCursor > 0) {
             setTimeout(() => {
               this.createBackup(backupId, listId, slug, ownerId, ownerScreenName, counter, nextCursorString)
-            }, 2e3)
+            }, 1e3 / 3)
           }
 
         })
