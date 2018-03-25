@@ -105,7 +105,7 @@
         }, {
           text: 'Search Analytics',
           icon: 'zoom_in',
-          to: '/search/grid',
+          to: '/search',
           on: true
         }],
         mentions: [{
@@ -135,6 +135,10 @@
           to: '/settings'
         }]
       }
+    },
+    created() {}, 
+    methods: {
+      someMethod() {}
     }
   }
 </script>

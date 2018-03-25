@@ -43,11 +43,11 @@ const routerUser = [{
   children: [{
     path: '/user/friends',
     name: 'user-friends',
-    component: require('@/components/views/User/UserFriends').default
+    component: require('@/components/views/user/UserFriends').default
   }, {
     path: '/user/followers',
     name: 'user-followers',
-    component: require('@/components/views/User/UserFollowers').default
+    component: require('@/components/views/user/UserFollowers').default
   }]
 }]
 
@@ -63,13 +63,13 @@ const routerSearch = [{
     default: require('@/components/pages/Search').default
   },
   children: [{
-    path: '/search/grid',
+    path: '',
     name: 'search-grid',
-    component: require('@/components/views/Search/SearchGrid').default
+    component: require('@/components/views/search/grid/SearchGrid').default
   }, {
-    path: '/search/create',
-    name: 'search-create',
-    component: require('@/components/views/Search/SearchCreate').default
+    path: '/search/session',
+    name: 'search-session',
+    component: require('@/components/views/search/session/SearchSession').default
   }]
 }]
 

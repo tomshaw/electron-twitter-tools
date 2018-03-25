@@ -5,13 +5,15 @@ export default function initialOptions () {
     sessions: [],
     languages: [],
     locations: [],
+    timezones: [],
     results: {
       status_count: 0,
       quote_count: 0,
       reply_count: 0,
       retweet_count: 0,
       verified_count: 0,
-      language_count: 0
+      language_count: 0,
+      timezone_count: 0
     },
     sentiment: {
       negative: 0,

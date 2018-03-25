@@ -26,8 +26,8 @@ const mutations = {
     } else {
       let i = state.connections.findIndex(item => item.client === payload.client)
       if (i !== -1) {
-        console.log('FOUND', payload)
-        state.connections[i] = payload
+        //state.connections[i] = payload
+        Object.assign(state.connections[i], payload);
       }
     }
   },

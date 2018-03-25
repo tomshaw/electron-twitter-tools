@@ -15,6 +15,7 @@ const getters = {
   getSearchResults: state => state.results,
   getSearchSessions: state => state.sessions,
   getSearchLanguages: state => state.languages,
+  getSearchTimezones: state => state.timezones,
   getSearchLocations: state => state.locations,
   getSearchSentiment: state => state.sentiment
 }
@@ -48,16 +49,38 @@ const mutations = {
       }
     }
 
-    let hasLang = state.languages.map(item => item.value).indexOf(payload.lang) 
-    if (hasLang === -1) {
-      let langIdx = availableLanguages.map(item => item.code).indexOf(payload.lang) 
-      if (langIdx !== -1) {
-        let langData = availableLanguages[langIdx]
+    let j = availableLanguages.map(item => item.code).indexOf(payload.lang) 
+    let i = state.languages.map(item => item.value).indexOf(payload.lang) 
+    if (i === -1) {
+      if (j !== -1) {
+        let langData = availableLanguages[j]
         state.languages.push({ 
           text: langData.name,
-          value: payload.lang 
+          value: payload.lang,
+          counter: 1 
         })
         state.results.language_count = state.languages.length
+      }
+    } else {
+      if (j !== -1) {
+        let langData = availableLanguages[j]
+        state.languages[i].counter++
+        state.languages[i].text = `${langData.name}: ${state.languages[i].counter}`
+      }
+    }
+
+    if (payload.user.time_zone) {
+      let i = state.timezones.map(item => item.value).indexOf(payload.user.time_zone) 
+      if (i === -1) {
+        state.timezones.push({ 
+          text: payload.user.time_zone,
+          value: payload.user.time_zone,
+          counter: 1 
+        })
+        state.results.timezone_count = state.timezones.length
+      } else {
+        state.timezones[i].counter++
+        state.timezones[i].text = `${payload.user.time_zone}: ${state.timezones[i].counter}`
       }
     }
 
@@ -112,7 +135,7 @@ const mutations = {
       state.sentiment.neutral++
     }
 
-    // console.log('state.sentiment', state)
+    console.log('payload', payload)
 
     state.results.status_count++
   },

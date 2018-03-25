@@ -13,7 +13,7 @@
 
 ## Overview
 
-> Electron Twitter Tools a cross platfom [Electron](https://electronjs.org) application that allows users to effortlessly backup and restore user lists, seamlessly manage friends and followers, perform powerful multi account user searches and finally execute highly customized streaming searches that index a litany of data including languages used, geographic locations and rudimentary sentiment analysis. The project was originaly developed to learn the basics of [Electron](https://electronjs.org), [Vue](https://vuejs.org), [Vuex](https://vuex.vuejs.org/en) and [Vuetify](https://vuetifyjs.com/en) but has evolved into much more. Thanks to Twitter's powerful programming API that offers developers the unique ability to develop exciting features not currently offered out of the box. At this time there is a feature freeze but much more functionalty is planned for the future.
+> Electron Twitter Tools a cross platfom [Electron](https://electronjs.org) application that allows users to effortlessly backup and restore user lists, seamlessly manage friends and followers, perform powerful multi account user searches and finally execute highly customized streaming searches that index a litany of data including languages used, geographic locations and rudimentary sentiment analysis.
 
 ## Screenshot
 
@@ -44,10 +44,10 @@ npm run lint
 
 Functionality you'll find in this application include:
 
-- Completely manage user lists including backup and restore options.
-- A robust customized streaming search that harvests a litany of data.
+- User list management including backup and restore options.
+- A highly customized streaming search that indexes a litany of data.
 - A multi user account lookup that returns most of the relevant metadata. 
-- The ability to completely delete user statuses based on search criteria.
+- Delete user statuses tweets and favorites based on search criteria.
 - Supports multiple storage backends special thanks to [Knex.js](http://knexjs.org/)
 
 ## Libraries Used
@@ -61,7 +61,7 @@ Functionality you'll find in this application include:
 + [Knex.js](http://knexjs.org/) - An SQL query builder designed to be flexible, portable, and fun to use.
 
 ## Contributing
-This project was developed to learn the basics of Electron and Vue.js and was developed rather hastily. Many of the components are incomplete or could use vast improvements. Any pull requests, suggestions or ideas to enhance the project are highly welcomed. Please read the contributing guide thoroughly before issuing pull requests.
+The project was originaly developed to learn the basics of [Electron](https://electronjs.org), [Vue](https://vuejs.org), [Vuex](https://vuex.vuejs.org/en) and [Vuetify](https://vuetifyjs.com/en) and was developed rather hastily. Many of the components are incomplete or could use vast improvements. Any pull requests, suggestions or ideas are highly welcomed.
 
 ## AFINN
 

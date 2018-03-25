@@ -1,11 +1,13 @@
 import Database from '@/library/storage'
 import Twitter from '@/library/twitter'
-const settings = require('electron-settings')
+let settings = require('electron-settings')
+let connection = settings.get('storage.connection')
+let tokens = settings.get('twitter.tokens')
 
 function getDb () {
   let db
   if (db === undefined) {
-    db = new Database(settings.get('storage.connection'))
+    db = new Database(connection)
   }
   return db
 }
@@ -13,7 +15,7 @@ function getDb () {
 function getClient () {
   let client
   if (client === undefined) {
-    client = new Twitter(settings.get('twitter.tokens'))
+    client = new Twitter(tokens)
   }
   return client
 }

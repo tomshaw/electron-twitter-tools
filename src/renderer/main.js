@@ -7,7 +7,6 @@
 import Vue from 'vue'
 import axios from 'axios'
 import moment from 'moment'
-import DateFormat from 'dateformat'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.css'
 import VueToastr from '@deveodk/vue-toastr'
@@ -17,8 +16,10 @@ import App from './App'
 import router from './router'
 import store from './store'
 
+import reload from '@/mixins/reload'
 import settings from '@/mixins/settings'
 
+Vue.mixin(reload)
 Vue.mixin(settings)
 
 Vue.use(Vuetify)
@@ -42,21 +43,14 @@ new Vue({
   template: '<App/>'
 }).$mount('#app')
 
-Vue.filter('formatDate', (value) => {
+Vue.filter('formatDate', (value, format = 'MMMM Do YYYY') => {
   if (value) {
-    return moment(String(value)).format('MMMM Do YYYY')
-  }
-})
-
-Vue.filter('twitterTime', (value) => {
-  if (value) {
-    let date = new Date(value.replace(/^\w+ (\w+) (\d+) ([\d:]+) \+0000 (\d+)$/, '$1 $2 $4 $3 UTC'))
-    return DateFormat(date, 'yyyy/mm/dd HH:MM:ss')
+    return moment(String(value)).format(format)
   }
 })
 
 Vue.filter('timeAgo', (value) => {
   if (value) {
-    return moment(new Date(value)).locale('en-short').fromNow()
+    return moment(new Date(value)).fromNow()
   }
 })

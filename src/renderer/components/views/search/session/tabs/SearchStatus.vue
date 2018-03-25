@@ -8,11 +8,11 @@
               <v-text-field label="Status Count" v-model="results.status_count" prepend-icon="speaker_notes"></v-text-field>
             </v-flex>
             <v-flex xs11 sm4>
-              <v-select label="Languages" :items="languages" v-model="languages" prepend-icon="translate" single-line></v-select>
+              <v-select :label="languageLabel" :items="languages" v-model="languages" prepend-icon="translate" single-line></v-select>
             </v-flex>
             <v-spacer></v-spacer>
             <v-flex xs11 sm4>
-              <v-text-field label="Languages Count" v-model="results.language_count" prepend-icon="translate"></v-text-field>
+              <v-select :label="timezoneLabel" :items="timezones" v-model="timezones" prepend-icon="translate" single-line></v-select>
             </v-flex>
             <v-spacer></v-spacer>
             <v-flex xs11 sm4>
@@ -45,8 +45,23 @@
     computed: {
       ...mapGetters({
         results: 'getSearchResults',
-        languages: 'getSearchLanguages'
-      })
+        languages: 'getSearchLanguages',
+        timezones: 'getSearchTimezones'
+      }),
+      languageLabel: function () { 
+        if (this.results.language_count === 0) {
+          return 'Languages'
+        } else {
+          return `${this.results.language_count} Languages`
+        }
+      },
+      timezoneLabel: function () { 
+        if (this.results.timezone_count === 0) {
+          return 'Timezones'
+        } else {
+          return `${this.results.timezone_count} Timezones`
+        }
+      }
     }
   }
 </script>

@@ -7,7 +7,6 @@
       <v-toolbar-items>
         <elapsed-time :active="active"></elapsed-time>
       </v-toolbar-items>
-      <!-- <v-progress-circular v-if="active" indeterminate :size="25" :width="5" color="amber"></v-progress-circular> -->
       <v-tabs color="grey darken-2" slot="extension" slider-color="yellow" v-model="model">
         <v-tab href="#tab1">Search Criteria</v-tab>
         <v-tab v-if="active" href="#tab2">Session Statistics</v-tab>
@@ -35,12 +34,12 @@
 <script>
   import { mapGetters } from 'vuex'
   import ElapsedTime from '@/components/shared/Blocks/ElapsedTime'
-  import SearchForm from './SearchForm'
-  import SearchStatus from './SearchStatus'
-  import SearchSentiment from './SearchSentiment'
-  import SearchGeographic from './SearchGeographic'
+  import SearchForm from './tabs/SearchForm'
+  import SearchStatus from './tabs/SearchStatus'
+  import SearchSentiment from './tabs/SearchSentiment'
+  import SearchGeographic from './tabs/SearchGeographic'
   export default {
-    name: 'search-create',
+    name: 'search-session',
     components: {
       'elapsed-time': ElapsedTime,
       'search-form': SearchForm,

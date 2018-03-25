@@ -198,9 +198,13 @@
       handleAdapterSubmit(type) {
         const connection = this.adapters[type]
         this.$store.commit('STORAGE_SET_ADAPTER', type)
+        this.$store.commit('STORAGE_ADD_CONNECTION', connection)
         this.$settings.set(`adapters.${type}`, connection)
         this.$settings.set('storage.connections', this.connections)
-        this.$electron.ipcRenderer.send(types.IPC_REQUEST_SCHEMA_CREATE, connection)        
+        this.$electron.ipcRenderer.send(types.IPC_REQUEST_SCHEMA_CREATE, connection)
+        let seconds = 5e3
+        this.$reload(seconds)
+        this.$toastr('warning', `Reloading for changes to take effect in ${seconds / 1000} seconds...`, 'Success Message')    
       },
       handleTwitterSubmit() {
         this.$store.commit('TWITTER_SET_VALIDATED', false)

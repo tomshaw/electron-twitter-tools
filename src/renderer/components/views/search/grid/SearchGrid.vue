@@ -131,7 +131,7 @@
         this.close()
       },
       create () {
-        this.$router.push({ name: 'search-create' })
+        this.$router.push({ name: 'search-session' })
       }
     }
   }
