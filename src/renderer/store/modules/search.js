@@ -135,7 +135,7 @@ const mutations = {
       state.sentiment.neutral++
     }
 
-    console.log('payload', payload)
+    // console.log('payload', payload)
 
     state.results.status_count++
   },
