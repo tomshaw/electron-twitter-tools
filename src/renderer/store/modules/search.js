@@ -13,10 +13,12 @@ const getters = {
   getSearchId: state => state.id,
   getSearchActive: state => state.active,
   getSearchResults: state => state.results,
+  getSearchPlaces: state => state.places,
   getSearchSessions: state => state.sessions,
   getSearchLanguages: state => state.languages,
   getSearchTimezones: state => state.timezones,
   getSearchLocations: state => state.locations,
+  getSearchInfluential: state => state.influential,
   getSearchSentiment: state => state.sentiment
 }
 
@@ -84,6 +86,53 @@ const mutations = {
       }
     }
 
+    if (payload.place) {
+      let i = state.places.map(item => item.value).indexOf(payload.place.full_name) 
+      
+      if (i === -1) {
+        state.places.push({ 
+          text: payload.place.full_name,
+          value: payload.place.full_name,
+          counter: 1 
+        })
+        state.results.places_count = state.places.length
+      } else {
+        state.places[i].counter++
+        state.places[i].text = `${payload.place.full_name}: ${state.places[i].counter}`
+      }
+    }
+
+    if (payload.user) {
+      let i = state.influential.map(item => item.value).indexOf(payload.user.id_str)
+      if (i === -1) {
+        if (state.influential.length) {
+          if (state.influential[state.influential.length - 1].count < payload.user.followers_count) {
+            state.influential.push({ 
+              text: `${payload.user.name} @${payload.user.screen_name} #${payload.user.followers_count}`,
+              value: payload.user.id_str,
+              count: payload.user.followers_count
+            })
+          }
+        } else {
+          state.influential.push({ 
+            text: `${payload.user.name} ${payload.user.followers_count}`,
+            value: payload.user.id_str,
+            count: payload.user.followers_count
+          })
+        }
+      }
+
+      if (state.influential.length) {
+        state.influential.sort((a, b) => {
+          return a.count - b.count;
+        }).reverse()
+      }
+
+      if (state.influential.length > 10) {
+        state.influential.pop()
+      }
+    }
+
     const MAX_LOCATION_ITEMS = 10
 
     if (payload.coordinates) {
@@ -111,7 +160,6 @@ const mutations = {
           description: payload.user.description
         }
       })
-      // console.log('state.place', payload.place.bounding_box.coordinates[0][0])
     }
 
     if (state.locations.length > MAX_LOCATION_ITEMS) {
@@ -127,8 +175,6 @@ const mutations = {
     } else {
       state.sentiment.neutral++
     }
-
-    // console.log('payload', payload)
 
     state.results.status_count++
   },
@@ -328,7 +374,6 @@ const actions = {
         save.place_country_code = response.place.country_code
         save.place_name = response.place.name
         save.place_full_name = response.place.full_name
-        console.log('response.place', response.place)
       }
 
       save.favorite_count = response.favorite_count
@@ -361,8 +406,6 @@ const actions = {
       save.verified = response.user.verified
       save.created_at = db.api.fn.now()
 
-      // console.log('save', save)
-
       if (processSentiment) {
         let results = new SentimentAnalysis(response.text)
         response.score = results.score
@@ -388,7 +431,7 @@ const actions = {
       db.api('search').update('end_time', db.api.fn.now()).where('id', '=', state.id).then((resp) => {
         commit(types.SEARCH_SESSION_END)
       }).catch(error => {
-        console.log('error!!', error)
+        console.log('dberror', error)
       })
     })
   }

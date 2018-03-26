@@ -6,6 +6,8 @@ export default function initialOptions () {
     languages: [],
     locations: [],
     timezones: [],
+    influential: [],
+    places: [],
     results: {
       status_count: 0,
       quote_count: 0,
@@ -13,7 +15,8 @@ export default function initialOptions () {
       retweet_count: 0,
       verified_count: 0,
       language_count: 0,
-      timezone_count: 0
+      timezone_count: 0,
+      places_count: 0
     },
     sentiment: {
       negative: 0,

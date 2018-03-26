@@ -30,6 +30,12 @@
             <v-flex xs11 sm4>
               <v-text-field label="Verified Accounts" v-model="results.verified_count" prepend-icon="list"></v-text-field>
             </v-flex>
+            <v-flex xs11 sm4>
+              <v-select :label="placesLabel" :items="places" v-model="places" prepend-icon="pin_drop" single-line></v-select>
+            </v-flex>
+            <v-flex xs11 sm4>
+              <v-select label="Influenial Accounts" :items="influential" v-model="influential" prepend-icon="visibility" single-line></v-select>
+            </v-flex>
           </v-layout>
         </v-form>
       </v-container>
@@ -46,7 +52,9 @@
       ...mapGetters({
         results: 'getSearchResults',
         languages: 'getSearchLanguages',
-        timezones: 'getSearchTimezones'
+        timezones: 'getSearchTimezones',
+        influential: 'getSearchInfluential',
+        places: 'getSearchPlaces'
       }),
       languageLabel: function () { 
         if (this.results.language_count === 0) {
@@ -60,6 +68,13 @@
           return 'Timezones'
         } else {
           return `${this.results.timezone_count} Timezones`
+        }
+      },
+      placesLabel: function () { 
+        if (this.results.places_count === 0) {
+          return 'Places'
+        } else {
+          return `${this.results.places_count} Places`
         }
       }
     }
