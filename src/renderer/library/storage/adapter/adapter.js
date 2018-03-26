@@ -143,9 +143,14 @@ export default class Adapter {
       table.string('coordinates_type').nullable().collate('utf8mb4_general_ci')
       table.decimal('coordinates_lat', [9], [6]).nullable()
       table.decimal('coordinates_lng', [9], [6]).nullable()
-      table.string('geo_type').nullable().collate('utf8mb4_general_ci')
-      table.decimal('geo_lat', [9], [6]).nullable()
-      table.decimal('geo_lng', [9], [6]).nullable()
+      // Place data
+      table.text('place_coordinates', ['longtext']).nullable().collate('utf8mb4_general_ci')
+      table.string('place_type').nullable().collate('utf8mb4_general_ci')
+      table.string('place_country').nullable().collate('utf8mb4_general_ci')
+      table.string('place_country_code').nullable().collate('utf8mb4_general_ci')
+      table.string('place_name').nullable().collate('utf8mb4_general_ci')
+      table.string('place_full_name').nullable().collate('utf8mb4_general_ci')
+
       table.integer('favorite_count').nullable()
       table.string('filter_level').nullable().collate('utf8mb4_general_ci')
       table.bigInteger('tweet_id').unsigned()

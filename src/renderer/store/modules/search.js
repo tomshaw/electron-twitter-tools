@@ -93,13 +93,6 @@ const mutations = {
       })
     }
 
-    if (payload.geo) {
-      state.locations.unshift({
-        latitude: payload.geo.coordinates[0],
-        longitude: payload.geo.coordinates[0]
-      })
-    }
-
     if (payload.place && payload.user) {
       let coordinates = payload.place.bounding_box.coordinates[0][0]
       state.locations.unshift({
@@ -328,10 +321,14 @@ const actions = {
         save.coordinates_lng = response.coordinates.coordinates[1]
       }
 
-      if (response.geo) {
-        save.geo_type = response.geo.type
-        save.geo_lat = response.geo.coordinates[1]
-        save.geo_lng = response.geo.coordinates[0]
+      if (response.place) {
+        save.place_coordinates = JSON.stringify(response.place.bounding_box.coordinates)
+        save.place_type = response.place.place_type
+        save.place_country = response.place.country
+        save.place_country_code = response.place.country_code
+        save.place_name = response.place.name
+        save.place_full_name = response.place.full_name
+        console.log('response.place', response.place)
       }
 
       save.favorite_count = response.favorite_count

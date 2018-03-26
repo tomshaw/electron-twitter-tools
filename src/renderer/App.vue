@@ -29,7 +29,8 @@
       fixed: false,
       miniVariant: true,
       rightDrawer: false,
-      title: 'Electron Twitter Tools'
+      title: 'Electron Twitter Tools',
+      seconds: 3e3
     }),
     components: {
       'app-navigation': AppNavigation,
@@ -39,10 +40,12 @@
     },
     created () {
 
-      this.$settings.watch('storage', (newValue, oldValue) => {})
-      this.$settings.watch('twitter', (newValue, oldValue) => {})
-      this.$settings.watch('twitter.profile', (newValue, oldValue) => {})
-      this.$settings.watch('google.maps.key', (newValue, oldValue) => {})
+      this.$settings.watch('storage.connection', (newValue, oldValue) => {
+        if (newValue !== oldValue) {
+          this.$reload(this.seconds)
+          this.$toastr('warning', `Reloading for changes to take effect in ${this.seconds / 1000} seconds...`, 'Success Message')
+        } 
+      })
 
       //this.$settings.deleteAll()
       //this.$settings.delete('storage')
