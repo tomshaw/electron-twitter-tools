@@ -18,7 +18,7 @@
 ## Screen Shots
 As part of the documentation you can check out some random [screenshots here.](docs/screenshots/readme.md)
 
-<img src="https://raw.github.com/tomshaw/electron-twitter-tools/master/docs/screen-grab1.png" alt="Electron Twitter Tools" title="Electron Twitter Tools">
+<img src="docs/screenshots/screen-grab1.png" alt="Electron Twitter Tools" title="Electron Twitter Tools">
 
 ## Build Setup
 Once the application is launched you will need to provide your own Twitter API keys in the application configuration panel. An Sqlite3 database comes pre-selected and ready to use by default. A Google Maps API key is also required and can also be added in the application settings control panel.
