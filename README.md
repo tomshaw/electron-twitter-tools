@@ -15,9 +15,10 @@
 
 > Electron Twitter Tools a cross platfom [Electron](https://electronjs.org) application that allows users to effortlessly backup and restore user lists, seamlessly manage friends and followers, perform powerful multi account user searches and finally execute highly customized streaming searches that index a litany of data including languages used, geographic locations and rudimentary sentiment analysis.
 
-## Screenshot
+## Screen Shots
+As part of the documentation you can check out some random [screenshots here.](docs/screenshots/readme.md)
 
-<img src="https://raw.github.com/tomshaw/electron-twitter-tools/master/docs/screen-grab1.png" alt="Screen Grab Electron Twitter Tools" title="Screen Grab Electron Twitter Tools">
+<img src="https://raw.github.com/tomshaw/electron-twitter-tools/master/docs/screen-grab1.png" alt="Electron Twitter Tools" title="Electron Twitter Tools">
 
 ## Build Setup
 Once the application is launched you will need to provide your own Twitter API keys in the application configuration panel. An Sqlite3 database comes pre-selected and ready to use by default. A Google Maps API key is also required and can also be added in the application settings control panel.
