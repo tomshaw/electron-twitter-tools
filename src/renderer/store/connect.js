@@ -22,4 +22,4 @@ function getClient () {
 
 export const db = getDb()
 export const client = getClient()
-export const account = settings.get('twitter.profile')
+export const account = settings.get('twitter.credentials')

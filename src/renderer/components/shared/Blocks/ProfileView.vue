@@ -34,7 +34,7 @@
     name: 'profile-view',
     computed: {
       ...mapGetters({
-        profile: 'getTwitterProfile'
+        profile: 'getAccountCredentials'
       })
     },
     data () {
@@ -61,11 +61,11 @@
       this.buildArray(this.profile)
     },
     methods: {
-      ...mapActions(['loadProfile']),
+      ...mapActions(['accountCredentials']),
       handleRefresh() {
         this.loader = 'loading'
         setTimeout(() => {
-          this.loadProfile().then(() => {
+          this.accountCredentials().then(() => {
             this.$toastr('success', 'System profile updated successfully.', 'Success')
           })
         }, 1e3)

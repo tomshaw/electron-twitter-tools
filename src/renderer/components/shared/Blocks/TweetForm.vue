@@ -55,7 +55,7 @@
     },
     computed: {
       ...mapGetters({
-        profile: 'getTwitterProfile',
+        profile: 'getAccountCredentials',
         images: 'getImages',
         reply: 'getReply'
       }),

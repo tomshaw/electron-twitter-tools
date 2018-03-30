@@ -154,14 +154,16 @@ export default class extends Adapter {
     }
   }
 
-  homeTimeline (callback) {
-    this.api.get('statuses/home_timeline', {count: 20, include_entities: true}, (error, data, response) => {
+  homeTimeline (options, callback) {
+    this.api.get('statuses/home_timeline', options, (error, data, response) => {
       if (error) { 
         callback(error) 
       } else {
+        let tweets = []
         data.forEach(tweet => {
-          callback(Parser.all(tweet))
+          tweets.push(Parser.all(tweet))
         })
+        callback(tweets)
       }
     })
   }
@@ -171,9 +173,11 @@ export default class extends Adapter {
       if (error) { 
         callback(error) 
       } else {
+        let tweets = []
         data.forEach(tweet => {
-          callback(Parser.all(tweet))
+          tweets.push(Parser.all(tweet))
         })
+        callback(tweets)
       }
     })
   }
@@ -183,9 +187,11 @@ export default class extends Adapter {
       if (error) { 
         callback(error) 
       } else {
+        let tweets = []
         data.forEach(tweet => {
-          callback(Parser.all(tweet))
+          tweets.push(Parser.all(tweet))
         })
+        callback(tweets)
       }
     })
   }
@@ -261,7 +267,7 @@ export default class extends Adapter {
   }
 
   postUnretweet(options, callback) {
-    this.api.post('statuses/unretweet', options, (error, data, response) => {
+    this.api.post(`statuses/unretweet/${options.id}`, options, (error, data, response) => {
       if (error) { 
         callback(error)
       } else {
@@ -300,28 +306,32 @@ export default class extends Adapter {
     })
   }
 
-  followersList(options, callback) {
-    this.api.get('followers/list', {name: options.screen_name}, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  followersList(options) {
+    return new Promise((resolve, reject) => {
+      this.api.get('followers/list', options, (error, data, response) => {
+        if (error) { 
+          reject(new Error(error))
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  friendsList(options, callback) {
-    this.api.get('friends/list', {name: options.screen_name}, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  friendsList(options) {
+    return new Promise((resolve, reject) => {
+      this.api.get('friends/list', options, (error, data, response) => {
+        if (error) { 
+          reject(new Error(error))
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
   friendshipCreate(options, callback) {
-    this.api.post('friendships/create', {name: options.screen_name, id: options.user_id}, (error, data, response) => {
+    this.api.post('friendships/create', options, (error, data, response) => {
       if (error) { 
         callback(error)
       } else {
@@ -331,7 +341,7 @@ export default class extends Adapter {
   }
 
   friendshipDestroy(options, callback) {
-    this.api.post('friendships/destroy', {name: options.screen_name, user_id: options.user_id}, (error, data, response) => {
+    this.api.post('friendships/destroy', options, (error, data, response) => {
       if (error) { 
         callback(error)
       } else {
@@ -340,8 +350,8 @@ export default class extends Adapter {
     })
   }
 
-  mutesCreate(options, callback) {
-    this.api.post('mutes/users/create', {name: options.name, user_id: options.user_id}, (error, data, response) => {
+  mutesCreate(options, callback) { /* {name: options.name, user_id: options.user_id} */
+    this.api.post('mutes/users/create', options, (error, data, response) => {
       if (error) { 
         callback(error)
       } else {
@@ -351,7 +361,7 @@ export default class extends Adapter {
   }
 
   mutesDestroy(options, callback) {
-    this.api.post('mutes/users/destroy', {name: options.name, user_id: options.user_id}, (error, data, response) => {
+    this.api.post('mutes/users/destroy', options, (error, data, response) => {
       if (error) { 
         callback(error)
       } else {
@@ -361,7 +371,7 @@ export default class extends Adapter {
   }
 
   blocksCreate(options, callback) {
-    this.api.post('blocks/create', {name: options.name, user_id: options.user_id}, (error, data, response) => {
+    this.api.post('blocks/create', options, (error, data, response) => {
       if (error) { 
         callback(error)
       } else {
@@ -371,7 +381,7 @@ export default class extends Adapter {
   }
 
   blocksDestroy(options, callback) {
-    this.api.post('blocks/destroy', {name: options.name, user_id: options.user_id}, (error, data, response) => {
+    this.api.post('blocks/destroy', options, (error, data, response) => {
       if (error) { 
         callback(error)
       } else {
@@ -382,7 +392,7 @@ export default class extends Adapter {
 
   // https://developer.twitter.com/en/docs/trends/locations-with-trending-topics/api-reference/get-trends-available
   trendsAvailable(options, callback) {
-    this.api.get('trends/available', options, (error, data, response) => {
+    this.api.get('trends/available', {}, (error, data, response) => {
       if (error) { 
         callback(error)
       } else {

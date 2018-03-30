@@ -1,0 +1,2336 @@
+[{
+  "name": "Dallas-Ft. Worth",
+  "country": "United States",
+  "woeid": 2388929,
+  "type": 7
+}, {
+  "name": "Austin",
+  "country": "United States",
+  "woeid": 2357536,
+  "type": 7
+}, {
+  "name": "Oklahoma City",
+  "country": "United States",
+  "woeid": 2464592,
+  "type": 7
+}, {
+  "name": "Houston",
+  "country": "United States",
+  "woeid": 2424766,
+  "type": 7
+}, {
+  "name": "San Antonio",
+  "country": "United States",
+  "woeid": 2487796,
+  "type": 7
+}, {
+  "name": "United States",
+  "country": "United States",
+  "woeid": 23424977,
+  "type": 12
+}, {
+  "name": "Baton Rouge",
+  "country": "United States",
+  "woeid": 2359991,
+  "type": 7
+}, {
+  "name": "Jackson",
+  "country": "United States",
+  "woeid": 2428184,
+  "type": 7
+}, {
+  "name": "Memphis",
+  "country": "United States",
+  "woeid": 2449323,
+  "type": 7
+}, {
+  "name": "New Orleans",
+  "country": "United States",
+  "woeid": 2458833,
+  "type": 7
+}, {
+  "name": "Kansas City",
+  "country": "United States",
+  "woeid": 2430683,
+  "type": 7
+}, {
+  "name": "Monterrey",
+  "country": "Mexico",
+  "woeid": 134047,
+  "type": 7
+}, {
+  "name": "St. Louis",
+  "country": "United States",
+  "woeid": 2486982,
+  "type": 7
+}, {
+  "name": "Saltillo",
+  "country": "Mexico",
+  "woeid": 141272,
+  "type": 7
+}, {
+  "name": "Birmingham",
+  "country": "United States",
+  "woeid": 2364559,
+  "type": 7
+}, {
+  "name": "El Paso",
+  "country": "United States",
+  "woeid": 2397816,
+  "type": 7
+}, {
+  "name": "Ciudad Juarez",
+  "country": "Mexico",
+  "woeid": 116556,
+  "type": 7
+}, {
+  "name": "Omaha",
+  "country": "United States",
+  "woeid": 2465512,
+  "type": 7
+}, {
+  "name": "Albuquerque",
+  "country": "United States",
+  "woeid": 2352824,
+  "type": 7
+}, {
+  "name": "Nashville",
+  "country": "United States",
+  "woeid": 2457170,
+  "type": 7
+}, {
+  "name": "Colorado Springs",
+  "country": "United States",
+  "woeid": 2383489,
+  "type": 7
+}, {
+  "name": "Chihuahua",
+  "country": "Mexico",
+  "woeid": 115958,
+  "type": 7
+}, {
+  "name": "Denver",
+  "country": "United States",
+  "woeid": 2391279,
+  "type": 7
+}, {
+  "name": "Mexico",
+  "country": "Mexico",
+  "woeid": 23424900,
+  "type": 12
+}, {
+  "name": "Atlanta",
+  "country": "United States",
+  "woeid": 2357024,
+  "type": 7
+}, {
+  "name": "Louisville",
+  "country": "United States",
+  "woeid": 2442327,
+  "type": 7
+}, {
+  "name": "Tallahassee",
+  "country": "United States",
+  "woeid": 2503713,
+  "type": 7
+}, {
+  "name": "Indianapolis",
+  "country": "United States",
+  "woeid": 2427032,
+  "type": 7
+}, {
+  "name": "San Luis Potosí",
+  "country": "Mexico",
+  "woeid": 144265,
+  "type": 7
+}, {
+  "name": "Chicago",
+  "country": "United States",
+  "woeid": 2379574,
+  "type": 7
+}, {
+  "name": "Cincinnati",
+  "country": "United States",
+  "woeid": 2380358,
+  "type": 7
+}, {
+  "name": "Aguascalientes",
+  "country": "Mexico",
+  "woeid": 111579,
+  "type": 7
+}, {
+  "name": "Tucson",
+  "country": "United States",
+  "woeid": 2508428,
+  "type": 7
+}, {
+  "name": "Culiacán",
+  "country": "Mexico",
+  "woeid": 117994,
+  "type": 7
+}, {
+  "name": "Milwaukee",
+  "country": "United States",
+  "woeid": 2451822,
+  "type": 7
+}, {
+  "name": "León",
+  "country": "Mexico",
+  "woeid": 131068,
+  "type": 7
+}, {
+  "name": "Minneapolis",
+  "country": "United States",
+  "woeid": 2452078,
+  "type": 7
+}, {
+  "name": "Querétaro",
+  "country": "Mexico",
+  "woeid": 138045,
+  "type": 7
+}, {
+  "name": "Mesa",
+  "country": "United States",
+  "woeid": 2449808,
+  "type": 7
+}, {
+  "name": "Hermosillo",
+  "country": "Mexico",
+  "woeid": 124785,
+  "type": 7
+}, {
+  "name": "Phoenix",
+  "country": "United States",
+  "woeid": 2471390,
+  "type": 7
+}, {
+  "name": "Jacksonville",
+  "country": "United States",
+  "woeid": 2428344,
+  "type": 7
+}, {
+  "name": "Columbus",
+  "country": "United States",
+  "woeid": 2383660,
+  "type": 7
+}, {
+  "name": "Tampa",
+  "country": "United States",
+  "woeid": 2503863,
+  "type": 7
+}, {
+  "name": "Ecatepec de Morelos",
+  "country": "Mexico",
+  "woeid": 118466,
+  "type": 7
+}, {
+  "name": "Charlotte",
+  "country": "United States",
+  "woeid": 2378426,
+  "type": 7
+}, {
+  "name": "Mérida",
+  "country": "Mexico",
+  "woeid": 133327,
+  "type": 7
+}, {
+  "name": "Zapopan",
+  "country": "Mexico",
+  "woeid": 151582,
+  "type": 7
+}, {
+  "name": "Guadalajara",
+  "country": "Mexico",
+  "woeid": 124162,
+  "type": 7
+}, {
+  "name": "Naucalpan de Juárez",
+  "country": "Mexico",
+  "woeid": 134395,
+  "type": 7
+}, {
+  "name": "Mexico City",
+  "country": "Mexico",
+  "woeid": 116545,
+  "type": 7
+}, {
+  "name": "Nezahualcóyotl",
+  "country": "Mexico",
+  "woeid": 116564,
+  "type": 7
+}, {
+  "name": "Morelia",
+  "country": "Mexico",
+  "woeid": 134091,
+  "type": 7
+}, {
+  "name": "Toluca",
+  "country": "Mexico",
+  "woeid": 149769,
+  "type": 7
+}, {
+  "name": "Puebla",
+  "country": "Mexico",
+  "woeid": 137612,
+  "type": 7
+}, {
+  "name": "Orlando",
+  "country": "United States",
+  "woeid": 2466256,
+  "type": 7
+}, {
+  "name": "Greensboro",
+  "country": "United States",
+  "woeid": 2414469,
+  "type": 7
+}, {
+  "name": "Detroit",
+  "country": "United States",
+  "woeid": 2391585,
+  "type": 7
+}, {
+  "name": "Salt Lake City",
+  "country": "United States",
+  "woeid": 2487610,
+  "type": 7
+}, {
+  "name": "Cleveland",
+  "country": "United States",
+  "woeid": 2381475,
+  "type": 7
+}, {
+  "name": "Raleigh",
+  "country": "United States",
+  "woeid": 2478307,
+  "type": 7
+}, {
+  "name": "Pittsburgh",
+  "country": "United States",
+  "woeid": 2473224,
+  "type": 7
+}, {
+  "name": "Las Vegas",
+  "country": "United States",
+  "woeid": 2436704,
+  "type": 7
+}, {
+  "name": "Mexicali",
+  "country": "Mexico",
+  "woeid": 133475,
+  "type": 7
+}, {
+  "name": "Miami",
+  "country": "United States",
+  "woeid": 2450022,
+  "type": 7
+}, {
+  "name": "Acapulco",
+  "country": "Mexico",
+  "woeid": 110978,
+  "type": 7
+}, {
+  "name": "Richmond",
+  "country": "United States",
+  "woeid": 2480894,
+  "type": 7
+}, {
+  "name": "Washington",
+  "country": "United States",
+  "woeid": 2514815,
+  "type": 7
+}, {
+  "name": "Tijuana",
+  "country": "Mexico",
+  "woeid": 149361,
+  "type": 7
+}, {
+  "name": "Winnipeg",
+  "country": "Canada",
+  "woeid": 2972,
+  "type": 7
+}, {
+  "name": "San Diego",
+  "country": "United States",
+  "woeid": 2487889,
+  "type": 7
+}, {
+  "name": "Norfolk",
+  "country": "United States",
+  "woeid": 2460389,
+  "type": 7
+}, {
+  "name": "Toronto",
+  "country": "Canada",
+  "woeid": 4118,
+  "type": 7
+}, {
+  "name": "Virginia Beach",
+  "country": "United States",
+  "woeid": 2512636,
+  "type": 7
+}, {
+  "name": "Baltimore",
+  "country": "United States",
+  "woeid": 2358820,
+  "type": 7
+}, {
+  "name": "Harrisburg",
+  "country": "United States",
+  "woeid": 2418046,
+  "type": 7
+}, {
+  "name": "Guatemala",
+  "country": "Guatemala",
+  "woeid": 23424834,
+  "type": 12
+}, {
+  "name": "Long Beach",
+  "country": "United States",
+  "woeid": 2441472,
+  "type": 7
+}, {
+  "name": "Los Angeles",
+  "country": "United States",
+  "woeid": 2442047,
+  "type": 7
+}, {
+  "name": "Philadelphia",
+  "country": "United States",
+  "woeid": 2471217,
+  "type": 7
+}, {
+  "name": "Guatemala City",
+  "country": "Guatemala",
+  "woeid": 83123,
+  "type": 7
+}, {
+  "name": "Fresno",
+  "country": "United States",
+  "woeid": 2407517,
+  "type": 7
+}, {
+  "name": "New York",
+  "country": "United States",
+  "woeid": 2459115,
+  "type": 7
+}, {
+  "name": "Ottawa",
+  "country": "Canada",
+  "woeid": 3369,
+  "type": 7
+}, {
+  "name": "New Haven",
+  "country": "United States",
+  "woeid": 2458410,
+  "type": 7
+}, {
+  "name": "Sacramento",
+  "country": "United States",
+  "woeid": 2486340,
+  "type": 7
+}, {
+  "name": "San Jose",
+  "country": "United States",
+  "woeid": 2488042,
+  "type": 7
+}, {
+  "name": "San Francisco",
+  "country": "United States",
+  "woeid": 2487956,
+  "type": 7
+}, {
+  "name": "Montreal",
+  "country": "Canada",
+  "woeid": 3534,
+  "type": 7
+}, {
+  "name": "Providence",
+  "country": "United States",
+  "woeid": 2477058,
+  "type": 7
+}, {
+  "name": "Calgary",
+  "country": "Canada",
+  "woeid": 8775,
+  "type": 7
+}, {
+  "name": "Boston",
+  "country": "United States",
+  "woeid": 2367105,
+  "type": 7
+}, {
+  "name": "Portland",
+  "country": "United States",
+  "woeid": 2475687,
+  "type": 7
+}, {
+  "name": "Quebec",
+  "country": "Canada",
+  "woeid": 3444,
+  "type": 7
+}, {
+  "name": "Edmonton",
+  "country": "Canada",
+  "woeid": 8676,
+  "type": 7
+}, {
+  "name": "Canada",
+  "country": "Canada",
+  "woeid": 23424775,
+  "type": 12
+}, {
+  "name": "Seattle",
+  "country": "United States",
+  "woeid": 2490383,
+  "type": 7
+}, {
+  "name": "Vancouver",
+  "country": "Canada",
+  "woeid": 9807,
+  "type": 7
+}, {
+  "name": "Dominican Republic",
+  "country": "Dominican Republic",
+  "woeid": 23424800,
+  "type": 12
+}, {
+  "name": "Santo Domingo",
+  "country": "Dominican Republic",
+  "woeid": 76456,
+  "type": 7
+}, {
+  "name": "Panama",
+  "country": "Panama",
+  "woeid": 23424924,
+  "type": 12
+}, {
+  "name": "Barranquilla",
+  "country": "Colombia",
+  "woeid": 368151,
+  "type": 7
+}, {
+  "name": "Puerto Rico",
+  "country": "Puerto Rico",
+  "woeid": 23424935,
+  "type": 12
+}, {
+  "name": "Maracaibo",
+  "country": "Venezuela",
+  "woeid": 395270,
+  "type": 7
+}, {
+  "name": "Medellín",
+  "country": "Colombia",
+  "woeid": 368150,
+  "type": 7
+}, {
+  "name": "Barquisimeto",
+  "country": "Venezuela",
+  "woeid": 468382,
+  "type": 7
+}, {
+  "name": "Valencia",
+  "country": "Venezuela",
+  "woeid": 395272,
+  "type": 7
+}, {
+  "name": "Cali",
+  "country": "Colombia",
+  "woeid": 368149,
+  "type": 7
+}, {
+  "name": "Maracay",
+  "country": "Venezuela",
+  "woeid": 395271,
+  "type": 7
+}, {
+  "name": "Turmero",
+  "country": "Venezuela",
+  "woeid": 395277,
+  "type": 7
+}, {
+  "name": "Bogotá",
+  "country": "Colombia",
+  "woeid": 368148,
+  "type": 7
+}, {
+  "name": "Caracas",
+  "country": "Venezuela",
+  "woeid": 395269,
+  "type": 7
+}, {
+  "name": "Colombia",
+  "country": "Colombia",
+  "woeid": 23424787,
+  "type": 12
+}, {
+  "name": "Barcelona",
+  "country": "Venezuela",
+  "woeid": 395273,
+  "type": 7
+}, {
+  "name": "Quito",
+  "country": "Ecuador",
+  "woeid": 375732,
+  "type": 7
+}, {
+  "name": "Venezuela",
+  "country": "Venezuela",
+  "woeid": 23424982,
+  "type": 12
+}, {
+  "name": "Guayaquil",
+  "country": "Ecuador",
+  "woeid": 375733,
+  "type": 7
+}, {
+  "name": "Maturín",
+  "country": "Venezuela",
+  "woeid": 468384,
+  "type": 7
+}, {
+  "name": "Ecuador",
+  "country": "Ecuador",
+  "woeid": 23424801,
+  "type": 12
+}, {
+  "name": "Ciudad Guayana",
+  "country": "Venezuela",
+  "woeid": 395275,
+  "type": 7
+}, {
+  "name": "Peru",
+  "country": "Peru",
+  "woeid": 23424919,
+  "type": 12
+}, {
+  "name": "Brasília",
+  "country": "Brazil",
+  "woeid": 455819,
+  "type": 7
+}, {
+  "name": "Lima",
+  "country": "Peru",
+  "woeid": 418440,
+  "type": 7
+}, {
+  "name": "Manaus",
+  "country": "Brazil",
+  "woeid": 455833,
+  "type": 7
+}, {
+  "name": "Honolulu",
+  "country": "United States",
+  "woeid": 2423945,
+  "type": 7
+}, {
+  "name": "Belém",
+  "country": "Brazil",
+  "woeid": 455820,
+  "type": 7
+}, {
+  "name": "São Luís",
+  "country": "Brazil",
+  "woeid": 455834,
+  "type": 7
+}, {
+  "name": "Brazil",
+  "country": "Brazil",
+  "woeid": 23424768,
+  "type": 12
+}, {
+  "name": "Galway",
+  "country": "Ireland",
+  "woeid": 560912,
+  "type": 7
+}, {
+  "name": "Ireland",
+  "country": "Ireland",
+  "woeid": 23424803,
+  "type": 12
+}, {
+  "name": "Cork",
+  "country": "Ireland",
+  "woeid": 560472,
+  "type": 7
+}, {
+  "name": "Belfast",
+  "country": "United Kingdom",
+  "woeid": 44544,
+  "type": 7
+}, {
+  "name": "Dublin",
+  "country": "Ireland",
+  "woeid": 560743,
+  "type": 7
+}, {
+  "name": "Glasgow",
+  "country": "United Kingdom",
+  "woeid": 21125,
+  "type": 7
+}, {
+  "name": "Edinburgh",
+  "country": "United Kingdom",
+  "woeid": 19344,
+  "type": 7
+}, {
+  "name": "Fortaleza",
+  "country": "Brazil",
+  "woeid": 455830,
+  "type": 7
+}, {
+  "name": "Blackpool",
+  "country": "United Kingdom",
+  "woeid": 12903,
+  "type": 7
+}, {
+  "name": "Liverpool",
+  "country": "United Kingdom",
+  "woeid": 26734,
+  "type": 7
+}, {
+  "name": "Preston",
+  "country": "United Kingdom",
+  "woeid": 32566,
+  "type": 7
+}, {
+  "name": "United Kingdom",
+  "country": "United Kingdom",
+  "woeid": 23424975,
+  "type": 12
+}, {
+  "name": "Newcastle",
+  "country": "United Kingdom",
+  "woeid": 30079,
+  "type": 7
+}, {
+  "name": "Swansea",
+  "country": "United Kingdom",
+  "woeid": 36758,
+  "type": 7
+}, {
+  "name": "Manchester",
+  "country": "United Kingdom",
+  "woeid": 28218,
+  "type": 7
+}, {
+  "name": "Middlesbrough",
+  "country": "United Kingdom",
+  "woeid": 28869,
+  "type": 7
+}, {
+  "name": "Plymouth",
+  "country": "United Kingdom",
+  "woeid": 32185,
+  "type": 7
+}, {
+  "name": "Stoke-on-Trent",
+  "country": "United Kingdom",
+  "woeid": 36240,
+  "type": 7
+}, {
+  "name": "Leeds",
+  "country": "United Kingdom",
+  "woeid": 26042,
+  "type": 7
+}, {
+  "name": "Cardiff",
+  "country": "United Kingdom",
+  "woeid": 15127,
+  "type": 7
+}, {
+  "name": "Goiânia",
+  "country": "Brazil",
+  "woeid": 455831,
+  "type": 7
+}, {
+  "name": "Sheffield",
+  "country": "United Kingdom",
+  "woeid": 34503,
+  "type": 7
+}, {
+  "name": "Birmingham",
+  "country": "United Kingdom",
+  "woeid": 12723,
+  "type": 7
+}, {
+  "name": "Bristol",
+  "country": "United Kingdom",
+  "woeid": 13963,
+  "type": 7
+}, {
+  "name": "Derby",
+  "country": "United Kingdom",
+  "woeid": 18114,
+  "type": 7
+}, {
+  "name": "Bergen",
+  "country": "Norway",
+  "woeid": 857105,
+  "type": 7
+}, {
+  "name": "Nottingham",
+  "country": "United Kingdom",
+  "woeid": 30720,
+  "type": 7
+}, {
+  "name": "Coventry",
+  "country": "United Kingdom",
+  "woeid": 17044,
+  "type": 7
+}, {
+  "name": "Hull",
+  "country": "United Kingdom",
+  "woeid": 25211,
+  "type": 7
+}, {
+  "name": "Leicester",
+  "country": "United Kingdom",
+  "woeid": 26062,
+  "type": 7
+}, {
+  "name": "Bournemouth",
+  "country": "United Kingdom",
+  "woeid": 13383,
+  "type": 7
+}, {
+  "name": "Norway",
+  "country": "Norway",
+  "woeid": 23424910,
+  "type": 12
+}, {
+  "name": "Las Palmas",
+  "country": "Spain",
+  "woeid": 764814,
+  "type": 7
+}, {
+  "name": "Portsmouth",
+  "country": "United Kingdom",
+  "woeid": 32452,
+  "type": 7
+}, {
+  "name": "London",
+  "country": "United Kingdom",
+  "woeid": 44418,
+  "type": 7
+}, {
+  "name": "Brighton",
+  "country": "United Kingdom",
+  "woeid": 13911,
+  "type": 7
+}, {
+  "name": "Portugal",
+  "country": "Portugal",
+  "woeid": 23424925,
+  "type": 12
+}, {
+  "name": "Rennes",
+  "country": "France",
+  "woeid": 619163,
+  "type": 7
+}, {
+  "name": "Nantes",
+  "country": "France",
+  "woeid": 613858,
+  "type": 7
+}, {
+  "name": "Valparaiso",
+  "country": "Chile",
+  "woeid": 349861,
+  "type": 7
+}, {
+  "name": "Oslo",
+  "country": "Norway",
+  "woeid": 862592,
+  "type": 7
+}, {
+  "name": "Santiago",
+  "country": "Chile",
+  "woeid": 349859,
+  "type": 7
+}, {
+  "name": "Bilbao",
+  "country": "Spain",
+  "woeid": 754542,
+  "type": 7
+}, {
+  "name": "Mendoza",
+  "country": "Argentina",
+  "woeid": 332471,
+  "type": 7
+}, {
+  "name": "Den Haag",
+  "country": "Netherlands",
+  "woeid": 726874,
+  "type": 7
+}, {
+  "name": "Lille",
+  "country": "France",
+  "woeid": 608105,
+  "type": 7
+}, {
+  "name": "Rotterdam",
+  "country": "Netherlands",
+  "woeid": 733075,
+  "type": 7
+}, {
+  "name": "Amsterdam",
+  "country": "Netherlands",
+  "woeid": 727232,
+  "type": 7
+}, {
+  "name": "Córdoba",
+  "country": "Argentina",
+  "woeid": 466861,
+  "type": 7
+}, {
+  "name": "Utrecht",
+  "country": "Netherlands",
+  "woeid": 734047,
+  "type": 7
+}, {
+  "name": "Paris",
+  "country": "France",
+  "woeid": 615702,
+  "type": 7
+}, {
+  "name": "Seville",
+  "country": "Spain",
+  "woeid": 774508,
+  "type": 7
+}, {
+  "name": "Denmark",
+  "country": "Denmark",
+  "woeid": 23424796,
+  "type": 12
+}, {
+  "name": "Netherlands",
+  "country": "Netherlands",
+  "woeid": 23424909,
+  "type": 12
+}, {
+  "name": "Bordeaux",
+  "country": "France",
+  "woeid": 580778,
+  "type": 7
+}, {
+  "name": "Sweden",
+  "country": "Sweden",
+  "woeid": 23424954,
+  "type": 12
+}, {
+  "name": "Madrid",
+  "country": "Spain",
+  "woeid": 766273,
+  "type": 7
+}, {
+  "name": "Belgium",
+  "country": "Belgium",
+  "woeid": 23424757,
+  "type": 12
+}, {
+  "name": "Gothenburg",
+  "country": "Sweden",
+  "woeid": 890869,
+  "type": 7
+}, {
+  "name": "Salvador",
+  "country": "Brazil",
+  "woeid": 455826,
+  "type": 7
+}, {
+  "name": "France",
+  "country": "France",
+  "woeid": 23424819,
+  "type": 12
+}, {
+  "name": "Spain",
+  "country": "Spain",
+  "woeid": 23424950,
+  "type": 12
+}, {
+  "name": "Chile",
+  "country": "Chile",
+  "woeid": 23424782,
+  "type": 12
+}, {
+  "name": "Dusseldorf",
+  "country": "Germany",
+  "woeid": 646099,
+  "type": 7
+}, {
+  "name": "Essen",
+  "country": "Germany",
+  "woeid": 648820,
+  "type": 7
+}, {
+  "name": "Bremen",
+  "country": "Germany",
+  "woeid": 641142,
+  "type": 7
+}, {
+  "name": "Malaga",
+  "country": "Spain",
+  "woeid": 766356,
+  "type": 7
+}, {
+  "name": "Zaragoza",
+  "country": "Spain",
+  "woeid": 779063,
+  "type": 7
+}, {
+  "name": "Dortmund",
+  "country": "Germany",
+  "woeid": 645458,
+  "type": 7
+}, {
+  "name": "Cologne",
+  "country": "Germany",
+  "woeid": 667931,
+  "type": 7
+}, {
+  "name": "Belo Horizonte",
+  "country": "Brazil",
+  "woeid": 455821,
+  "type": 7
+}, {
+  "name": "Campinas",
+  "country": "Brazil",
+  "woeid": 455828,
+  "type": 7
+}, {
+  "name": "Concepcion",
+  "country": "Chile",
+  "woeid": 349860,
+  "type": 7
+}, {
+  "name": "Hamburg",
+  "country": "Germany",
+  "woeid": 656958,
+  "type": 7
+}, {
+  "name": "Toulouse",
+  "country": "France",
+  "woeid": 628886,
+  "type": 7
+}, {
+  "name": "Stockholm",
+  "country": "Sweden",
+  "woeid": 906057,
+  "type": 7
+}, {
+  "name": "Curitiba",
+  "country": "Brazil",
+  "woeid": 455822,
+  "type": 7
+}, {
+  "name": "São Paulo",
+  "country": "Brazil",
+  "woeid": 455827,
+  "type": 7
+}, {
+  "name": "Guarulhos",
+  "country": "Brazil",
+  "woeid": 455867,
+  "type": 7
+}, {
+  "name": "Rosario",
+  "country": "Argentina",
+  "woeid": 466862,
+  "type": 7
+}, {
+  "name": "Valencia",
+  "country": "Spain",
+  "woeid": 776688,
+  "type": 7
+}, {
+  "name": "Frankfurt",
+  "country": "Germany",
+  "woeid": 650272,
+  "type": 7
+}, {
+  "name": "Lyon",
+  "country": "France",
+  "woeid": 609125,
+  "type": 7
+}, {
+  "name": "Murcia",
+  "country": "Spain",
+  "woeid": 768026,
+  "type": 7
+}, {
+  "name": "Strasbourg",
+  "country": "France",
+  "woeid": 627791,
+  "type": 7
+}, {
+  "name": "Germany",
+  "country": "Germany",
+  "woeid": 23424829,
+  "type": 12
+}, {
+  "name": "Montpellier",
+  "country": "France",
+  "woeid": 612977,
+  "type": 7
+}, {
+  "name": "Geneva",
+  "country": "Switzerland",
+  "woeid": 782538,
+  "type": 7
+}, {
+  "name": "Barcelona",
+  "country": "Spain",
+  "woeid": 753692,
+  "type": 7
+}, {
+  "name": "Lausanne",
+  "country": "Switzerland",
+  "woeid": 783058,
+  "type": 7
+}, {
+  "name": "Stuttgart",
+  "country": "Germany",
+  "woeid": 698064,
+  "type": 7
+}, {
+  "name": "Berlin",
+  "country": "Germany",
+  "woeid": 638242,
+  "type": 7
+}, {
+  "name": "Leipzig",
+  "country": "Germany",
+  "woeid": 671072,
+  "type": 7
+}, {
+  "name": "Rio de Janeiro",
+  "country": "Brazil",
+  "woeid": 455825,
+  "type": 7
+}, {
+  "name": "Zurich",
+  "country": "Switzerland",
+  "woeid": 784794,
+  "type": 7
+}, {
+  "name": "Switzerland",
+  "country": "Switzerland",
+  "woeid": 23424957,
+  "type": 12
+}, {
+  "name": "Marseille",
+  "country": "France",
+  "woeid": 610264,
+  "type": 7
+}, {
+  "name": "Porto Alegre",
+  "country": "Brazil",
+  "woeid": 455823,
+  "type": 7
+}, {
+  "name": "Palma",
+  "country": "Spain",
+  "woeid": 769293,
+  "type": 7
+}, {
+  "name": "Dresden",
+  "country": "Germany",
+  "woeid": 645686,
+  "type": 7
+}, {
+  "name": "Buenos Aires",
+  "country": "Argentina",
+  "woeid": 468739,
+  "type": 7
+}, {
+  "name": "Turin",
+  "country": "Italy",
+  "woeid": 725003,
+  "type": 7
+}, {
+  "name": "Argentina",
+  "country": "Argentina",
+  "woeid": 23424747,
+  "type": 12
+}, {
+  "name": "Gdańsk",
+  "country": "Poland",
+  "woeid": 493417,
+  "type": 7
+}, {
+  "name": "Munich",
+  "country": "Germany",
+  "woeid": 676757,
+  "type": 7
+}, {
+  "name": "Milan",
+  "country": "Italy",
+  "woeid": 718345,
+  "type": 7
+}, {
+  "name": "Poznań",
+  "country": "Poland",
+  "woeid": 514048,
+  "type": 7
+}, {
+  "name": "Riga",
+  "country": "Latvia",
+  "woeid": 854823,
+  "type": 7
+}, {
+  "name": "Genoa",
+  "country": "Italy",
+  "woeid": 716085,
+  "type": 7
+}, {
+  "name": "Saint Petersburg",
+  "country": "Russia",
+  "woeid": 2123260,
+  "type": 7
+}, {
+  "name": "Latvia",
+  "country": "Latvia",
+  "woeid": 23424874,
+  "type": 12
+}, {
+  "name": "Algiers",
+  "country": "Algeria",
+  "woeid": 1253079,
+  "type": 7
+}, {
+  "name": "Wroclaw",
+  "country": "Poland",
+  "woeid": 526363,
+  "type": 7
+}, {
+  "name": "Austria",
+  "country": "Austria",
+  "woeid": 23424750,
+  "type": 12
+}, {
+  "name": "Poland",
+  "country": "Poland",
+  "woeid": 23424923,
+  "type": 12
+}, {
+  "name": "Lodz",
+  "country": "Poland",
+  "woeid": 505120,
+  "type": 7
+}, {
+  "name": "Bologna",
+  "country": "Italy",
+  "woeid": 711080,
+  "type": 7
+}, {
+  "name": "Nizhny Novgorod",
+  "country": "Russia",
+  "woeid": 2122471,
+  "type": 7
+}, {
+  "name": "Warsaw",
+  "country": "Poland",
+  "woeid": 523920,
+  "type": 7
+}, {
+  "name": "Vienna",
+  "country": "Austria",
+  "woeid": 551801,
+  "type": 7
+}, {
+  "name": "Grodno",
+  "country": "Belarus",
+  "woeid": 825848,
+  "type": 7
+}, {
+  "name": "Kraków",
+  "country": "Poland",
+  "woeid": 502075,
+  "type": 7
+}, {
+  "name": "Brest",
+  "country": "Belarus",
+  "woeid": 824382,
+  "type": 7
+}, {
+  "name": "Italy",
+  "country": "Italy",
+  "woeid": 23424853,
+  "type": 12
+}, {
+  "name": "Minsk",
+  "country": "Belarus",
+  "woeid": 834463,
+  "type": 7
+}, {
+  "name": "Rome",
+  "country": "Italy",
+  "woeid": 721943,
+  "type": 7
+}, {
+  "name": "Belarus",
+  "country": "Belarus",
+  "woeid": 23424765,
+  "type": 12
+}, {
+  "name": "Algeria",
+  "country": "Algeria",
+  "woeid": 23424740,
+  "type": 12
+}, {
+  "name": "Lviv",
+  "country": "Ukraine",
+  "woeid": 924943,
+  "type": 7
+}, {
+  "name": "Naples",
+  "country": "Italy",
+  "woeid": 719258,
+  "type": 7
+}, {
+  "name": "Moscow",
+  "country": "Russia",
+  "woeid": 2122265,
+  "type": 7
+}, {
+  "name": "Gomel",
+  "country": "Belarus",
+  "woeid": 825978,
+  "type": 7
+}, {
+  "name": "Palermo",
+  "country": "Italy",
+  "woeid": 719846,
+  "type": 7
+}, {
+  "name": "Kyiv",
+  "country": "Ukraine",
+  "woeid": 924938,
+  "type": 7
+}, {
+  "name": "Russia",
+  "country": "Russia",
+  "woeid": 23424936,
+  "type": 12
+}, {
+  "name": "Perm",
+  "country": "Russia",
+  "woeid": 2122814,
+  "type": 7
+}, {
+  "name": "Ukraine",
+  "country": "Ukraine",
+  "woeid": 23424976,
+  "type": 12
+}, {
+  "name": "Khabarovsk",
+  "country": "Russia",
+  "woeid": 2018708,
+  "type": 7
+}, {
+  "name": "Kazan",
+  "country": "Russia",
+  "woeid": 2121267,
+  "type": 7
+}, {
+  "name": "Voronezh",
+  "country": "Russia",
+  "woeid": 2108210,
+  "type": 7
+}, {
+  "name": "Kharkiv",
+  "country": "Ukraine",
+  "woeid": 922137,
+  "type": 7
+}, {
+  "name": "Sapporo",
+  "country": "Japan",
+  "woeid": 1118108,
+  "type": 7
+}, {
+  "name": "Odesa",
+  "country": "Ukraine",
+  "woeid": 929398,
+  "type": 7
+}, {
+  "name": "Thessaloniki",
+  "country": "Greece",
+  "woeid": 963291,
+  "type": 7
+}, {
+  "name": "Dnipropetrovsk",
+  "country": "Ukraine",
+  "woeid": 918981,
+  "type": 7
+}, {
+  "name": "Greece",
+  "country": "Greece",
+  "woeid": 23424833,
+  "type": 12
+}, {
+  "name": "Yekaterinburg",
+  "country": "Russia",
+  "woeid": 2112237,
+  "type": 7
+}, {
+  "name": "Zaporozhye",
+  "country": "Ukraine",
+  "woeid": 939628,
+  "type": 7
+}, {
+  "name": "Ufa",
+  "country": "Russia",
+  "woeid": 2124045,
+  "type": 7
+}, {
+  "name": "Samara",
+  "country": "Russia",
+  "woeid": 2077746,
+  "type": 7
+}, {
+  "name": "Donetsk",
+  "country": "Ukraine",
+  "woeid": 919163,
+  "type": 7
+}, {
+  "name": "Chelyabinsk",
+  "country": "Russia",
+  "woeid": 1997422,
+  "type": 7
+}, {
+  "name": "Athens",
+  "country": "Greece",
+  "woeid": 946738,
+  "type": 7
+}, {
+  "name": "Ghana",
+  "country": "Ghana",
+  "woeid": 23424824,
+  "type": 12
+}, {
+  "name": "Kumasi",
+  "country": "Ghana",
+  "woeid": 1330595,
+  "type": 7
+}, {
+  "name": "Istanbul",
+  "country": "Turkey",
+  "woeid": 2344116,
+  "type": 7
+}, {
+  "name": "Krasnoyarsk",
+  "country": "Russia",
+  "woeid": 2029043,
+  "type": 7
+}, {
+  "name": "Rostov-on-Don",
+  "country": "Russia",
+  "woeid": 2123177,
+  "type": 7
+}, {
+  "name": "Sendai",
+  "country": "Japan",
+  "woeid": 1118129,
+  "type": 7
+}, {
+  "name": "Volgograd",
+  "country": "Russia",
+  "woeid": 2124298,
+  "type": 7
+}, {
+  "name": "Bursa",
+  "country": "Turkey",
+  "woeid": 2343843,
+  "type": 7
+}, {
+  "name": "Izmir",
+  "country": "Turkey",
+  "woeid": 2344117,
+  "type": 7
+}, {
+  "name": "Omsk",
+  "country": "Russia",
+  "woeid": 2122641,
+  "type": 7
+}, {
+  "name": "Vladivostok",
+  "country": "Russia",
+  "woeid": 2124288,
+  "type": 7
+}, {
+  "name": "Novosibirsk",
+  "country": "Russia",
+  "woeid": 2122541,
+  "type": 7
+}, {
+  "name": "Japan",
+  "country": "Japan",
+  "woeid": 23424856,
+  "type": 12
+}, {
+  "name": "Niigata",
+  "country": "Japan",
+  "woeid": 1117881,
+  "type": 7
+}, {
+  "name": "Accra",
+  "country": "Ghana",
+  "woeid": 1326075,
+  "type": 7
+}, {
+  "name": "Krasnodar",
+  "country": "Russia",
+  "woeid": 2028717,
+  "type": 7
+}, {
+  "name": "Eskişehir",
+  "country": "Turkey",
+  "woeid": 2343980,
+  "type": 7
+}, {
+  "name": "Irkutsk",
+  "country": "Russia",
+  "woeid": 2121040,
+  "type": 7
+}, {
+  "name": "Chiba",
+  "country": "Japan",
+  "woeid": 1117034,
+  "type": 7
+}, {
+  "name": "Saitama",
+  "country": "Japan",
+  "woeid": 1116753,
+  "type": 7
+}, {
+  "name": "Tokyo",
+  "country": "Japan",
+  "woeid": 1118370,
+  "type": 7
+}, {
+  "name": "Ankara",
+  "country": "Turkey",
+  "woeid": 2343732,
+  "type": 7
+}, {
+  "name": "Kawasaki",
+  "country": "Japan",
+  "woeid": 1117502,
+  "type": 7
+}, {
+  "name": "Yokohama",
+  "country": "Japan",
+  "woeid": 1118550,
+  "type": 7
+}, {
+  "name": "Sagamihara",
+  "country": "Japan",
+  "woeid": 1118072,
+  "type": 7
+}, {
+  "name": "Ibadan",
+  "country": "Nigeria",
+  "woeid": 1393672,
+  "type": 7
+}, {
+  "name": "Antalya",
+  "country": "Turkey",
+  "woeid": 2343733,
+  "type": 7
+}, {
+  "name": "Lagos",
+  "country": "Nigeria",
+  "woeid": 1398823,
+  "type": 7
+}, {
+  "name": "Konya",
+  "country": "Turkey",
+  "woeid": 2344210,
+  "type": 7
+}, {
+  "name": "Hamamatsu",
+  "country": "Japan",
+  "woeid": 1117155,
+  "type": 7
+}, {
+  "name": "Nagoya",
+  "country": "Japan",
+  "woeid": 1117817,
+  "type": 7
+}, {
+  "name": "Worldwide",
+  "country": "",
+  "woeid": 1,
+  "type": 19
+}, {
+  "name": "Turkey",
+  "country": "Turkey",
+  "woeid": 23424969,
+  "type": 12
+}, {
+  "name": "Kayseri",
+  "country": "Turkey",
+  "woeid": 2344174,
+  "type": 7
+}, {
+  "name": "Kaduna",
+  "country": "Nigeria",
+  "woeid": 1396439,
+  "type": 7
+}, {
+  "name": "Kano",
+  "country": "Nigeria",
+  "woeid": 1396803,
+  "type": 7
+}, {
+  "name": "Kyoto",
+  "country": "Japan",
+  "woeid": 15015372,
+  "type": 7
+}, {
+  "name": "Osaka",
+  "country": "Japan",
+  "woeid": 15015370,
+  "type": 7
+}, {
+  "name": "Benin City",
+  "country": "Nigeria",
+  "woeid": 1387660,
+  "type": 7
+}, {
+  "name": "Kobe",
+  "country": "Japan",
+  "woeid": 1117545,
+  "type": 7
+}, {
+  "name": "Mersin",
+  "country": "Turkey",
+  "woeid": 2323778,
+  "type": 7
+}, {
+  "name": "Adana",
+  "country": "Turkey",
+  "woeid": 2343678,
+  "type": 7
+}, {
+  "name": "Okayama",
+  "country": "Japan",
+  "woeid": 90036018,
+  "type": 7
+}, {
+  "name": "Nigeria",
+  "country": "Nigeria",
+  "woeid": 23424908,
+  "type": 12
+}, {
+  "name": "Takamatsu",
+  "country": "Japan",
+  "woeid": 1118285,
+  "type": 7
+}, {
+  "name": "Gaziantep",
+  "country": "Turkey",
+  "woeid": 2343999,
+  "type": 7
+}, {
+  "name": "Hiroshima",
+  "country": "Japan",
+  "woeid": 1117227,
+  "type": 7
+}, {
+  "name": "Alexandria",
+  "country": "Egypt",
+  "woeid": 1522006,
+  "type": 7
+}, {
+  "name": "Diyarbakır",
+  "country": "Turkey",
+  "woeid": 2343932,
+  "type": 7
+}, {
+  "name": "Goyang",
+  "country": "Korea",
+  "woeid": 1130853,
+  "type": 7
+}, {
+  "name": "Seoul",
+  "country": "Korea",
+  "woeid": 1132599,
+  "type": 7
+}, {
+  "name": "Port Harcourt",
+  "country": "Nigeria",
+  "woeid": 1404447,
+  "type": 7
+}, {
+  "name": "Seongnam",
+  "country": "Korea",
+  "woeid": 1132559,
+  "type": 7
+}, {
+  "name": "Incheon",
+  "country": "Korea",
+  "woeid": 1132496,
+  "type": 7
+}, {
+  "name": "Bucheon",
+  "country": "Korea",
+  "woeid": 1132445,
+  "type": 7
+}, {
+  "name": "Yongin",
+  "country": "Korea",
+  "woeid": 1132094,
+  "type": 7
+}, {
+  "name": "Suwon",
+  "country": "Korea",
+  "woeid": 1132567,
+  "type": 7
+}, {
+  "name": "Ansan",
+  "country": "Korea",
+  "woeid": 1132444,
+  "type": 7
+}, {
+  "name": "Ulsan",
+  "country": "Korea",
+  "woeid": 1132578,
+  "type": 7
+}, {
+  "name": "Korea",
+  "country": "Korea",
+  "woeid": 23424868,
+  "type": 12
+}, {
+  "name": "Daegu",
+  "country": "Korea",
+  "woeid": 1132466,
+  "type": 7
+}, {
+  "name": "Daejeon",
+  "country": "Korea",
+  "woeid": 2345975,
+  "type": 7
+}, {
+  "name": "Busan",
+  "country": "Korea",
+  "woeid": 1132447,
+  "type": 7
+}, {
+  "name": "Changwon",
+  "country": "Korea",
+  "woeid": 1132449,
+  "type": 7
+}, {
+  "name": "Kitakyushu",
+  "country": "Japan",
+  "woeid": 1110809,
+  "type": 7
+}, {
+  "name": "Lebanon",
+  "country": "Lebanon",
+  "woeid": 23424873,
+  "type": 12
+}, {
+  "name": "Cairo",
+  "country": "Egypt",
+  "woeid": 1521894,
+  "type": 7
+}, {
+  "name": "Giza",
+  "country": "Egypt",
+  "woeid": 1521643,
+  "type": 7
+}, {
+  "name": "Haifa",
+  "country": "Israel",
+  "woeid": 1967449,
+  "type": 7
+}, {
+  "name": "Fukuoka",
+  "country": "Japan",
+  "woeid": 1117099,
+  "type": 7
+}, {
+  "name": "Tel Aviv",
+  "country": "Israel",
+  "woeid": 1968212,
+  "type": 7
+}, {
+  "name": "Kumamoto",
+  "country": "Japan",
+  "woeid": 1117605,
+  "type": 7
+}, {
+  "name": "Gwangju",
+  "country": "Korea",
+  "woeid": 1132481,
+  "type": 7
+}, {
+  "name": "Jerusalem",
+  "country": "Israel",
+  "woeid": 1968222,
+  "type": 7
+}, {
+  "name": "Amman",
+  "country": "Jordan",
+  "woeid": 1968902,
+  "type": 7
+}, {
+  "name": "Israel",
+  "country": "Israel",
+  "woeid": 23424852,
+  "type": 12
+}, {
+  "name": "Egypt",
+  "country": "Egypt",
+  "woeid": 23424802,
+  "type": 12
+}, {
+  "name": "Jordan",
+  "country": "Jordan",
+  "woeid": 23424860,
+  "type": 12
+}, {
+  "name": "Recife",
+  "country": "Brazil",
+  "woeid": 455824,
+  "type": 7
+}, {
+  "name": "Okinawa",
+  "country": "Japan",
+  "woeid": 2345896,
+  "type": 7
+}, {
+  "name": "Auckland",
+  "country": "New Zealand",
+  "woeid": 2348079,
+  "type": 7
+}, {
+  "name": "Medina",
+  "country": "Saudi Arabia",
+  "woeid": 1937801,
+  "type": 7
+}, {
+  "name": "Kuwait",
+  "country": "Kuwait",
+  "woeid": 23424870,
+  "type": 12
+}, {
+  "name": "Jeddah",
+  "country": "Saudi Arabia",
+  "woeid": 1939873,
+  "type": 7
+}, {
+  "name": "Mecca",
+  "country": "Saudi Arabia",
+  "woeid": 1939897,
+  "type": 7
+}, {
+  "name": "Saudi Arabia",
+  "country": "Saudi Arabia",
+  "woeid": 23424938,
+  "type": 12
+}, {
+  "name": "Srinagar",
+  "country": "India",
+  "woeid": 2295387,
+  "type": 7
+}, {
+  "name": "Riyadh",
+  "country": "Saudi Arabia",
+  "woeid": 1939753,
+  "type": 7
+}, {
+  "name": "Dammam",
+  "country": "Saudi Arabia",
+  "woeid": 1939574,
+  "type": 7
+}, {
+  "name": "Rawalpindi",
+  "country": "Pakistan",
+  "woeid": 2211387,
+  "type": 7
+}, {
+  "name": "Bahrain",
+  "country": "Bahrain",
+  "woeid": 23424753,
+  "type": 12
+}, {
+  "name": "New Zealand",
+  "country": "New Zealand",
+  "woeid": 23424916,
+  "type": 12
+}, {
+  "name": "Qatar",
+  "country": "Qatar",
+  "woeid": 23424930,
+  "type": 12
+}, {
+  "name": "Faisalabad",
+  "country": "Pakistan",
+  "woeid": 2211574,
+  "type": 7
+}, {
+  "name": "Amritsar",
+  "country": "India",
+  "woeid": 2295388,
+  "type": 7
+}, {
+  "name": "Lahore",
+  "country": "Pakistan",
+  "woeid": 2211177,
+  "type": 7
+}, {
+  "name": "Pakistan",
+  "country": "Pakistan",
+  "woeid": 23424922,
+  "type": 12
+}, {
+  "name": "Multan",
+  "country": "Pakistan",
+  "woeid": 2211269,
+  "type": 7
+}, {
+  "name": "Sharjah",
+  "country": "United Arab Emirates",
+  "woeid": 1940119,
+  "type": 7
+}, {
+  "name": "Dubai",
+  "country": "United Arab Emirates",
+  "woeid": 1940345,
+  "type": 7
+}, {
+  "name": "Abu Dhabi",
+  "country": "United Arab Emirates",
+  "woeid": 1940330,
+  "type": 7
+}, {
+  "name": "United Arab Emirates",
+  "country": "United Arab Emirates",
+  "woeid": 23424738,
+  "type": 12
+}, {
+  "name": "Ahsa",
+  "country": "Saudi Arabia",
+  "woeid": 56120136,
+  "type": 9
+}, {
+  "name": "Delhi",
+  "country": "India",
+  "woeid": 20070458,
+  "type": 7
+}, {
+  "name": "Muscat",
+  "country": "Oman",
+  "woeid": 2268284,
+  "type": 7
+}, {
+  "name": "Philippines",
+  "country": "Philippines",
+  "woeid": 23424934,
+  "type": 12
+}, {
+  "name": "Jaipur",
+  "country": "India",
+  "woeid": 2295401,
+  "type": 7
+}, {
+  "name": "Karachi",
+  "country": "Pakistan",
+  "woeid": 2211096,
+  "type": 7
+}, {
+  "name": "Oman",
+  "country": "Oman",
+  "woeid": 23424898,
+  "type": 12
+}, {
+  "name": "Lucknow",
+  "country": "India",
+  "woeid": 2295377,
+  "type": 7
+}, {
+  "name": "Antipolo",
+  "country": "Philippines",
+  "woeid": 1198785,
+  "type": 7
+}, {
+  "name": "Quezon City",
+  "country": "Philippines",
+  "woeid": 1199682,
+  "type": 7
+}, {
+  "name": "Pasig",
+  "country": "Philippines",
+  "woeid": 1187115,
+  "type": 7
+}, {
+  "name": "Calocan",
+  "country": "Philippines",
+  "woeid": 1167715,
+  "type": 7
+}, {
+  "name": "Manila",
+  "country": "Philippines",
+  "woeid": 1199477,
+  "type": 7
+}, {
+  "name": "Makati",
+  "country": "Philippines",
+  "woeid": 1180689,
+  "type": 7
+}, {
+  "name": "Taguig",
+  "country": "Philippines",
+  "woeid": 1195098,
+  "type": 7
+}, {
+  "name": "Brisbane",
+  "country": "Australia",
+  "woeid": 1100661,
+  "type": 7
+}, {
+  "name": "Kanpur",
+  "country": "India",
+  "woeid": 2295378,
+  "type": 7
+}, {
+  "name": "Patna",
+  "country": "India",
+  "woeid": 2295381,
+  "type": 7
+}, {
+  "name": "Hai Phong",
+  "country": "Vietnam",
+  "woeid": 1236690,
+  "type": 7
+}, {
+  "name": "Hanoi",
+  "country": "Vietnam",
+  "woeid": 1236594,
+  "type": 7
+}, {
+  "name": "Cebu City",
+  "country": "Philippines",
+  "woeid": 1199079,
+  "type": 7
+}, {
+  "name": "Cagayan de Oro",
+  "country": "Philippines",
+  "woeid": 1199002,
+  "type": 7
+}, {
+  "name": "Ahmedabad",
+  "country": "India",
+  "woeid": 2295402,
+  "type": 7
+}, {
+  "name": "Davao City",
+  "country": "Philippines",
+  "woeid": 1199136,
+  "type": 7
+}, {
+  "name": "Rajkot",
+  "country": "India",
+  "woeid": 2295404,
+  "type": 7
+}, {
+  "name": "Bhopal",
+  "country": "India",
+  "woeid": 2295407,
+  "type": 7
+}, {
+  "name": "Ranchi",
+  "country": "India",
+  "woeid": 2295383,
+  "type": 7
+}, {
+  "name": "Indore",
+  "country": "India",
+  "woeid": 2295408,
+  "type": 7
+}, {
+  "name": "Sydney",
+  "country": "Australia",
+  "woeid": 1105779,
+  "type": 7
+}, {
+  "name": "Kolkata",
+  "country": "India",
+  "woeid": 2295386,
+  "type": 7
+}, {
+  "name": "Surat",
+  "country": "India",
+  "woeid": 2295405,
+  "type": 7
+}, {
+  "name": "India",
+  "country": "India",
+  "woeid": 23424848,
+  "type": 12
+}, {
+  "name": "Da Nang",
+  "country": "Vietnam",
+  "woeid": 1252376,
+  "type": 7
+}, {
+  "name": "Zamboanga City",
+  "country": "Philippines",
+  "woeid": 1199980,
+  "type": 7
+}, {
+  "name": "Vietnam",
+  "country": "Vietnam",
+  "woeid": 23424984,
+  "type": 12
+}, {
+  "name": "Nagpur",
+  "country": "India",
+  "woeid": 2282863,
+  "type": 7
+}, {
+  "name": "Kenya",
+  "country": "Kenya",
+  "woeid": 23424863,
+  "type": 12
+}, {
+  "name": "Nairobi",
+  "country": "Kenya",
+  "woeid": 1528488,
+  "type": 7
+}, {
+  "name": "Canberra",
+  "country": "Australia",
+  "woeid": 1100968,
+  "type": 7
+}, {
+  "name": "Cape Town",
+  "country": "South Africa",
+  "woeid": 1591691,
+  "type": 7
+}, {
+  "name": "Thane",
+  "country": "India",
+  "woeid": 2295410,
+  "type": 7
+}, {
+  "name": "Mumbai",
+  "country": "India",
+  "woeid": 2295411,
+  "type": 7
+}, {
+  "name": "Pune",
+  "country": "India",
+  "woeid": 2295412,
+  "type": 7
+}, {
+  "name": "Hyderabad",
+  "country": "India",
+  "woeid": 2295414,
+  "type": 7
+}, {
+  "name": "South Africa",
+  "country": "South Africa",
+  "woeid": 23424942,
+  "type": 12
+}, {
+  "name": "Mombasa",
+  "country": "Kenya",
+  "woeid": 1528335,
+  "type": 7
+}, {
+  "name": "Melbourne",
+  "country": "Australia",
+  "woeid": 1103816,
+  "type": 7
+}, {
+  "name": "Bangkok",
+  "country": "Thailand",
+  "woeid": 1225448,
+  "type": 7
+}, {
+  "name": "Thailand",
+  "country": "Thailand",
+  "woeid": 23424960,
+  "type": 12
+}, {
+  "name": "Ho Chi Minh City",
+  "country": "Vietnam",
+  "woeid": 1252431,
+  "type": 7
+}, {
+  "name": "Soweto",
+  "country": "South Africa",
+  "woeid": 1587677,
+  "type": 22
+}, {
+  "name": "Pretoria",
+  "country": "South Africa",
+  "woeid": 1586638,
+  "type": 7
+}, {
+  "name": "Johannesburg",
+  "country": "South Africa",
+  "woeid": 1582504,
+  "type": 7
+}, {
+  "name": "Can Tho",
+  "country": "Vietnam",
+  "woeid": 1252351,
+  "type": 7
+}, {
+  "name": "Darwin",
+  "country": "Australia",
+  "woeid": 1101597,
+  "type": 7
+}, {
+  "name": "Port Elizabeth",
+  "country": "South Africa",
+  "woeid": 1586614,
+  "type": 7
+}, {
+  "name": "Malaysia",
+  "country": "Malaysia",
+  "woeid": 23424901,
+  "type": 12
+}, {
+  "name": "Bangalore",
+  "country": "India",
+  "woeid": 2295420,
+  "type": 7
+}, {
+  "name": "Chennai",
+  "country": "India",
+  "woeid": 2295424,
+  "type": 7
+}, {
+  "name": "Adelaide",
+  "country": "Australia",
+  "woeid": 1099805,
+  "type": 7
+}, {
+  "name": "Durban",
+  "country": "South Africa",
+  "woeid": 1580913,
+  "type": 7
+}, {
+  "name": "Australia",
+  "country": "Australia",
+  "woeid": 23424748,
+  "type": 12
+}, {
+  "name": "Indonesia",
+  "country": "Indonesia",
+  "woeid": 23424846,
+  "type": 12
+}, {
+  "name": "Makassar",
+  "country": "Indonesia",
+  "woeid": 1046138,
+  "type": 7
+}, {
+  "name": "Ipoh",
+  "country": "Malaysia",
+  "woeid": 1154679,
+  "type": 7
+}, {
+  "name": "Kuala Lumpur",
+  "country": "Malaysia",
+  "woeid": 1154781,
+  "type": 7
+}, {
+  "name": "Hulu Langat",
+  "country": "Malaysia",
+  "woeid": 56013645,
+  "type": 7
+}, {
+  "name": "Petaling",
+  "country": "Malaysia",
+  "woeid": 56013632,
+  "type": 7
+}, {
+  "name": "Kajang",
+  "country": "Malaysia",
+  "woeid": 1141268,
+  "type": 7
+}, {
+  "name": "Klang",
+  "country": "Malaysia",
+  "woeid": 1154726,
+  "type": 7
+}, {
+  "name": "Johor Bahru",
+  "country": "Malaysia",
+  "woeid": 1154698,
+  "type": 7
+}, {
+  "name": "Singapore",
+  "country": "Singapore",
+  "woeid": 23424948,
+  "type": 12
+}, {
+  "name": "Singapore",
+  "country": "Singapore",
+  "woeid": 1062617,
+  "type": 7
+}, {
+  "name": "Medan",
+  "country": "Indonesia",
+  "woeid": 1047908,
+  "type": 7
+}, {
+  "name": "Pekanbaru",
+  "country": "Indonesia",
+  "woeid": 1040779,
+  "type": 7
+}, {
+  "name": "Surabaya",
+  "country": "Indonesia",
+  "woeid": 1044316,
+  "type": 7
+}, {
+  "name": "Semarang",
+  "country": "Indonesia",
+  "woeid": 1048324,
+  "type": 7
+}, {
+  "name": "Palembang",
+  "country": "Indonesia",
+  "woeid": 1048059,
+  "type": 7
+}, {
+  "name": "Bekasi",
+  "country": "Indonesia",
+  "woeid": 1030077,
+  "type": 7
+}, {
+  "name": "Jakarta",
+  "country": "Indonesia",
+  "woeid": 1047378,
+  "type": 7
+}, {
+  "name": "Tangerang",
+  "country": "Indonesia",
+  "woeid": 1048536,
+  "type": 7
+}, {
+  "name": "Bandung",
+  "country": "Indonesia",
+  "woeid": 1047180,
+  "type": 7
+}, {
+  "name": "Depok",
+  "country": "Indonesia",
+  "woeid": 1032539,
+  "type": 7
+}, {
+  "name": "Perth",
+  "country": "Australia",
+  "woeid": 1098081,
+  "type": 7
+}]

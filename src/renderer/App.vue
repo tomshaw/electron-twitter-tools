@@ -38,7 +38,7 @@
       'app-content': AppContent,
       'app-footer': AppFooter
     },
-    created () {
+    mounted () {
 
       this.$settings.watch('storage.connection', (newValue, oldValue) => {
         if (newValue !== oldValue) {
@@ -51,13 +51,13 @@
       //this.$settings.delete('storage')
 
       if (this.$settings.has('storage.connections')) {
-        this.$store.dispatch('addConnections', this.$settings.get('storage.connections'))
+        this.$store.commit('STORAGE_ADD_CONNECTIONS', this.$settings.get('storage.connections'))
       } else {
         this.$settings.set('storage.connections', this.$store.getters.getConnections)
       }
 
       if (this.$settings.has('storage.adapter')) {
-        this.$store.dispatch('setAdapter', this.$settings.get('storage.adapter'))
+        this.$store.commit('STORAGE_SET_ADAPTER', this.$settings.get('storage.adapter'))
       } else {
         this.$settings.set('storage.adapter', this.$store.getters.getAdapter)
       }
@@ -97,22 +97,28 @@
         this.$router.push({ name: 'settings-page' })
       }
 
-      if (this.$settings.has('twitter.profile')) {
-        this.$store.dispatch('setValidated', true)
-        this.$store.dispatch('setProfile', this.$settings.get('twitter.profile'))
-      } 
+      if (!this.$settings.has('twitter.tokens')) {
+        this.$router.push({ name: 'settings-page' })
+      }
 
-      this.$electron.ipcRenderer.send(types.IPC_REQUEST_TWITTER_CREDENTIALS, this.$settings.get('twitter.tokens'))
+      if (this.$settings.has('twitter.tokens')) {
+        this.$electron.ipcRenderer.send(types.IPC_REQUEST_TWITTER_CREDENTIALS, this.$settings.get('twitter.tokens'))
+        this.$electron.ipcRenderer.send(types.IPC_REQUEST_TWITTER_SETTINGS, this.$settings.get('twitter.tokens'))
+      }
+
       this.$electron.ipcRenderer.on(types.IPC_RESPONSE_TWITTER_CREDENTIALS, (event, response) => {
-        if (!response.hasOwnProperty('id')) {
-          this.$toastr('error', 'Twitter authentication failed.', 'Error Message')
-          this.$router.push({ name: 'settings-page' })
-        } else {
+        if (response.hasOwnProperty('id')) {
           this.$settings.set('twitter.validated', true)
-          this.$settings.set('twitter.profile', response)
-          this.$store.dispatch('setValidated', true)
-          this.$store.dispatch('setProfile', response)
-          this.$toastr('success', `The Twitter account for ${response.name} has been setup successfully.`, 'Success Message')
+          this.$settings.set('twitter.credentials', response)
+          this.$store.commit('TWITTER_UPDATE_VALIDATED', true)
+          this.$store.commit('TWITTER_UPDATE_CREDENTIALS', response)
+        }
+      })
+
+      this.$electron.ipcRenderer.on(types.IPC_RESPONSE_TWITTER_SETTINGS, (event, response) => {
+        if (response.hasOwnProperty('language')) {
+          this.$store.commit('TWITTER_UPDATE_SETTINGS', response)
+          this.$settings.set('twitter.settings', response)
         }
       })
 

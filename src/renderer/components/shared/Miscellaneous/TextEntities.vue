@@ -41,7 +41,7 @@ export default {
 
       let data = []
 
-      if (!entities.length) {
+      if (!entities || !entities.length) {
         data.push({
           text: text
         })

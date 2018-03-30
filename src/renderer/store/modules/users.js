@@ -1,5 +1,5 @@
 import * as types from '../mutation-types'
-import {client, account} from '@/store/connect'
+import {client} from '@/store/connect'
 
 const state = {
   friends: [],
@@ -25,43 +25,109 @@ const mutations = {
     })
   },
   [types.TWITTER_USERS_FRIENDSHIP_CREATE](state, payload) {
-    state.friends.push(payload)
+    state.friends = [payload, ...state.friends]
   },
   [types.TWITTER_USERS_FRIENDSHIP_DESTROY](state, payload) {
-    let i = state.friends.map(item => item.id_str).indexOf(payload.id_str) 
-    if (i !== -1) {
-      state.friends.splice(i, 1)
+    const id = payload.id_str
+    let friendsIdx = state.friends.map(item => item.id_str).indexOf(id) 
+    if (friendsIdx !== -1) {
+      state.friends.splice(friendsIdx, 1)
     }
+  },
+  [types.TWITTER_USERS_BLOCKS_CREATE](state, payload) {
+    const id = payload.id_str
+    let friendsIdx = state.friends.map(item => item.id_str).indexOf(id) 
+    if (friendsIdx !== -1) {
+      state.friends.splice(friendsIdx, 1)
+    }
+  },
+  [types.TWITTER_USERS_BLOCKS_DESTROY](state, payload) {},
+  [types.TWITTER_USERS_MUTES_CREATE](state, payload) {
+    console.log('mute-create', payload)
+  },
+  [types.TWITTER_USERS_MUTES_DESTROY](state, payload) {
+    console.log('mute-destroy', payload)
   }
 }
 
 const actions = {
-  loadFriends({ commit }) {
-    client.friendsList(account, payload => {
-      if (payload.users) {
-        commit(types.TWITTER_USERS_LOAD_FRIENDS, payload.users)
-      }
+  loadFriends({ commit }, options) {
+    return new Promise((resolve, reject) => {
+      client.friendsList(options).then((resolved, rejected) => {
+        if (resolved.users) {
+          commit(types.TWITTER_USERS_LOAD_FRIENDS, resolved.users)
+          resolve(resolved)
+        } else {
+          reject(rejected)
+        }
+      })
     })
   },
-  loadFollowers({ commit }) {
-    client.followersList(account, payload => {
-      if (payload.users) {
-        commit(types.TWITTER_USERS_LOAD_FOLLOWERS, payload.users)
-      }
+  loadFollowers({ commit }, options) {
+    return new Promise((resolve, reject) => {
+      client.followersList(options).then((resolved, rejected) => {
+        if (resolved.users) {
+          commit(types.TWITTER_USERS_LOAD_FOLLOWERS, resolved.users)
+          resolve(resolved)
+        } else {
+          reject(rejected)
+        }
+      })
     })
   },
-  friendshipCreate({ commit }, id) {
-    client.friendshipCreate({ name: account.screen_name, user_id: id }, response => {
-      commit(types.TWITTER_SET_FRIENDS_COUNT, {type: 'increment'})
-      commit(types.TWITTER_USERS_FRIENDSHIP_CREATE, response)
-      commit(types.LOOKUP_USERS_FRIENDSHIP, { id: id, value: true })
+  friendshipCreate({ commit }, options) {
+    return new Promise((resolve, reject) => {
+      client.friendshipCreate(options, response => {
+        commit(types.TWITTER_SET_FRIENDS_COUNT, {type: 'increment'})
+        commit(types.TWITTER_USERS_FRIENDSHIP_CREATE, response)
+        commit(types.LOOKUP_USERS_FRIENDSHIP, { id: options.user_id, value: true })
+        resolve(response)
+      })
     })
   },
-  friendshipDestroy({ commit }, id) {
-    client.friendshipDestroy({ name: account.screen_name, user_id: id }, response => {
-      commit(types.TWITTER_SET_FRIENDS_COUNT, {type: 'decrement'})
-      commit(types.TWITTER_USERS_FRIENDSHIP_DESTROY, response)
-      commit(types.LOOKUP_USERS_FRIENDSHIP, { id: id, value: false })
+  friendshipDestroy({ commit }, options) {
+    return new Promise((resolve, reject) => {
+      client.friendshipDestroy(options, response => {
+        commit(types.TWITTER_SET_FRIENDS_COUNT, {type: 'decrement'})
+        commit(types.TWITTER_USERS_FRIENDSHIP_DESTROY, response)
+        commit(types.LOOKUP_USERS_FRIENDSHIP, { id: options.user_id, value: false })
+        resolve(response)
+      })
+    })
+  },
+  blocksCreate({ commit }, options) {
+    return new Promise((resolve, reject) => {
+      client.blocksCreate(options, response => {
+        commit(types.TWITTER_SET_FRIENDS_COUNT, {type: 'decrement'})
+        commit(types.TWITTER_USERS_FRIENDSHIP_DESTROY, response)
+        commit(types.LOOKUP_USERS_FRIENDSHIP, { id: options.user_id, value: false })
+        commit(types.TWITTER_USERS_BLOCKS_CREATE, response)
+        resolve(response)
+      })
+    })
+  },
+  blocksDestroy({ commit }, options) {
+    return new Promise((resolve, reject) => {
+      client.blocksDestroy(options, response => {
+        commit(types.TWITTER_USERS_BLOCKS_DESTROY, response)
+        resolve(response)
+      })
+    })
+  },
+  mutesCreate({ commit }, options) {
+    return new Promise((resolve, reject) => {
+      client.mutesCreate(options, response => {
+        commit(types.TWITTER_USERS_MUTES_CREATE, response)
+        resolve(response)
+      })
+    })
+  },
+  mutesDestroy({ commit }, options) {
+    return new Promise((resolve, reject) => {
+      client.mutesDestroy(options, response => {
+        commit(types.TWITTER_USERS_MUTES_DESTROY, response)
+        resolve(response)
+      })
     })
   }
 }

@@ -48,7 +48,7 @@
     },
     watch: {
       adapter: function (newAdapter, oldAdapter) {
-        this.$store.dispatch('setAdapter', newAdapter)
+        this.$store.commit('STORAGE_SET_ADAPTER', newAdapter)
         this.$electron.ipcRenderer.send(types.IPC_REQUEST_SCHEMA_CREATE, this.$store.getters.getConnection)
       }
     },

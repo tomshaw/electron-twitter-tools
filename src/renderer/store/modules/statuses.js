@@ -1,6 +1,8 @@
 import * as types from '../mutation-types'
 import {client, account} from '@/store/connect'
 
+const STATUS_MAX_ITEMS = 20
+
 const state = {
   home: [],
   user: [],
@@ -15,84 +17,93 @@ const getters = {
 
 const mutations = {
   [types.STATUS_TIMELINE_LOAD_HOME](state, payload) {
-    if (state.home.length > 50) {
-      state.home.pop()
+    state.home = []
+    payload.forEach((item) => {
+      state.home.push(item)
+    })
+    if (state.home.length > STATUS_MAX_ITEMS) {
+      let diff = state.home.length - STATUS_MAX_ITEMS
+      state.home.splice(STATUS_MAX_ITEMS, diff)
     }
-    state.home.push(payload)
   },
   [types.STATUS_TIMELINE_STREAM_HOME](state, payload) {
-    if (state.home.length > 50) {
-      state.home.pop()
+    state.home.unshift(payload)
+    if (state.home.length > STATUS_MAX_ITEMS) {
+      let diff = state.home.length - STATUS_MAX_ITEMS
+      state.home.splice(STATUS_MAX_ITEMS, diff)
     }
-    let newState = Object.assign({}, payload)
-    state.home.unshift(newState)
-    //state.home = [...state.home, payload]
   },
   [types.STATUS_TIMELINE_LOAD_USER](state, payload) {
-    if (state.user.length > 50) {
-      state.user.pop()
+    state.user = []
+    payload.forEach((item) => {
+      state.user.push(item)
+    })
+    if (state.user.length > STATUS_MAX_ITEMS) {
+      let diff = state.user.length - STATUS_MAX_ITEMS
+      state.user.splice(STATUS_MAX_ITEMS, diff)
     }
-    state.user.push(payload)
   },
   [types.STATUS_TIMELINE_LOAD_FAVS](state, payload) {
-    if (state.favs.length > 50) {
-      state.favs.pop()
+    state.favs = []
+    payload.forEach((item) => {
+      state.favs.push(item)
+    })
+    if (state.favs.length > STATUS_MAX_ITEMS) {
+      let diff = state.favs.length - STATUS_MAX_ITEMS
+      state.favs.splice(STATUS_MAX_ITEMS, diff)
     }
-    state.favs.push(payload) // unshift
   },
   [types.STATUS_TWEET_DESTROY](state, payload) {
     let homeIdx = state.home.map(item => item.id_str).indexOf(payload.id_str)
-    if (homeIdx > 0) {
-      state.home[homeIdx].retweeted = false
+    if (homeIdx !== -1) {
+      state.home.splice(homeIdx, 1)
     }
     let userIdx = state.user.map(item => item.id_str).indexOf(payload.id_str)
-    if (userIdx > 0) {
-      state.user[userIdx].retweeted = false
+    if (userIdx !== -1) {
+      state.user.splice(userIdx, 1)
     }
   },
   [types.STATUS_RETWEET_CREATE](state, payload) {
-    let homeIdx = state.home.map(item => item.id_str).indexOf(payload.id_str)
-    if (homeIdx > 0) {
+    const id = payload.id_str
+    console.log(id, id)
+    let homeIdx = state.home.map(item => item.id_str).indexOf(id)
+    if (homeIdx !== -1) {
       state.home[homeIdx].retweeted = true
     }
-    let userIdx = state.user.map(item => item.id_str).indexOf(payload.id_str)
-    if (userIdx > 0) {
-      state.user[userIdx].retweeted = true
-    } else {
-      state.user.push(payload)
-    }
+    state.user = [payload, ...state.user]
   },
   [types.STATUS_RETWEET_DESTROY](state, payload) {
-    let homeIdx = state.home.map(item => item.id_str).indexOf(payload.id_str)
-    if (homeIdx > 0) {
+    const id = payload.id_str
+    console.log(id, id)
+    let homeIdx = state.home.map(item => item.id_str).indexOf(id)
+    if (homeIdx !== -1) {
       state.home[homeIdx].retweeted = false
     }
-    let userIdx = state.user.map(item => item.id_str).indexOf(payload.id_str)
-    console.log('userIdx', userIdx)
-    if (userIdx > 0) {
-      state.user[userIdx].retweeted = false
+    let userIdx = state.user.map(item => item.id_str).indexOf(id)
+    if (userIdx !== -1) {
+      state.user.splice(userIdx, 1)
     }
   },
   [types.STATUS_FAVORITES_CREATE](state, payload) {
-    state.favs.push(payload)
+    state.favs = [payload, ...state.favs]
     let homeIdx = state.home.map(item => item.id_str).indexOf(payload.id_str)
-    if (homeIdx > 0) {
+    if (homeIdx !== -1) {
       state.home[homeIdx].favorited = true
     }
     let userIdx = state.user.map(item => item.id_str).indexOf(payload.id_str)
-    if (userIdx > 0) {
+    if (userIdx !== -1) {
       state.user[userIdx].favorited = true
     }
   },
   [types.STATUS_FAVORITES_DESTROY](state, payload) {
-    let i = state.favs.map(item => item.id_str).indexOf(payload.id_str) 
+    let i = state.favs.map(item => item.id_str).indexOf(payload.id) 
     state.favs.splice(i, 1)
     let homeIdx = state.home.map(item => item.id_str).indexOf(payload.id_str)
-    if (homeIdx > 0) {
+    if (homeIdx !== -1) {
       state.home[homeIdx].favorited = false
     }
     let userIdx = state.user.map(item => item.id_str).indexOf(payload.id_str)
-    if (userIdx > 0) {
+    if (userIdx !== -1) {
       state.user[userIdx].favorited = false
     }
   }
@@ -101,7 +112,8 @@ const mutations = {
 const actions = {
   loadStatusHome({ commit }) {
     return new Promise((resolve, reject) => {
-      client.homeTimeline(payload => {
+      const options = {count: 20, include_entities: true}
+      client.homeTimeline(options, payload => {
         commit(types.STATUS_TIMELINE_LOAD_HOME, payload)
         resolve(payload)
       })
@@ -116,19 +128,28 @@ const actions = {
     })
   },
   loadStatusUser({ commit }) {
-    const options = {screen_name: account.screen_name}
-    client.userTimeline(options, payload => {
-      commit(types.STATUS_TIMELINE_LOAD_USER, payload)
+    return new Promise((resolve, reject) => {
+      const options = {screen_name: account.screen_name}
+      client.userTimeline(options, payload => {
+        console.log('payload', payload)
+        commit(types.STATUS_TIMELINE_LOAD_USER, payload)
+        resolve(payload)
+      })
     })
   },
   loadStatusFavs({ commit }) {
-    client.favoritesList(account, payload => {
-      commit(types.STATUS_TIMELINE_LOAD_FAVS, payload)
+    return new Promise((resolve, reject) => {
+      const options = {screen_name: account.screen_name}
+      client.favoritesList(options, payload => {
+        commit(types.STATUS_TIMELINE_LOAD_FAVS, payload)
+        resolve(payload)
+      })
     })
   },
   statusDestroy({ commit }, tweet) {
     return new Promise((resolve, reject) => {
-      client.postStatusDestroy(tweet, payload => {
+      const options = {id: tweet.id_str}
+      client.postStatusDestroy(options, payload => {
         commit(types.STATUS_TWEET_DESTROY, tweet)
         resolve()
       })
@@ -136,33 +157,37 @@ const actions = {
   },
   retweetCreate({ commit }, tweet) {
     return new Promise((resolve, reject) => {
-      client.postRetweet(tweet, payload => {
-        commit(types.STATUS_RETWEET_CREATE, tweet)
-        resolve()
+      const options = {id: tweet.id_str}
+      client.postRetweet(options, payload => {
+        commit(types.STATUS_RETWEET_CREATE, payload)
+        resolve(payload)
       })
     })
   },
   retweetDestroy({ commit }, tweet) {
     return new Promise((resolve, reject) => {
-      client.postUnretweet(tweet, payload => {
-        commit(types.STATUS_RETWEET_DESTROY, tweet)
-        resolve()
+      const options = {id: tweet.id_str}
+      client.postUnretweet(options, payload => {
+        commit(types.STATUS_RETWEET_DESTROY, {id_str: tweet.id_str})
+        resolve(payload)
       })
     })
   },
   favoriteCreate({ commit }, tweet) {
     return new Promise((resolve, reject) => {
-      client.postFavoritesCreate(tweet, payload => {
-        commit(types.STATUS_FAVORITES_CREATE, payload)
-        resolve()
+      const options = {id: tweet.id_str}
+      client.postFavoritesCreate(options, payload => {
+        commit(types.STATUS_FAVORITES_CREATE, tweet)
+        resolve(payload)
       })
     })
   },
   favoriteDestroy({ commit }, tweet) {
     return new Promise((resolve, reject) => {
-      client.postFavoritesDestroy(tweet, payload => {
-        commit(types.STATUS_FAVORITES_DESTROY, payload)
-        resolve()
+      const options = {id: tweet.id_str}
+      client.postFavoritesDestroy(options, payload => {
+        commit(types.STATUS_FAVORITES_DESTROY, tweet)
+        resolve(payload)
       })
     })
   }

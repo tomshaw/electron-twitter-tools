@@ -86,6 +86,7 @@
         retweetDestroy: 'retweetDestroy',
         favoriteCreate: 'favoriteCreate',
         favoriteDestroy: 'favoriteDestroy',
+        setStatusesCount: 'setStatusesCount',
         setFavoritesCount: 'setFavoritesCount'
       }),
       ...mapMutations({
@@ -95,8 +96,6 @@
         if (tweet.in_reply_to_status_id) {
           this.statusDestroy(tweet).then(response => {
             console.log('destroy', response)
-          }, error => {
-            console.log(error)
           })
         } else {
           this.setReply(tweet)
@@ -105,15 +104,11 @@
       handleRetweet (tweet) {
         if (tweet.retweeted) {
           this.retweetDestroy(tweet).then(response => {
-            console.log('destroy', response)
-          }, error => {
-            console.log(error)
+            this.setStatusesCount({type: 'decrement'})
           })
         } else {
           this.retweetCreate(tweet).then(response => {
-            console.log('create', response)
-          }, error => {
-            console.log(error)
+            this.setStatusesCount({type: 'increment'})
           })
         }
       },
@@ -121,14 +116,10 @@
         if (tweet.favorited) {
           this.favoriteDestroy(tweet).then(response => {
             this.setFavoritesCount({type: 'decrement'})
-          }, error => {
-            console.log(error)
           })
         } else {
           this.favoriteCreate(tweet).then(response => {
             this.setFavoritesCount({type: 'increment'})
-          }, error => {
-            console.log(error)
           })
         }
       }

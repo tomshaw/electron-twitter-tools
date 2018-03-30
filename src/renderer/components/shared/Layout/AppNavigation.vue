@@ -67,7 +67,7 @@
     computed: {
       ...mapGetters({
         validated: 'getAccountValidated',
-        profile: 'getTwitterProfile'
+        profile: 'getAccountCredentials'
       })
     },
     data() {

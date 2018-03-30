@@ -29,7 +29,13 @@
       })
     },
     created () {
-      this.$store.dispatch('loadFriends')
+      this.$store.dispatch('loadFriends', { name: this.$account.screen_name }).then((resolved, rejected) => {
+        if (resolved) {
+          console.log('followers-resolved', resolved)
+        } else if (rejected) {
+          console.log('followers-rejected', rejected)
+        }
+      })
     }
   }
 </script>

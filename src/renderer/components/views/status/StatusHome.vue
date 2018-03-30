@@ -80,16 +80,10 @@
     },
     created () {
       this.$store.dispatch('loadStatusHome').then((resp) => {
-        this.$store.dispatch('streamStatusHome').then((resp) => {
-          // console.log('resp', resp)
-        })
+        this.$store.dispatch('streamStatusHome')
       })
-      this.$store.dispatch('loadStatusUser').then((resp) => {
-
-      })
-      this.$store.dispatch('loadStatusFavs').then((resp) => {
-        
-      })
+      this.$store.dispatch('loadStatusUser')
+      this.$store.dispatch('loadStatusFavs')
     }
   }
 </script>

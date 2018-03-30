@@ -35,30 +35,39 @@ const mutations = {
 
 const actions = {
   loadTrendsAvailable: ({commit}, options) => {
-    client.trendsAvailable(options, response => {
-      if (typeof response !== 'undefined') {
-        if (response.length) {
-          commit(types.TRENDS_LOAD_AVAILABLE, response)
+    return new Promise((resolve, reject) => {
+      client.trendsAvailable(options, response => {
+        if (typeof response !== 'undefined') {
+          if (response.length) {
+            commit(types.TRENDS_LOAD_AVAILABLE, response)
+            resolve(response)
+          }
         }
-      }
+      })
     })
   },
   loadTrendsClosest: ({commit}, options) => {
-    client.trendsClosest(options, response => {
-      if (typeof response !== 'undefined') {
-        if (response.length) {
-          commit(types.TRENDS_LOAD_CLOSEST, response)
+    return new Promise((resolve, reject) => {
+      client.trendsClosest(options, response => {
+        if (typeof response !== 'undefined') {
+          if (response.length) {
+            commit(types.TRENDS_LOAD_CLOSEST, response)
+            resolve(response)
+          }
         }
-      }
+      })
     })
   },
   loadTrendsPlace: ({commit}, options) => {
-    client.trendsPlace(options, response => {
-      if (typeof response !== 'undefined') {
-        if (response.length) {
-          commit(types.TRENDS_LOAD_PLACE, response[0].trends)
+    return new Promise((resolve, reject) => {
+      client.trendsPlace(options, response => {
+        if (typeof response !== 'undefined') {
+          if (response.length) {
+            commit(types.TRENDS_LOAD_PLACE, response[0].trends)
+            resolve(response)
+          }
         }
-      }
+      })
     })
   }
 }

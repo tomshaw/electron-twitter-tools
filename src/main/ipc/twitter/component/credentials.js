@@ -1,5 +1,5 @@
 import TwitterClient from '../../../../renderer/library/twitter'
-import _ from 'lodash'
+//import _ from 'lodash'
 
 export default class Credentials {
 
@@ -15,18 +15,7 @@ export default class Credentials {
             message: 'Could not authenticate you.'
           })
         } else {
-          resolve(_.pick(response, [
-            'id',
-            'name',
-            'screen_name',
-            'description',
-            'followers_count',
-            'friends_count',
-            'statuses_count',
-            'favourites_count',
-            'profile_image_url',
-            'profile_background_image_url'
-          ]))
+          resolve(response)
         }
       })
     })

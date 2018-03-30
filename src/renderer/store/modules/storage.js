@@ -24,10 +24,9 @@ const mutations = {
     if (!found) {
       state.connections.push(payload)
     } else {
-      let i = state.connections.findIndex(item => item.client === payload.client)
-      if (i !== -1) {
-        //state.connections[i] = payload
-        Object.assign(state.connections[i], payload);
+      const connection = state.connections.findIndex(item => item.client === payload.client)
+      if (connection !== -1) {
+        Object.assign(state.connections[connection], payload);
       }
     }
   },
@@ -36,18 +35,6 @@ const mutations = {
   }
 }
 
-const actions = {
-  setAdapter: ({commit}, payload) => {
-    commit(types.STORAGE_SET_ADAPTER, payload)
-  },
-  addConnection: ({commit}, payload) => {
-    commit(types.STORAGE_ADD_CONNECTION, payload)
-  },
-  addConnections: ({commit}, payload) => {
-    commit(types.STORAGE_ADD_CONNECTIONS, payload)
-  }
-}
-
 export default {
-  state, mutations, actions, getters
+  state, mutations, getters
 }

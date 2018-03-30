@@ -1,7 +1,5 @@
 import TwitterClient from '../../../../renderer/library/twitter'
 
-let _ = require('lodash')
-
 export default class Account {
 
   action(credentials, callback) {
@@ -16,9 +14,7 @@ export default class Account {
             message: 'Could not authenticate you.'
           })
         } else {
-          resolve(_.map(_.reject(response, key => {
-            return _.includes([ 'trend_location' ], key);
-          })))
+          resolve(response)
         }
       })
     })

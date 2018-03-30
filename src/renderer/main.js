@@ -16,9 +16,13 @@ import App from './App'
 import router from './router'
 import store from './store'
 
+import account from '@/mixins/account'
 import reload from '@/mixins/reload'
+import locations from '@/mixins/locations'
 import settings from '@/mixins/settings'
 
+Vue.mixin(account)
+Vue.mixin(locations)
 Vue.mixin(reload)
 Vue.mixin(settings)
 

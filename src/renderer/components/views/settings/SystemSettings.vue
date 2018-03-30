@@ -204,13 +204,14 @@
         this.$electron.ipcRenderer.send(types.IPC_REQUEST_SCHEMA_CREATE, connection)   
       },
       handleTwitterSubmit() {
-        this.$store.commit('TWITTER_SET_VALIDATED', false)
+        this.$store.commit('TWITTER_UPDATE_VALIDATED', false)
         this.$settings.set('twitter.validated', false)
         this.$settings.set('twitter.tokens', this.tokens)
         this.$electron.ipcRenderer.send(types.IPC_REQUEST_TWITTER_CREDENTIALS, this.tokens)
       },
       handleGoogleSubmit() {
         this.$settings.set('google.maps.key', this.google.maps.key)
+        this.$toastr('success', `Google Maps APi Key has been setup successfully.`, 'Success Message')
       }
     }
   }
