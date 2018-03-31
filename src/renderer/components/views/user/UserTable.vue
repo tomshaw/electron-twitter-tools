@@ -99,20 +99,12 @@
       }),
       gridReload() {
         if (this.friends) {
-          this.loadFriends({ name: this.$account.screen_name }).then((resolved, rejected) => {
-            if (resolved) {
-              console.log('followers-resolved', resolved)
-            } else if (rejected) {
-              console.log('followers-rejected', rejected)
-            }
+          this.loadFriends({ name: this.$account.screen_name }).then(resp => {
+            this.$toastr('success', `A total of ${resp.users.length} friends loaded successfully.`, 'Success Message')
           })
         } else if (this.followers) {
-          this.loadFollowers({ name: this.$account.screen_name }).then((resolved, rejected) => {
-            if (resolved) {
-              console.log('followers-resolved', resolved)
-            } else if (rejected) {
-              console.log('followers-rejected', rejected)
-            }
+          this.loadFollowers({ name: this.$account.screen_name }).then(resp => {
+            this.$toastr('success', `A total of ${resp.users.length} followers loaded successfully.`, 'Success Message')
           })
         }
       }, 

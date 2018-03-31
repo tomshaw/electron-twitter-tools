@@ -155,44 +155,50 @@ export default class extends Adapter {
   }
 
   homeTimeline (options, callback) {
-    this.api.get('statuses/home_timeline', options, (error, data, response) => {
-      if (error) { 
-        callback(error) 
-      } else {
-        let tweets = []
-        data.forEach(tweet => {
-          tweets.push(Parser.all(tweet))
-        })
-        callback(tweets)
-      }
+    return new Promise((resolve, reject) => {
+      this.api.get('statuses/home_timeline', options, (error, data, response) => {
+        if (error) { 
+          reject(error) 
+        } else {
+          let tweets = []
+          data.forEach(tweet => {
+            tweets.push(Parser.all(tweet))
+          })
+          resolve(tweets)
+        }
+      })
     })
   }
 
   userTimeline (options, callback) {
-    this.api.get('statuses/user_timeline', options, (error, data, response) => {
-      if (error) { 
-        callback(error) 
-      } else {
-        let tweets = []
-        data.forEach(tweet => {
-          tweets.push(Parser.all(tweet))
-        })
-        callback(tweets)
-      }
+    return new Promise((resolve, reject) => {
+      this.api.get('statuses/user_timeline', options, (error, data, response) => {
+        if (error) { 
+          reject(error) 
+        } else {
+          let tweets = []
+          data.forEach(tweet => {
+            tweets.push(Parser.all(tweet))
+          })
+          resolve(tweets)
+        }
+      })
     })
   }
 
   favoritesList (options, callback) {
-    this.api.get('favorites/list', options, (error, data, response) => {
-      if (error) { 
-        callback(error) 
-      } else {
-        let tweets = []
-        data.forEach(tweet => {
-          tweets.push(Parser.all(tweet))
-        })
-        callback(tweets)
-      }
+    return new Promise((resolve, reject) => {
+      this.api.get('favorites/list', options, (error, data, response) => {
+        if (error) { 
+          reject(error) 
+        } else {
+          let tweets = []
+          data.forEach(tweet => {
+            tweets.push(Parser.all(tweet))
+          })
+          resolve(tweets)
+        }
+      })
     })
   }
 
@@ -310,7 +316,7 @@ export default class extends Adapter {
     return new Promise((resolve, reject) => {
       this.api.get('followers/list', options, (error, data, response) => {
         if (error) { 
-          reject(new Error(error))
+          reject(error)
         } else {
           resolve(data)
         }
@@ -322,7 +328,7 @@ export default class extends Adapter {
     return new Promise((resolve, reject) => {
       this.api.get('friends/list', options, (error, data, response) => {
         if (error) { 
-          reject(new Error(error))
+          reject(error)
         } else {
           resolve(data)
         }

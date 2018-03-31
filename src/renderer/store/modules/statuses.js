@@ -1,5 +1,5 @@
 import * as types from '../mutation-types'
-import {client, account} from '@/store/connect'
+import {client} from '@/store/connect'
 
 const STATUS_MAX_ITEMS = 20
 
@@ -65,7 +65,6 @@ const mutations = {
   },
   [types.STATUS_RETWEET_CREATE](state, payload) {
     const id = payload.id_str
-    console.log(id, id)
     let homeIdx = state.home.map(item => item.id_str).indexOf(id)
     if (homeIdx !== -1) {
       state.home[homeIdx].retweeted = true
@@ -74,7 +73,6 @@ const mutations = {
   },
   [types.STATUS_RETWEET_DESTROY](state, payload) {
     const id = payload.id_str
-    console.log(id, id)
     let homeIdx = state.home.map(item => item.id_str).indexOf(id)
     if (homeIdx !== -1) {
       state.home[homeIdx].retweeted = false
@@ -110,84 +108,91 @@ const mutations = {
 }
 
 const actions = {
-  loadStatusHome({ commit }) {
+  loadStatusHome({ commit }, options) {
     return new Promise((resolve, reject) => {
-      const options = {count: 20, include_entities: true}
-      client.homeTimeline(options, payload => {
-        commit(types.STATUS_TIMELINE_LOAD_HOME, payload)
-        resolve(payload)
+      client.homeTimeline(options).then(resp => {
+        commit(types.STATUS_TIMELINE_LOAD_HOME, resp)
+        resolve(resp)
+      }).catch(error => {
+        reject(error)
       })
     })
   },
   streamStatusHome({ commit }) {
     return new Promise((resolve, reject) => {
-      client.streamFilter('user', {}, payload => {
-        commit(types.STATUS_TIMELINE_STREAM_HOME, payload)
-        resolve(payload)
+      client.streamFilter('user', {}, resp => {
+        commit(types.STATUS_TIMELINE_STREAM_HOME, resp)
+        resolve(resp)
       })
     })
   },
-  loadStatusUser({ commit }) {
+  loadStatusUser({ commit }, options) {
     return new Promise((resolve, reject) => {
-      const options = {screen_name: account.screen_name}
-      client.userTimeline(options, payload => {
-        console.log('payload', payload)
-        commit(types.STATUS_TIMELINE_LOAD_USER, payload)
-        resolve(payload)
+      client.userTimeline(options).then(resp => {
+        commit(types.STATUS_TIMELINE_LOAD_USER, resp)
+        resolve(resp)
+      }).catch(error => {
+        reject(error)
       })
     })
   },
-  loadStatusFavs({ commit }) {
+  loadStatusFavs({ commit }, options) {
     return new Promise((resolve, reject) => {
-      const options = {screen_name: account.screen_name}
-      client.favoritesList(options, payload => {
-        commit(types.STATUS_TIMELINE_LOAD_FAVS, payload)
-        resolve(payload)
+      client.favoritesList(options).then(resp => {
+        commit(types.STATUS_TIMELINE_LOAD_FAVS, resp)
+        resolve(resp)
+      }).catch(error => {
+        reject(error)
       })
     })
   },
-  statusDestroy({ commit }, tweet) {
+  statusDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      const options = {id: tweet.id_str}
-      client.postStatusDestroy(options, payload => {
-        commit(types.STATUS_TWEET_DESTROY, tweet)
-        resolve()
+      client.postStatusDestroy(options, resp => {
+        commit(types.STATUS_TWEET_DESTROY, resp)
+        resolve(resp)
+      }).catch(error => {
+        reject(error)
       })
     })
   },
-  retweetCreate({ commit }, tweet) {
+  retweetCreate({ commit }, options) {
     return new Promise((resolve, reject) => {
-      const options = {id: tweet.id_str}
-      client.postRetweet(options, payload => {
-        commit(types.STATUS_RETWEET_CREATE, payload)
-        resolve(payload)
+      client.postRetweet(options, resp => {
+        commit(types.STATUS_RETWEET_CREATE, resp)
+        resolve(resp)
+      }).catch(error => {
+        reject(error)
       })
     })
   },
-  retweetDestroy({ commit }, tweet) {
+  retweetDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      const options = {id: tweet.id_str}
-      client.postUnretweet(options, payload => {
-        commit(types.STATUS_RETWEET_DESTROY, {id_str: tweet.id_str})
-        resolve(payload)
+      client.postUnretweet(options, resp => {
+        commit(types.STATUS_RETWEET_DESTROY, resp)
+        resolve(resp)
+      }).catch(error => {
+        reject(error)
       })
     })
   },
-  favoriteCreate({ commit }, tweet) {
+  favoriteCreate({ commit }, options) {
     return new Promise((resolve, reject) => {
-      const options = {id: tweet.id_str}
-      client.postFavoritesCreate(options, payload => {
-        commit(types.STATUS_FAVORITES_CREATE, tweet)
-        resolve(payload)
+      client.postFavoritesCreate(options, resp => {
+        commit(types.STATUS_FAVORITES_CREATE, resp)
+        resolve(resp)
+      }).catch(error => {
+        reject(error)
       })
     })
   },
-  favoriteDestroy({ commit }, tweet) {
+  favoriteDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      const options = {id: tweet.id_str}
-      client.postFavoritesDestroy(options, payload => {
-        commit(types.STATUS_FAVORITES_DESTROY, tweet)
-        resolve(payload)
+      client.postFavoritesDestroy(options, resp => {
+        commit(types.STATUS_FAVORITES_DESTROY, resp)
+        resolve(resp)
+      }).catch(error => {
+        reject(error)
       })
     })
   }

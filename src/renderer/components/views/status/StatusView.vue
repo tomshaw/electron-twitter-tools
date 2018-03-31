@@ -94,7 +94,7 @@
       }),
       handleReply (tweet) {
         if (tweet.in_reply_to_status_id) {
-          this.statusDestroy(tweet).then(response => {
+          this.statusDestroy({id: tweet.id_str}).then(response => {
             console.log('destroy', response)
           })
         } else {
@@ -103,22 +103,22 @@
       },
       handleRetweet (tweet) {
         if (tweet.retweeted) {
-          this.retweetDestroy(tweet).then(response => {
+          this.retweetDestroy({id: tweet.id_str}).then(response => {
             this.setStatusesCount({type: 'decrement'})
           })
         } else {
-          this.retweetCreate(tweet).then(response => {
+          this.retweetCreate({id: tweet.id_str}).then(response => {
             this.setStatusesCount({type: 'increment'})
           })
         }
       },
       handleFavorite (tweet) {
         if (tweet.favorited) {
-          this.favoriteDestroy(tweet).then(response => {
+          this.favoriteDestroy({id: tweet.id_str}).then(response => {
             this.setFavoritesCount({type: 'decrement'})
           })
         } else {
-          this.favoriteCreate(tweet).then(response => {
+          this.favoriteCreate({id: tweet.id_str}).then(response => {
             this.setFavoritesCount({type: 'increment'})
           })
         }

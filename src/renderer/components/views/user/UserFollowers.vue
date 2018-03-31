@@ -4,11 +4,8 @@
       <v-icon>people</v-icon>
       <v-toolbar-title>Followers</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>search</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon>check_circle</v-icon>
+      <v-btn icon :loading="loading" :disabled="loading" @click="handleRefresh">
+        <v-icon dark>refresh</v-icon>
       </v-btn>
     </v-toolbar>
     <user-table :items="items" followers></user-table>
@@ -28,14 +25,34 @@
         items: 'getFollowers'
       })
     },
+    watch: {
+      loader () {
+        const loader = this.loader
+        this[loader] = !this[loader]
+        setTimeout(() => {
+          this[loader] = false
+        }, 3000)
+        this.loader = null
+      }
+    },
+    data () {
+      return {
+        loader: null,
+        loading: false
+      }
+    },
     created () {
-      this.$store.dispatch('loadFollowers', { name: this.$account.screen_name }).then((resolved, rejected) => {
-        if (resolved) {
-          console.log('followers-resolved', resolved)
-        } else if (rejected) {
-          console.log('followers-rejected', rejected)
-        }
-      })
+      this.handleRefresh()
+    },
+    methods: {
+      handleRefresh() {
+        this.loader = 'loading'
+        this.$store.dispatch('loadFollowers', { name: this.$account.screen_name }).then(resp => {
+          this.$toastr('success', `A total of ${resp.users.length} followers loaded successfully.`, 'Success Message')
+        }).catch(error => {
+          this.$toastr('error', error[0].message, 'Error Message')
+        })
+      }
     }
   }
 </script>

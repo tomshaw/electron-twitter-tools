@@ -53,25 +53,25 @@ const mutations = {
 const actions = {
   loadFriends({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.friendsList(options).then((resolved, rejected) => {
-        if (resolved.users) {
-          commit(types.TWITTER_USERS_LOAD_FRIENDS, resolved.users)
-          resolve(resolved)
-        } else {
-          reject(rejected)
+      client.friendsList(options).then(resp => {
+        if (resp.users) {
+          commit(types.TWITTER_USERS_LOAD_FRIENDS, resp.users)
+          resolve(resp)
         }
+      }).catch(error => {
+        reject(error)
       })
     })
   },
   loadFollowers({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.followersList(options).then((resolved, rejected) => {
-        if (resolved.users) {
-          commit(types.TWITTER_USERS_LOAD_FOLLOWERS, resolved.users)
-          resolve(resolved)
-        } else {
-          reject(rejected)
+      client.followersList(options).then(resp => {
+        if (resp.users) {
+          commit(types.TWITTER_USERS_LOAD_FOLLOWERS, resp.users)
+          resolve(resp)
         }
+      }).catch(error => {
+        reject(error)
       })
     })
   },

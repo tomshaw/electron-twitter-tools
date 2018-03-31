@@ -79,11 +79,18 @@
       }
     },
     created () {
-      this.$store.dispatch('loadStatusHome').then((resp) => {
+      this.$store.dispatch('loadStatusHome', {count: 20, include_entities: true}).then((resp) => {
         this.$store.dispatch('streamStatusHome')
+      }).catch(error => {
+        this.$toastr('error', error[0].message, 'Error Message')
       })
-      this.$store.dispatch('loadStatusUser')
-      this.$store.dispatch('loadStatusFavs')
+      let options = {screen_name: this.$account.screen_name}
+      this.$store.dispatch('loadStatusUser', options).catch(error => {
+        this.$toastr('error', error[0].message, 'Error Message')
+      })
+      this.$store.dispatch('loadStatusFavs', options).catch(error => {
+        this.$toastr('error', error[0].message, 'Error Message')
+      })
     }
   }
 </script>
