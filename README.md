@@ -16,7 +16,7 @@
 > Electron Twitter Tools a cross platfom [Electron](https://electronjs.org) application that allows users to effortlessly backup and restore user lists, seamlessly manage friends and followers, perform powerful multi account user searches and finally execute highly customized streaming searches that index a litany of data including languages used, geographic locations and rudimentary sentiment analysis.
 
 ## Screen Shots
-As part of the documentation you can check out some random [screenshots here.](docs/screenshots/readme.md)
+As part of the documentation you can check out more [random screenshots here.](docs/screenshots/readme.md)
 
 <img src="docs/screenshots/screen-grab1.png" alt="Electron Twitter Tools" title="Electron Twitter Tools">
 
