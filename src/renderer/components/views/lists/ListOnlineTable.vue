@@ -59,7 +59,6 @@
     mounted() {
       this.db = new Database(this.$settings.get('storage.connection'))
       this.client = new Twitter(this.$settings.get('twitter.tokens'))
-      this.account = this.$settings.get('twitter.profile')
     },
     methods: {
       ...mapActions(['deleteListRemote', 'loadSavedLists', 'updateListRemote']),
@@ -111,8 +110,8 @@
           let params = {
             list_id: item.id_str,
             slug: item.slug,
-            owner_id: this.account.id, 
-            owner_screen_name: this.account.screen_name
+            owner_id: this.$account.id, 
+            owner_screen_name: this.$account.screen_name
           }
 
           this.db.api('lists').insert([{
@@ -123,7 +122,7 @@
             const lastInsertId = response[0]
             this.createBackup(lastInsertId, params.list_id, params.slug, params.owner_id, params.owner_screen_name)
           }).catch(error => {
-            console.log(error)
+            this.$toastr('error', error[0].message, 'Error Message')
           })
         }
       },
@@ -139,7 +138,7 @@
           cursor: cursor
         }
 
-        this.client.listMembers(options, response => {
+        this.client.listMembers(options).then(response => {
 
           let nextCursor = response.next_cursor
           let nextCursorString = response.next_cursor_str
@@ -176,7 +175,7 @@
                   setTimeout(() => {
                     this.loadSavedLists()
                     this.$store.commit('TASKS_RESET_PROGRESS')
-                    this.$toastr('success', 'Operation successfully completed.', 'Success')
+                    this.$toastr('success', `List ${options.slug} successfully saved.`, 'Success')
                   }, 2e3)
                 }
               }).catch(err => {

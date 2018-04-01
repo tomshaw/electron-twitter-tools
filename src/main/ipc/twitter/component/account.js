@@ -7,15 +7,10 @@ export default class Account {
     const client = new TwitterClient(credentials)
 
     const promise = new Promise((resolve, reject) => {
-      client.accountSettings(response => {
-        if (response.hasOwnProperty('errors')) {
-          resolve({
-            status: 'errors',
-            message: 'Could not authenticate you.'
-          })
-        } else {
-          resolve(response)
-        }
+      client.accountSettings().then(response => {
+        resolve(response)
+      }).catch(error => {
+        reject(error)
       })
     })
 

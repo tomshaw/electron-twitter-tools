@@ -38,7 +38,7 @@
       'app-content': AppContent,
       'app-footer': AppFooter
     },
-    mounted () {
+    created () {
 
       this.$settings.watch('storage.connection', (newValue, oldValue) => {
         if (newValue !== oldValue) {

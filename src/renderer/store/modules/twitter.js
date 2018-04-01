@@ -60,7 +60,7 @@ const mutations = {
 const actions = {
   accountCredentials({ commit }) {
     return new Promise((resolve, reject) => {
-      client.verifyCredentials(payload => {
+      client.verifyCredentials().then(payload => {
         commit(types.TWITTER_UPDATE_CREDENTIALS, payload)
         resolve(payload)
       })
@@ -68,7 +68,7 @@ const actions = {
   },
   accountSettings({ commit }) {
     return new Promise((resolve, reject) => {
-      client.accountSettings(payload => {
+      client.accountSettings().then(payload => {
         commit(types.TWITTER_UPDATE_SETTINGS, payload)
         resolve(payload)
       })

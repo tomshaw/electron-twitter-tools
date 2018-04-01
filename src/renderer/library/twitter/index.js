@@ -5,41 +5,49 @@ import Parser from './parser'
 export default class extends Adapter {
 
   accountSettings(callback) {
-    this.api.get('account/settings', {}, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+    return new Promise((resolve, reject) => {
+      this.api.get('account/settings', {}, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  verifyCredentials(callback) {
-    this.api.get('account/verify_credentials', {}, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  verifyCredentials() {
+    return new Promise((resolve, reject) => {
+      this.api.get('account/verify_credentials', {}, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  helpLanguages(callback) {
-    this.api.get('help/languages', {}, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  helpLanguages() {
+    return new Promise((resolve, reject) => {
+      this.api.get('help/languages', {}, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
   search(options, next) {
-    this.api.stream(options.type, {track: options.keyword}, (stream) => {
+    this.api.stream(options.type, {
+      track: options.keyword
+    }, (stream) => {
       this.stream = stream
-      this.stream.on('error', (err) => { 
+      this.stream.on('error', (err) => {
         this.errors.push(err)
-       })
+      })
       this.stream.on('data', (tweet) => {
         const processed = Parser.all(tweet)
         if (typeof processed === 'object') {
@@ -56,9 +64,9 @@ export default class extends Adapter {
   streamFilter(type, options, next) {
     this.api.stream(type, options, (stream) => {
       this.stream = stream
-      this.stream.on('error', (err) => { 
+      this.stream.on('error', (err) => {
         this.errors.push(err)
-       })
+      })
       this.stream.on('data', (tweet) => {
         const processed = Parser.all(tweet)
         if (typeof processed === 'object') {
@@ -72,28 +80,32 @@ export default class extends Adapter {
     })
   }
 
-  searchUsers(options, callback) {
-    this.api.get('users/search', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  searchUsers(options) {
+    return new Promise((resolve, reject) => {
+      this.api.get('users/search', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  lookupUsers(options, callback) {
-    this.api.get('users/lookup', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  lookupUsers(options) {
+    return new Promise((resolve, reject) => {
+      this.api.get('users/lookup', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  postTweet (options) {
-
+  postTweet(options) {
+    
     const statusUpdate = (options, mediaIds = []) => {
       let params = {
         status: options.message
@@ -106,10 +118,10 @@ export default class extends Adapter {
       }
       return new Promise((resolve, reject) => {
         this.api.post('statuses/update', params, (error, data, response) => {
-          if (!error) {
-            resolve()
+          if (error) {
+            reject(error)
           } else {
-            reject(new Error(error))
+            resolve(response)
           }
         })
       })
@@ -123,7 +135,9 @@ export default class extends Adapter {
           return new Promise((resolve, reject) => {
             let b64Image = options.images[mediaIds.length]
             b64Image = b64Image.replace(/^data:image\/.+;base64,/, '')
-            this.api.post('media/upload', {media_data: b64Image}, (error, data, response) => {
+            this.api.post('media/upload', {
+              media_data: b64Image
+            }, (error, data, response) => {
               if (!error) {
                 mediaIds.push(data.media_id_string)
                 resolve()
@@ -133,7 +147,9 @@ export default class extends Adapter {
             })
           }).then(() => {
             if (options.images.length === mediaIds.length) {
-              out(mediaIds.filter((id) => { return id !== null }))
+              out(mediaIds.filter((id) => {
+                return id !== null
+              }))
             } else {
               process()
             }
@@ -154,11 +170,11 @@ export default class extends Adapter {
     }
   }
 
-  homeTimeline (options, callback) {
+  homeTimeline(options) {
     return new Promise((resolve, reject) => {
       this.api.get('statuses/home_timeline', options, (error, data, response) => {
-        if (error) { 
-          reject(error) 
+        if (error) {
+          reject(error)
         } else {
           let tweets = []
           data.forEach(tweet => {
@@ -170,11 +186,11 @@ export default class extends Adapter {
     })
   }
 
-  userTimeline (options, callback) {
+  userTimeline(options) {
     return new Promise((resolve, reject) => {
       this.api.get('statuses/user_timeline', options, (error, data, response) => {
-        if (error) { 
-          reject(error) 
+        if (error) {
+          reject(error)
         } else {
           let tweets = []
           data.forEach(tweet => {
@@ -186,11 +202,11 @@ export default class extends Adapter {
     })
   }
 
-  favoritesList (options, callback) {
+  favoritesList(options) {
     return new Promise((resolve, reject) => {
       this.api.get('favorites/list', options, (error, data, response) => {
-        if (error) { 
-          reject(error) 
+        if (error) {
+          reject(error)
         } else {
           let tweets = []
           data.forEach(tweet => {
@@ -202,120 +218,144 @@ export default class extends Adapter {
     })
   }
 
-  userLists(options, callback) {
-    this.api.get('lists/list', _.pick(_.assign(options, { user_id: options.id }), ['user_id', 'screen_name']), (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  userLists(options) {
+    return new Promise((resolve, reject) => {
+      this.api.get('lists/list', _.pick(_.assign(options, {
+        user_id: options.id
+      }), ['user_id', 'screen_name']), (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  listMembers(options, callback) { /* {list_id: options.list_id, slug: options.slug, owner_id: options.owner_id, owner_screen_name: options.owner_screen_name, include_entities: options.include_entities, skip_status: options.skip_status, cursor: options.cursor} */   
-    this.api.get('lists/members', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  listMembers(options) {
+    return new Promise((resolve, reject) => {
+      this.api.get('lists/members', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  postList(options, callback) {
-    this.api.post('lists/create', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  postList(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('lists/create', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  postListCreateAll(options, callback) {
-    this.api.post('lists/members/create_all', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  postListCreateAll(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('lists/members/create_all', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  postListUpdate(options, callback) {
-    this.api.post('lists/update', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  postListUpdate(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('lists/update', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  postListDestroy(options, callback) {
-    this.api.post('lists/destroy', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  postListDestroy(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('lists/destroy', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  postRetweet(options, callback) {
-    this.api.post('statuses/retweet', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  postRetweet(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('statuses/retweet', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  postUnretweet(options, callback) {
-    this.api.post(`statuses/unretweet/${options.id}`, options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  postUnretweet(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post(`statuses/unretweet/${options.id}`, options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  postFavoritesCreate(options, callback) {
-    this.api.post('favorites/create', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  postFavoritesCreate(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('favorites/create', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  postFavoritesDestroy(options, callback) {
-    this.api.post('favorites/destroy', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  postFavoritesDestroy(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('favorites/destroy', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  postStatusDestroy(options, callback) {
-    this.api.post('statuses/destroy', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  postStatusDestroy(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('statuses/destroy', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
   followersList(options) {
     return new Promise((resolve, reject) => {
       this.api.get('followers/list', options, (error, data, response) => {
-        if (error) { 
+        if (error) {
           reject(error)
         } else {
           resolve(data)
@@ -327,7 +367,7 @@ export default class extends Adapter {
   friendsList(options) {
     return new Promise((resolve, reject) => {
       this.api.get('friends/list', options, (error, data, response) => {
-        if (error) { 
+        if (error) {
           reject(error)
         } else {
           resolve(data)
@@ -336,96 +376,114 @@ export default class extends Adapter {
     })
   }
 
-  friendshipCreate(options, callback) {
-    this.api.post('friendships/create', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  friendshipCreate(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('friendships/create', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  friendshipDestroy(options, callback) {
-    this.api.post('friendships/destroy', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  friendshipDestroy(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('friendships/destroy', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  mutesCreate(options, callback) { /* {name: options.name, user_id: options.user_id} */
-    this.api.post('mutes/users/create', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  mutesCreate(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('mutes/users/create', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  mutesDestroy(options, callback) {
-    this.api.post('mutes/users/destroy', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  mutesDestroy(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('mutes/users/destroy', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  blocksCreate(options, callback) {
-    this.api.post('blocks/create', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  blocksCreate(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('blocks/create', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
-  blocksDestroy(options, callback) {
-    this.api.post('blocks/destroy', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  blocksDestroy(options) {
+    return new Promise((resolve, reject) => {
+      this.api.post('blocks/destroy', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
   // https://developer.twitter.com/en/docs/trends/locations-with-trending-topics/api-reference/get-trends-available
-  trendsAvailable(options, callback) {
-    this.api.get('trends/available', {}, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  trendsAvailable(options) {
+    return new Promise((resolve, reject) => {
+      this.api.get('trends/available', {}, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
   // https://developer.twitter.com/en/docs/trends/locations-with-trending-topics/api-reference/get-trends-closest
-  trendsClosest(options, callback) {
-    this.api.get('trends/closest', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  trendsClosest(options) {
+    return new Promise((resolve, reject) => {
+      this.api.get('trends/closest', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 
   // https://developer.twitter.com/en/docs/trends/trends-for-location/api-reference/get-trends-place
-  trendsPlace(options, callback) {
-    this.api.get('trends/place', options, (error, data, response) => {
-      if (error) { 
-        callback(error)
-      } else {
-        callback(data)
-      }
+  trendsPlace(options) {
+    return new Promise((resolve, reject) => {
+      this.api.get('trends/place', options, (error, data, response) => {
+        if (error) {
+          reject(error)
+        } else {
+          resolve(data)
+        }
+      })
     })
   }
 

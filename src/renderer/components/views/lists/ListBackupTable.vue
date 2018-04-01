@@ -60,7 +60,6 @@
     mounted() {
       this.db = new Database(this.$settings.get('storage.connection'))
       this.client = new Twitter(this.$settings.get('twitter.tokens'))
-      this.account = this.$settings.get('twitter.profile')
     },
     methods: {
       ...mapActions(['deleteListLocal', 'loadActiveLists', 'updateListLocal']),
@@ -124,7 +123,7 @@
           const name = item.slug
           const mode = 'private'
 
-          this.fetchListMembers(id, (members) => {
+          this.fetchListMembers(id, members => {
             this.postListCreate(name, mode, members)
           })
         }
@@ -133,28 +132,25 @@
         this.client.postList({
           name: name + randomString(5),
           mode: mode
-        }, (response) => {
-          if (!response.hasOwnProperty('errors')) { 
-            this.postListCreateAll({
-              slug: response.slug,
-              list_id: response.id_str,
-              members: members
-            })
-          }
+        }).then(resp => { 
+          this.postListCreateAll({
+            slug: resp.slug,
+            list_id: resp.id_str,
+            members: members
+          })
         })
       },
       postListCreateAll(options) {
-        const size = 90
 
         let members = options.members
-        let parts = chunks(members, size)
-        let partsLength = parts.length
+        let parts = chunks(members, 100)
+        let partsLength = parts.length - 1
 
         const processChunks = (counter, increment = 0) => {
 
-          let total = parts[counter].length
+          let process = increment + parts[counter].length
 
-          for (let i = increment; i <= total; i++) {
+          for (let i = increment; i <= process; i++) {
             this.$store.commit('TASKS_SET_PROGRESS', { id: 'restore', done: i })
           }
 
@@ -164,12 +160,17 @@
             user_id: parts[counter].join(', ')
           }
 
-          this.client.postListCreateAll(opts, response => {
-            if (counter < partsLength - 1) {
-              processChunks(counter + 1, increment + total)
+          this.client.postListCreateAll(opts).then(() => {
+            if (counter < partsLength) {
+              setTimeout(() => {
+                processChunks(counter + 1, process)
+              }, 1e3)
             } else {
-              this.$store.commit('TASKS_RESET_PROGRESS')
-              this.loadActiveLists()
+              setTimeout(() => {
+                this.$store.commit('TASKS_RESET_PROGRESS')
+                this.loadActiveLists()
+                this.$toastr('success', `List ${opts.slug} successfully restored.`, 'Success')
+              }, 1e3)
             }
           })
         }

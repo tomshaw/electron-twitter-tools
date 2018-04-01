@@ -148,7 +148,7 @@ const actions = {
   },
   statusDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postStatusDestroy(options, resp => {
+      client.postStatusDestroy(options).then(resp => {
         commit(types.STATUS_TWEET_DESTROY, resp)
         resolve(resp)
       }).catch(error => {
@@ -158,7 +158,7 @@ const actions = {
   },
   retweetCreate({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postRetweet(options, resp => {
+      client.postRetweet(options).then(resp => {
         commit(types.STATUS_RETWEET_CREATE, resp)
         resolve(resp)
       }).catch(error => {
@@ -168,7 +168,7 @@ const actions = {
   },
   retweetDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postUnretweet(options, resp => {
+      client.postUnretweet(options).then(resp => {
         commit(types.STATUS_RETWEET_DESTROY, resp)
         resolve(resp)
       }).catch(error => {
@@ -178,7 +178,7 @@ const actions = {
   },
   favoriteCreate({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postFavoritesCreate(options, resp => {
+      client.postFavoritesCreate(options).then(resp => {
         commit(types.STATUS_FAVORITES_CREATE, resp)
         resolve(resp)
       }).catch(error => {
@@ -188,7 +188,7 @@ const actions = {
   },
   favoriteDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postFavoritesDestroy(options, resp => {
+      client.postFavoritesDestroy(options).then(resp => {
         commit(types.STATUS_FAVORITES_DESTROY, resp)
         resolve(resp)
       }).catch(error => {

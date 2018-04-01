@@ -4,6 +4,13 @@ export default class Adapter {
 
   constructor(client) {
     this.client = client
+    this.tables = [
+      'config',
+      'lists',
+      'lists_store',
+      'search',
+      'search_store'
+    ]
   }
 
   validate(callback) {
@@ -22,18 +29,15 @@ export default class Adapter {
     })
   }
 
+  dropTable(table) {
+    this.api.schema.dropTableIfExists(table).then(() => {
+      console.dir(`TABLE_DELETED: ${table}`)
+    })
+  }
+
   dropTables() {
-
-    this.api.schema.dropTableIfExists('config').then(() => {
-      console.dir('Config Table is Deleted!')
-    })
-
-    this.api.schema.dropTableIfExists('lists').then(() => {
-      console.dir('Lists Table is Deleted!')
-    })
-
-    this.api.schema.dropTableIfExists('store').then(() => {
-      console.dir('Store Table is Deleted!')
+    this.tables.forEach(item => {
+      //this.dropTable(item)
     })
   }
 
@@ -56,6 +60,7 @@ export default class Adapter {
   }
 
   createConfigTable(callback) {
+    //this.dropTable('config')
     this.api.schema.createTableIfNotExists('config', table => {
       table.collate('utf8mb4_general_ci')
       table.string('key').collate('utf8mb4_general_ci')
@@ -68,6 +73,7 @@ export default class Adapter {
   }
 
   createListsTable(callback) {
+    //this.dropTable('lists')
     this.api.schema.createTableIfNotExists('lists', table => {
       table.collate('utf8mb4_general_ci')
       table.increments().unsigned().primary()
@@ -82,9 +88,7 @@ export default class Adapter {
   }
 
   createListsStoreTable(callback) {
-    // this.api.schema.dropTableIfExists('lists_store').then(() => {
-    //   console.dir('TABLE_DELETED: lists_store')
-    // })
+    //this.dropTable('lists_store')
     this.api.schema.createTableIfNotExists('lists_store', table => {
       table.collate('utf8mb4_general_ci')
       table.increments().unsigned().primary()
@@ -110,9 +114,7 @@ export default class Adapter {
   }
 
   createSearchSessionTable(callback) {
-    // this.api.schema.dropTableIfExists('search_session').then(() => {
-    //   console.dir('TABLE_DELETED: search_session')
-    // })
+    //this.dropTable('search')
     this.api.schema.createTableIfNotExists('search', table => {
       table.collate('utf8mb4_general_ci')
       table.increments().unsigned().primary()
@@ -133,9 +135,7 @@ export default class Adapter {
   }
 
   createSearchStoreTable(callback) {
-    // this.api.schema.dropTableIfExists('search_store').then(() => {
-    //   console.dir('TABLE_DELETED: search_store')
-    // })
+    //this.dropTable('search_store')
     this.api.schema.createTableIfNotExists('search_store', table => {
       table.collate('utf8mb4_general_ci')
       table.increments().unsigned().primary()
@@ -187,20 +187,22 @@ export default class Adapter {
     })
   }
 
-  addConfigData(callback) {
-    this.api('config').insert([{
-      key: 'package_name',
-      value: process.env.npm_package_name
-    }, {
-      key: 'version_number',
-      value: process.env.npm_package_version
-    }, {
-      key: 'installation_date',
-      value: this.api.fn.now()
-    }]).then(response => {
-      callback(response)
-    }).catch(error => {
-      callback(error)
+  addConfigData() {
+    return new Promise((resolve, reject) => {
+      this.api('config').insert([{
+        key: 'package_name',
+        value: process.env.npm_package_name
+      }, {
+        key: 'version_number',
+        value: process.env.npm_package_version
+      }, {
+        key: 'installation_date',
+        value: this.api.fn.now()
+      }]).then(response => {
+        resolve(response)
+      }).catch(error => {
+        reject(error)
+      })
     })
   }
 

@@ -40,7 +40,7 @@ const mutations = {
 const actions = {
   searchUsers: ({commit}, options) => {
     return new Promise((resolve, reject) => {
-      client.searchUsers(options, (payload) => {
+      client.searchUsers(options).then(payload => {
         let items = []
         if (payload.length) {
           payload.forEach(tweet => {
@@ -59,7 +59,7 @@ const actions = {
   },
   lookupUsers: ({commit}, options) => {
     return new Promise((resolve, reject) => {
-      client.lookupUsers(options, (payload) => {
+      client.lookupUsers(options).then(payload => {
         commit(types.LOOKUP_USERS_LOOKUP, payload)
         resolve()
       })

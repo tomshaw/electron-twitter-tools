@@ -44,9 +44,9 @@
     },
     created () {
 
-      // this.$store.dispatch('loadTrendsPlace', { id: this.woeid }).then((resp) => {
-      //   console.log('loadTrendsPlace', this.items)
-      // })
+      this.$store.dispatch('loadTrendsPlace', { id: this.woeid }).then((resp) => {
+        console.log('loadTrendsPlace', this.items)
+      })
 
       this.$store.dispatch('loadTrendsClosest', { lat: 37.781157, long: -122.400612831116 }).then((resp) => {
         console.log('loadTrendsClosest', resp)

@@ -36,7 +36,7 @@ const mutations = {
 const actions = {
   loadTrendsAvailable: ({commit}, options) => {
     return new Promise((resolve, reject) => {
-      client.trendsAvailable(options, response => {
+      client.trendsAvailable(options).then(response => {
         if (typeof response !== 'undefined') {
           if (response.length) {
             commit(types.TRENDS_LOAD_AVAILABLE, response)
@@ -48,7 +48,7 @@ const actions = {
   },
   loadTrendsClosest: ({commit}, options) => {
     return new Promise((resolve, reject) => {
-      client.trendsClosest(options, response => {
+      client.trendsClosest(options).then(response => {
         if (typeof response !== 'undefined') {
           if (response.length) {
             commit(types.TRENDS_LOAD_CLOSEST, response)
@@ -60,7 +60,7 @@ const actions = {
   },
   loadTrendsPlace: ({commit}, options) => {
     return new Promise((resolve, reject) => {
-      client.trendsPlace(options, response => {
+      client.trendsPlace(options).then(response => {
         if (typeof response !== 'undefined') {
           if (response.length) {
             commit(types.TRENDS_LOAD_PLACE, response[0].trends)

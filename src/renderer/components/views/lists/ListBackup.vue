@@ -56,8 +56,10 @@
     methods: {
       handleRefresh() {
         this.loader = 'loading'
-        this.$store.dispatch('loadSavedLists').then((response) => {
+        this.$store.dispatch('loadSavedLists').then(resp => {
           this.$toastr('success', 'Refreshing saved lists.', 'Success')
+        }).catch(error => {
+          this.$toastr('error', error[0].message, 'Error Message')
         })
       }
     }

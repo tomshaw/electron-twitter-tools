@@ -92,7 +92,6 @@ export default class Schema {
       createSearchTable,
       createSearchStoreTable
     ]).then(response => {
-      console.dir(response)
       callback(response)
     })
   }

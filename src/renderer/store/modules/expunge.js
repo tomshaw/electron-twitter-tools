@@ -96,18 +96,18 @@ const actions = {
       })
     })
   },
-  expungeTweet({ commit }, tweet) {
+  expungeTweet({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postStatusDestroy(tweet, payload => {
-        commit(types.EXPUNGE_DESTROY_TWEET, payload)
+      client.postStatusDestroy(options).then(resp => {
+        commit(types.EXPUNGE_DESTROY_TWEET, resp)
         resolve()
       })
     })
   },
-  expungeFavorite({ commit }, tweet) {
+  expungeFavorite({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postFavoritesDestroy(tweet, payload => {
-        commit(types.EXPUNGE_DESTROY_TWEET, payload)
+      client.postFavoritesDestroy(options).then(resp => {
+        commit(types.EXPUNGE_DESTROY_TWEET, resp)
         resolve()
       })
     })

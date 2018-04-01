@@ -6,7 +6,7 @@ export default class Schema {
     const db = new Adapter(credentials)
     
     let populateConfig = new Promise((resolve, reject) => {
-      db.addConfigData(response => {
+      db.addConfigData().then(response => {
         if (response instanceof Error) {
           resolve({
             status: 'error',
@@ -18,11 +18,12 @@ export default class Schema {
             message: 'Populated configuration data.'
           })
         }
+      }).catch(error => {
+        reject(error)
       })
     })
 
     Promise.all([populateConfig]).then(response => {
-      console.dir(response)
       callback(response)
     })
   }

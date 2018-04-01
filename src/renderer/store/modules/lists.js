@@ -64,31 +64,30 @@ const actions = {
   },
   loadActiveLists({ commit }) {
     return new Promise((resolve, reject) => {
-      client.userLists(account, response => {
-        if (response.length) {
-          commit(types.TWITTER_LISTS_ACTIVE, response)
-          resolve(response)
-        } else {
-          reject(response)
-        }
+      client.userLists(account).then(resp => {
+        commit(types.TWITTER_LISTS_ACTIVE, resp)
+        resolve(resp)
+      }).catch(error => {
+        reject(error)
       })
     })
   },
   deleteListLocal({ commit }, id) {
     return new Promise((resolve, reject) => {
       db.api('lists').where('id', id).del().then((resp) => {
-        db.api('lists_store').where('list_id', id).del().then((resp) => {
-          commit(types.TWITTER_LISTS_DELETE_LOCAL, id)
-          resolve(id)
-        })
+        db.api('lists_store').where('list_id', id).del().then((resp) => {})
+        commit(types.TWITTER_LISTS_DELETE_LOCAL, id)
+        resolve(id)
       })
     })
   },
   deleteListRemote({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postListDestroy(options, response => {
+      client.postListDestroy(options).then(response => {
         commit(types.TWITTER_LISTS_DELETE_REMOTE, options.list_id)
         resolve(response)
+      }).catch(error => {
+        reject(error)
       })
     })
   },
@@ -97,14 +96,18 @@ const actions = {
       db.api('lists').update('slug', data.slug).where('id', '=', data.id).then((resp) => {
         commit(types.TWITTER_LISTS_UPDATE_LOCAL, data)
         resolve(data)
+      }).catch(error => {
+        reject(error)
       })
     })
   },
   updateListRemote({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postListUpdate(options, response => {
+      client.postListUpdate(options).then(resp => {
         commit(types.TWITTER_LISTS_UPDATE_REMOTE, options)
-        resolve(response)
+        resolve(resp)
+      }).catch(error => {
+        reject(error)
       })
     })
   }

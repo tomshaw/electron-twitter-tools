@@ -77,7 +77,7 @@ const actions = {
   },
   friendshipCreate({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.friendshipCreate(options, response => {
+      client.friendshipCreate(options).then(response => {
         commit(types.TWITTER_SET_FRIENDS_COUNT, {type: 'increment'})
         commit(types.TWITTER_USERS_FRIENDSHIP_CREATE, response)
         commit(types.LOOKUP_USERS_FRIENDSHIP, { id: options.user_id, value: true })
@@ -87,7 +87,7 @@ const actions = {
   },
   friendshipDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.friendshipDestroy(options, response => {
+      client.friendshipDestroy(options).then(response => {
         commit(types.TWITTER_SET_FRIENDS_COUNT, {type: 'decrement'})
         commit(types.TWITTER_USERS_FRIENDSHIP_DESTROY, response)
         commit(types.LOOKUP_USERS_FRIENDSHIP, { id: options.user_id, value: false })
@@ -97,7 +97,7 @@ const actions = {
   },
   blocksCreate({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.blocksCreate(options, response => {
+      client.blocksCreate(options).then(response => {
         commit(types.TWITTER_SET_FRIENDS_COUNT, {type: 'decrement'})
         commit(types.TWITTER_USERS_FRIENDSHIP_DESTROY, response)
         commit(types.LOOKUP_USERS_FRIENDSHIP, { id: options.user_id, value: false })
@@ -108,7 +108,7 @@ const actions = {
   },
   blocksDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.blocksDestroy(options, response => {
+      client.blocksDestroy(options).then(response => {
         commit(types.TWITTER_USERS_BLOCKS_DESTROY, response)
         resolve(response)
       })
@@ -116,7 +116,7 @@ const actions = {
   },
   mutesCreate({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.mutesCreate(options, response => {
+      client.mutesCreate(options).then(response => {
         commit(types.TWITTER_USERS_MUTES_CREATE, response)
         resolve(response)
       })
@@ -124,7 +124,7 @@ const actions = {
   },
   mutesDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.mutesDestroy(options, response => {
+      client.mutesDestroy(options).then(response => {
         commit(types.TWITTER_USERS_MUTES_DESTROY, response)
         resolve(response)
       })

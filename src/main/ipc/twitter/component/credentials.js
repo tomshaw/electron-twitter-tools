@@ -8,15 +8,10 @@ export default class Credentials {
     const client = new TwitterClient(credentials)
 
     const promise = new Promise((resolve, reject) => {
-      client.verifyCredentials(response => {
-        if (response.hasOwnProperty('errors')) {
-          resolve({
-            status: 'errors',
-            message: 'Could not authenticate you.'
-          })
-        } else {
-          resolve(response)
-        }
+      client.verifyCredentials().then(response => {
+        resolve(response)
+      }).catch(error => {
+        reject(error)
       })
     })
 
