@@ -70,6 +70,10 @@ const routerSearch = [{
     path: '/search/session',
     name: 'search-session',
     component: require('@/components/views/search/session/SearchSession').default
+  }, {
+    path: '/search/results/:id',
+    name: 'search-results',
+    component: require('@/components/views/search/results/SearchResults').default
   }]
 }]
 

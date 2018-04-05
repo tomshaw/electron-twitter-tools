@@ -189,7 +189,7 @@ const mutations = {
             state.words.push({ 
               word: word,
               value: value,
-              count: 0
+              count: 1
             })
           } else {
             state.words[i].count++
@@ -201,6 +201,10 @@ const mutations = {
         state.words.sort((a, b) => {
           return a.count - b.count;
         }).reverse()
+      }
+
+      if (state.words.length > 30) {
+        state.words.pop()
       }
 
     }

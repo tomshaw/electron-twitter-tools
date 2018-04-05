@@ -8,7 +8,7 @@
     </v-layout>
     <v-layout row wrap>
       <v-flex xs3>
-        <trends-form></trends-form>
+        <trends-form v-if="sidebar"></trends-form>
       </v-flex>
       <v-flex xs9>
         <router-view></router-view>
@@ -27,6 +27,16 @@
       'page-title': PageTitle,
       'breadcrumbs': Breadcrumbs,
       'trends-form': TrendsForm
+    },
+    data () {
+      return {
+        sidebar: true
+      }
+    },
+    created () {
+      this.$on('search:sidebar', (value) => {
+        this.sidebar = value
+      })
     }
   }
 </script>

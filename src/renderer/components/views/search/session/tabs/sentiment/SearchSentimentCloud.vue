@@ -44,7 +44,7 @@ import { setInterval } from 'timers';
     created () {
       setInterval(() => {
         this.generateCloud()
-      }, 5e3)
+      }, 1e3 * 60)
     },
     methods: {
       wordValence(word) {
@@ -56,12 +56,13 @@ import { setInterval } from 'timers';
         return 0
       },
       generateCloud() {
+        let data = this.generateList()
         WordCloud(this.canvas, {
-          list: this.generateList(),
-          minSize: '1.6rem',
-          gridSize: Math.round(12 * 1100 / 1024),
+          list: data,
+          minSize: '14px',
+          gridSize: Math.round(6 * 800 / 1024),
           weightFactor: (size) => {
-            return Math.pow(size, 2.3) * 1100 / 1024;
+            return Math.pow(size, 1.8) * 800 / 1024;
           },
           fontFamily: 'Roboto',
           color: (word, weight) => {
@@ -71,7 +72,8 @@ import { setInterval } from 'timers';
             } else if (value < 0) {
               return this.colours.negative[Math.abs(value)]
             } else {
-              return (weight === 12) ? '#f02222' : '#c09292';
+              let join = [...this.colours.positive, ...this.colours.negative]
+              return join[Math.floor(Math.random() * join.length)]
             }
           },
           rotateRatio: 0.5,

@@ -43,6 +43,9 @@
         <td class="text-xs-right">{{ props.item.start_time }}</td>
         <td class="text-xs-right">{{ props.item.end_time }}</td>
         <td class="text-xs-center">
+         <v-btn icon class="mx-0" @click="viewItem(props.item)">
+            <v-icon color="green">find_replace</v-icon>
+          </v-btn>
           <v-btn icon class="mx-0" @click="editItem(props.item)">
             <v-icon color="teal">edit</v-icon>
           </v-btn>
@@ -105,6 +108,10 @@
     methods: {
       initialize () {
         this.$store.dispatch('loadSearchSessions')
+      },
+      viewItem (item) {
+        const id = item.id
+        this.$router.push({name: 'search-results', params: { id: id }})
       },
       editItem (item) {
         this.editedIndex = this.items.indexOf(item)

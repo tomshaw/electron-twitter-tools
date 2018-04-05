@@ -35,16 +35,18 @@
 </template>
 
 <script>
-  import { mapActions, mapMutations } from 'vuex'
+  import { mapActions, mapGetters, mapMutations } from 'vuex'
   import InitialState from './InitialState'
   export default {
     name: 'search-form',
     props: ['active'],
+    computed: {
+      ...mapGetters({
+        id: 'getSearchId'
+      })
+    },
     data: () => {
       return InitialState()
-    },
-    created() {
-      // console.log('this.data', this.$data)
     },
     destroyed() {
       if (this.active) {
@@ -62,8 +64,12 @@
       },
       handleStopButton() {
         this.streamEnd()
+        let id = this.$store.getters.getSearchId
         Object.assign(this.$data, InitialState())
         this.$refs.form.reset()
+        setTimeout(() => {
+          this.$router.push({name: 'search-results', params: { id: id }})
+        }, 1e3)
       },
       handleSubmitButton() {
         if (this.$refs.form.validate()) {
