@@ -78,6 +78,15 @@
           case 'mysql':
             title = 'MySQL'
             break
+          case 'postgres':
+            title = 'Postgres'
+            break
+          case 'mariadb':
+            title = 'MariaDb'
+            break
+          case 'mssql':
+            title = 'MSSQL'
+            break
         }
         return title
       },

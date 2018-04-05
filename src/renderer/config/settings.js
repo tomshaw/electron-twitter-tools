@@ -13,15 +13,15 @@ export const adapters = {
     password: '',
     database: ''
   },
-  postgres: {
+  pg: {
     client: 'postgres',
     host: '',
     user: '',
     password: '',
     database: ''
   },
-  mariadb: {
-    client: 'mariadb',
+  mariasql: {
+    client: 'mariasql',
     host: '',
     user: '',
     password: '',

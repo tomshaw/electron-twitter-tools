@@ -1,10 +1,8 @@
 export const API_STORAGE_SQLITE = 'sqlite3'
 export const API_STORAGE_MYSQL = 'mysql'
-export const API_STORAGE_POSTGRES = 'postgres'
-export const API_STORAGE_MARIADB = 'mariadb'
-export const API_STORAGE_ORACLE = 'oracle'
+export const API_STORAGE_POSTGRES = 'pg'
+export const API_STORAGE_MARIADB = 'mariasql'
 export const API_STORAGE_MSSQL = 'mssql'
-export const API_STORAGE_POUCHDB = 'pouchdb'
 
 // ipc-main/renderer
 export const IPC_REQUEST_SCHEMA_CREATE = 'IPC_REQUEST_SCHEMA_CREATE'

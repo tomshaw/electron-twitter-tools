@@ -15,9 +15,11 @@ export default class SentimentAnalysis {
 
     let array = string.toLowerCase().split(' ')
 
-    let wordArray = array.filter((word) => {
+    let filtered = array.filter((word) => {
       return word.length >= 3
     })
+    
+    let wordArray = [...new Set(filtered)]
 
     let total = 0
     let match = []

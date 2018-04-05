@@ -1,7 +1,5 @@
 import Adapter from './adapter'
 
-//var moment = require('moment');
-
 export default class extends Adapter {
 
   constructor(connection) {

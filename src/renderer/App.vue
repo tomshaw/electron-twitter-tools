@@ -69,7 +69,7 @@
       this.$electron.ipcRenderer.send(types.IPC_REQUEST_SCHEMA_CREATE, this.$store.getters.getConnection)
       this.$electron.ipcRenderer.on(types.IPC_RESPONSE_SCHEMA_CREATE, (event, response) => {
         let hasError = response.find(item => item.status === 'error')
-        if (hasError) {
+        if (hasError && hasError.message) {
           this.$toastr('error', hasError.message, 'Error Message')
           this.$router.push({ name: 'settings-page' })
         } else {
@@ -79,7 +79,7 @@
 
       this.$electron.ipcRenderer.on(types.IPC_RESPONSE_SCHEMA_CONFIG, (event, response) => {
         let hasError = response.find(item => item.status === 'error')
-        if (hasError) {
+        if (hasError && hasError.message) {
           this.$toastr('error', hasError.message, 'Error Message')
           this.$router.push({ name: 'settings-page' })
         } else {

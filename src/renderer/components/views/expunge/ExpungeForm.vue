@@ -296,9 +296,9 @@
           next(map)
         }
 
-        generateDates(data, response => {
-          if (response.length) {
-            response.forEach(item => {
+        generateDates(data, items => {
+          if (items.length) {
+            items.forEach(item => {
               let hasDate = this.statusDates.map(i => i).indexOf(item)
               if (hasDate === -1) {
                 this.statusDates.unshift(item)
@@ -308,7 +308,7 @@
         })
       },
       allowedDates(val) {
-        let found = this.statusDates.find(o => o === val);
+        let found = this.statusDates.find(i => i === val)
         if (found) {
           return found
         }

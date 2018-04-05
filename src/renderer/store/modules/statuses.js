@@ -64,26 +64,23 @@ const mutations = {
     }
   },
   [types.STATUS_RETWEET_CREATE](state, payload) {
-    const id = payload.id_str
-    let homeIdx = state.home.map(item => item.id_str).indexOf(id)
+    let homeIdx = state.home.map(item => item.id_str).indexOf(payload.id_str)
     if (homeIdx !== -1) {
       state.home[homeIdx].retweeted = true
     }
-    state.user = [payload, ...state.user]
+    state.user.unshift(payload)
   },
   [types.STATUS_RETWEET_DESTROY](state, payload) {
-    const id = payload.id_str
-    let homeIdx = state.home.map(item => item.id_str).indexOf(id)
+    let homeIdx = state.home.map(item => item.id_str).indexOf(payload.id_str)
     if (homeIdx !== -1) {
       state.home[homeIdx].retweeted = false
     }
-    let userIdx = state.user.map(item => item.id_str).indexOf(id)
+    let userIdx = state.user.map(item => item.id_str).indexOf(payload.id_str)
     if (userIdx !== -1) {
       state.user.splice(userIdx, 1)
     }
   },
   [types.STATUS_FAVORITES_CREATE](state, payload) {
-    state.favs = [payload, ...state.favs]
     let homeIdx = state.home.map(item => item.id_str).indexOf(payload.id_str)
     if (homeIdx !== -1) {
       state.home[homeIdx].favorited = true
@@ -92,9 +89,10 @@ const mutations = {
     if (userIdx !== -1) {
       state.user[userIdx].favorited = true
     }
+    state.favs.unshift(payload)
   },
   [types.STATUS_FAVORITES_DESTROY](state, payload) {
-    let i = state.favs.map(item => item.id_str).indexOf(payload.id) 
+    let i = state.favs.map(item => item.id_str).indexOf(payload.id_str) 
     state.favs.splice(i, 1)
     let homeIdx = state.home.map(item => item.id_str).indexOf(payload.id_str)
     if (homeIdx !== -1) {
@@ -148,7 +146,8 @@ const actions = {
   },
   statusDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postStatusDestroy(options).then(resp => {
+      client.postStatusDestroy({id: options.id_str}).then(resp => {
+        commit(types.TWITTER_SET_STATUSES_COUNT, {type: 'decrement'})
         commit(types.STATUS_TWEET_DESTROY, resp)
         resolve(resp)
       }).catch(error => {
@@ -158,8 +157,9 @@ const actions = {
   },
   retweetCreate({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postRetweet(options).then(resp => {
-        commit(types.STATUS_RETWEET_CREATE, resp)
+      client.postRetweet({id: options.id_str}).then(resp => {
+        commit(types.TWITTER_SET_STATUSES_COUNT, {type: 'increment'})
+        commit(types.STATUS_RETWEET_CREATE, options)
         resolve(resp)
       }).catch(error => {
         reject(error)
@@ -168,8 +168,9 @@ const actions = {
   },
   retweetDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postUnretweet(options).then(resp => {
-        commit(types.STATUS_RETWEET_DESTROY, resp)
+      client.postUnretweet({id: options.id_str}).then(resp => {
+        commit(types.TWITTER_SET_STATUSES_COUNT, {type: 'decrement'})
+        commit(types.STATUS_RETWEET_DESTROY, options)
         resolve(resp)
       }).catch(error => {
         reject(error)
@@ -178,8 +179,9 @@ const actions = {
   },
   favoriteCreate({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postFavoritesCreate(options).then(resp => {
-        commit(types.STATUS_FAVORITES_CREATE, resp)
+      client.postFavoritesCreate({id: options.id_str}).then(resp => {
+        commit(types.TWITTER_SET_FAVORITES_COUNT, {type: 'increment'})
+        commit(types.STATUS_FAVORITES_CREATE, options)
         resolve(resp)
       }).catch(error => {
         reject(error)
@@ -188,8 +190,9 @@ const actions = {
   },
   favoriteDestroy({ commit }, options) {
     return new Promise((resolve, reject) => {
-      client.postFavoritesDestroy(options).then(resp => {
-        commit(types.STATUS_FAVORITES_DESTROY, resp)
+      client.postFavoritesDestroy({id: options.id_str}).then(resp => {
+        commit(types.TWITTER_SET_FAVORITES_COUNT, {type: 'decrement'})
+        commit(types.STATUS_FAVORITES_DESTROY, options)
         resolve(resp)
       }).catch(error => {
         reject(error)

@@ -22,10 +22,10 @@
                 </div>
 
                 <text-entities v-if="item.retweeted_status" :tweet="item.retweeted_status" text media></text-entities>
-                <text-entities v-else :tweet="item" text media></text-entities> 
-                <div class="meta">
+                <text-entities v-else :tweet="item" text media></text-entities>
 
-                  <div class="action" @click="handleReply(item.retweeted_status ? item.retweeted_status : item)">
+                <div class="actions">
+                  <div class="action-item" @click="handleReply(item.retweeted_status ? item.retweeted_status : item)">
                     <template v-if="userTimeline">
                       <v-icon color="pink" v-if="item.in_reply_to_status_id">chat</v-icon>
                       <v-icon color="grey" v-else>chat_bubble_outline</v-icon>
@@ -35,18 +35,16 @@
                       <v-icon color="grey" v-else>chat_bubble_outline</v-icon>
                     </template>
                   </div>
-
-                  <div class="action" @click="handleRetweet(item)">
+                  <div class="action-item" @click="handleRetweet(item)">
                     <v-icon color="pink" v-if="item.retweeted">repeat_one</v-icon>
                     <v-icon color="grey" v-else>repeat</v-icon>
                   </div>
-
-                  <div class="action" @click="handleFavorite(item)">
+                  <div class="action-item" @click="handleFavorite(item)">
                     <v-icon color="pink" v-if="item.favorited">favorite</v-icon>
                     <v-icon color="grey" v-else>favorite_border</v-icon>
                   </div>
-
                 </div>
+
               </v-flex>
             </v-layout>
           </v-card-text>
@@ -57,7 +55,7 @@
 </template>
 
 <script>
-  import { mapActions, mapMutations } from 'vuex'
+  import { mapActions } from 'vuex'
   import TextEntities from '@/components/shared/Miscellaneous/TextEntities'
   export default {
     name: 'status-view',
@@ -85,42 +83,34 @@
         retweetCreate: 'retweetCreate',
         retweetDestroy: 'retweetDestroy',
         favoriteCreate: 'favoriteCreate',
-        favoriteDestroy: 'favoriteDestroy',
-        setStatusesCount: 'setStatusesCount',
-        setFavoritesCount: 'setFavoritesCount'
-      }),
-      ...mapMutations({
-        setReply: 'TWEET_FORM_SET_REPLY'
+        favoriteDestroy: 'favoriteDestroy'
       }),
       handleReply (tweet) {
         if (tweet.in_reply_to_status_id) {
-          this.statusDestroy({id: tweet.id_str}).then(response => {
-            console.log('destroy', response)
-          })
+          console.log('statusDestroy', tweet)
+          this.statusDestroy(tweet)
         } else {
-          this.setReply(tweet)
+          console.log('TWEET_FORM_SET_REPLY', tweet)
+          this.$store.commit('TWEET_FORM_SET_REPLY', tweet)
         }
       },
       handleRetweet (tweet) {
+        console.log('this.$account', this.$account.id_str)
         if (tweet.retweeted) {
-          this.retweetDestroy({id: tweet.id_str}).then(response => {
-            this.setStatusesCount({type: 'decrement'})
-          })
+          console.log('retweetDestroy', tweet)
+          this.retweetDestroy(tweet)
         } else {
-          this.retweetCreate({id: tweet.id_str}).then(response => {
-            this.setStatusesCount({type: 'increment'})
-          })
+          console.log('retweetCreate', tweet)
+          this.retweetCreate(tweet)
         }
       },
       handleFavorite (tweet) {
         if (tweet.favorited) {
-          this.favoriteDestroy({id: tweet.id_str}).then(response => {
-            this.setFavoritesCount({type: 'decrement'})
-          })
+          console.log('favoriteDestroy', tweet)
+          this.favoriteDestroy(tweet)
         } else {
-          this.favoriteCreate({id: tweet.id_str}).then(response => {
-            this.setFavoritesCount({type: 'increment'})
-          })
+          console.log('favoriteCreate', tweet)
+          this.favoriteCreate(tweet)
         }
       }
     }
@@ -128,9 +118,9 @@
 </script>
 
 <style lang="scss">
-.meta {
+.actions {
   margin-top: 10px;
-  .action {
+  .action-item {
     display: inline-block;
     cursor: pointer;
   }

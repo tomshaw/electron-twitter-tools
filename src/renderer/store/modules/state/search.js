@@ -8,6 +8,7 @@ export default function initialOptions () {
     timezones: [],
     influential: [],
     places: [],
+    words: [],
     results: {
       status_count: 0,
       quote_count: 0,

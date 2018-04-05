@@ -66,6 +66,7 @@
   },
   "dependencies": {
     "@deveodk/vue-toastr": "^1.0.4",
+    "amcharts3": "github:amcharts/amcharts3",
     "axios": "^0.16.1",
     "big-integer": "^1.6.26",
     "chart.js": "^2.7.2",
@@ -74,8 +75,11 @@
     "fontawesome": "^4.7.2",
     "knex": "^0.14.2",
     "lodash": "^4.17.4",
+    "mariasql": "^0.2.6",
     "moment": "^2.20.1",
+    "mssql": "^4.1.0",
     "mysql": "^2.15.0",
+    "pg": "^7.4.1",
     "sqlite3": "^3.1.13",
     "twemoji": "^2.5.0",
     "twitter": "^1.7.1",
@@ -86,7 +90,8 @@
     "vue-router": "^2.5.3",
     "vue-toastr": "^2.0.12",
     "vuetify": "^1.0.4",
-    "vuex": "^2.3.1"
+    "vuex": "^2.3.1",
+    "wordcloud": "^1.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

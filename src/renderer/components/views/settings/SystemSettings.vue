@@ -30,6 +30,7 @@
                           <v-text-field label="Username" v-model="adapters.mysql.user" required></v-text-field>
                           <v-text-field label="Password" v-model="adapters.mysql.password" required></v-text-field>
                           <v-text-field label="Database" v-model="adapters.mysql.database" required></v-text-field>
+                          <v-text-field label="TCP Port" v-model="adapters.mysql.port" required></v-text-field>
                           <v-btn @click="handleAdapterSubmit('mysql')">submit</v-btn>
                           <v-btn>clear</v-btn>
                         </v-form>
@@ -41,10 +42,11 @@
                     <v-card>
                       <v-card-text class="grey">
                         <v-form>
-                          <v-text-field label="Hostname" v-model="adapters.postgres.host" required></v-text-field>
-                          <v-text-field label="Username" v-model="adapters.postgres.user" required></v-text-field>
-                          <v-text-field label="Password" v-model="adapters.postgres.password" required></v-text-field>
-                          <v-text-field label="Database" v-model="adapters.postgres.database" required></v-text-field>
+                          <v-text-field label="Hostname" v-model="adapters.pg.host" required></v-text-field>
+                          <v-text-field label="Username" v-model="adapters.pg.user" required></v-text-field>
+                          <v-text-field label="Password" v-model="adapters.pg.password" required></v-text-field>
+                          <v-text-field label="Database" v-model="adapters.pg.database" required></v-text-field>
+                          <v-text-field label="TCP Port" v-model="adapters.pg.port" required></v-text-field>
                           <v-btn @click="handleAdapterSubmit('postgres')">submit</v-btn>
                           <v-btn>clear</v-btn>
                         </v-form>
@@ -56,10 +58,11 @@
                     <v-card>
                       <v-card-text class="grey">
                         <v-form>
-                          <v-text-field label="Hostname" v-model="adapters.mariadb.host" required></v-text-field>
-                          <v-text-field label="Username" v-model="adapters.mariadb.user" required></v-text-field>
-                          <v-text-field label="Password" v-model="adapters.mariadb.password" required></v-text-field>
-                          <v-text-field label="Database" v-model="adapters.mariadb.database" required></v-text-field>
+                          <v-text-field label="Hostname" v-model="adapters.mariasql.host" required></v-text-field>
+                          <v-text-field label="Username" v-model="adapters.mariasql.user" required></v-text-field>
+                          <v-text-field label="Password" v-model="adapters.mariasql.password" required></v-text-field>
+                          <v-text-field label="Database" v-model="adapters.mariasql.database" required></v-text-field>
+                          <v-text-field label="TCP Port" v-model="adapters.mariasql.port" required></v-text-field>
                           <v-btn @click="handleAdapterSubmit('mariadb')">submit</v-btn>
                           <v-btn>clear</v-btn>
                         </v-form>

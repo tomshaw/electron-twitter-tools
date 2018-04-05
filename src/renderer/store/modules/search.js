@@ -19,7 +19,8 @@ const getters = {
   getSearchTimezones: state => state.timezones,
   getSearchLocations: state => state.locations,
   getSearchInfluential: state => state.influential,
-  getSearchSentiment: state => state.sentiment
+  getSearchSentiment: state => state.sentiment,
+  getSearchSentimentWords: state => state.words
 }
 
 const mutations = {
@@ -166,7 +167,10 @@ const mutations = {
       state.locations.pop()
     }
 
-    const score = payload.score
+    const sentiment = payload.sa
+    const bagofwords = sentiment.bagofwords
+    const score = bagofwords.score
+    const match = bagofwords.match
 
     if (score < 0) {
       state.sentiment.negative += score
@@ -175,6 +179,34 @@ const mutations = {
     } else {
       state.sentiment.neutral++
     }
+
+    if (match.constructor === Array) {
+      if (match.length) {
+        match.forEach((data) => {
+          let {word, value} = data;
+          let i = state.words.map(item => item.word).indexOf(word)
+          if (i === -1) {
+            state.words.push({ 
+              word: word,
+              value: value,
+              count: 0
+            })
+          } else {
+            state.words[i].count++
+          }
+        })
+      }
+
+      if (state.words.length) {
+        state.words.sort((a, b) => {
+          return a.count - b.count;
+        }).reverse()
+      }
+
+    }
+
+    //console.log('words', state.words)
+    //console.log('payload', payload)
 
     state.results.status_count++
   },
@@ -406,9 +438,10 @@ const actions = {
       save.verified = response.user.verified
       save.created_at = db.api.fn.now()
 
+      response.sa = {}
+
       if (processSentiment) {
-        let results = new SentimentAnalysis(response.text)
-        response.score = results.score
+        response.sa.bagofwords = new SentimentAnalysis(response.text)
       }
 
       if (process === true) {
