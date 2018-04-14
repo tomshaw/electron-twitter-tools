@@ -4,6 +4,9 @@
       <v-container grid-list-md text-xs-center>
         <v-form>
           <v-layout row wrap>
+            <v-flex sm12>
+              <pizza-graph></pizza-graph>
+            </v-flex>
             <v-flex xs11 sm4>
               <v-text-field label="Status Count" v-model="results.status_count" prepend-icon="speaker_notes"></v-text-field>
             </v-flex>
@@ -76,6 +79,47 @@
         } else {
           return `${this.results.places_count} Places`
         }
+      }
+    },
+    watch: {
+      active: {
+        handler: function (newValues, oldValues) { 
+          if (newValues) {
+            this.startInterval()
+          } else {
+            this.clearInterval()
+          }
+        }
+      },
+      results: {
+        handler: function (newValues, oldValues) { 
+          this.count = newValues.status_count
+        },
+        deep: true
+      }
+    },
+    data () {
+      return {
+        timer: [],
+        count: 0
+      }
+    },
+    destroyed() {
+      if (this.timer) {
+        this.clearInterval()
+      }
+    },
+    methods: {
+      startInterval() {
+        let last = 0
+        this.timer = setInterval(() => {
+          let diff = this.count - last
+          console.log('timer', diff)
+          last = this.count
+        }, 1e3)
+      },
+      clearInterval() {
+        clearInterval(this.timer)
       }
     }
   }

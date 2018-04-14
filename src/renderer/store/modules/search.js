@@ -32,6 +32,8 @@ const mutations = {
   },
   [types.SEARCH_SESSION_START] (state, payload) {
 
+    state.results.status_count++
+
     if (payload.quoted_status) {
       state.results.quote_count++
     }
@@ -212,7 +214,6 @@ const mutations = {
     //console.log('words', state.words)
     //console.log('payload', payload)
 
-    state.results.status_count++
   },
   [types.SEARCH_SESSION_END] (state) {
     Object.assign(state, initialState())

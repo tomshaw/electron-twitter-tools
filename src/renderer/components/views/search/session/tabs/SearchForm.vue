@@ -66,7 +66,9 @@
         this.streamEnd()
         let id = this.$store.getters.getSearchId
         Object.assign(this.$data, InitialState())
-        this.$refs.form.reset()
+        if (this.$refs.form) {
+          this.$refs.form.reset()
+        }
         setTimeout(() => {
           this.$router.push({name: 'search-results', params: { id: id }})
         }, 1e3)

@@ -45,21 +45,21 @@
     created () {
 
       this.$store.dispatch('loadTrendsPlace', { id: this.woeid }).then((resp) => {
-        console.log('loadTrendsPlace', this.items)
+        //console.log('loadTrendsPlace', this.items)
       })
 
       this.$store.dispatch('loadTrendsClosest', { lat: 37.781157, long: -122.400612831116 }).then((resp) => {
-        console.log('loadTrendsClosest', resp)
+        //console.log('loadTrendsClosest', resp)
       })
 
       // 467 Results
       this.$store.dispatch('loadTrendsAvailable', {}).then((resp) => {
-        console.log('loadTrendsAvailable', resp)
+        //console.log('loadTrendsAvailable', resp)
       })
 
       //console.log(this.$store.state.twitter.settings.trend_location)
 
-        console.log(this.$settings.get('twitter.settings'))
+        //console.log(this.$settings.get('twitter.settings'))
 
       // let countries = this.$getCountries()
       // console.log(countries)
@@ -73,7 +73,7 @@
       },
       handleChangeLink(event) {
         event.preventDefault()
-        console.log('here...')
+        //console.log('here...')
         this.$store.commit('TRENDS_MODAL_DIALOG', true)
       }
     }

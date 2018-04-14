@@ -12,6 +12,12 @@ import 'vuetify/dist/vuetify.css'
 import VueToastr from '@deveodk/vue-toastr'
 import '@deveodk/vue-toastr/dist/@deveodk/vue-toastr.css'
 
+import AmCharts from 'amcharts3' // eslint-disable-line no-unused-vars
+import AmSerial from 'amcharts3/amcharts/serial' // eslint-disable-line no-unused-vars
+
+import Chartist from 'chartist' // eslint-disable-line no-unused-vars
+import 'chartist/dist/chartist.min.css'
+
 import App from './App'
 import router from './router'
 import store from './store'

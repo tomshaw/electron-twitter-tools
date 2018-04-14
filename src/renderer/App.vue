@@ -88,10 +88,6 @@
           this.$toastr('success', `Adapter ${this.$store.getters.getAdapter} has been setup successfully.`, 'Success Message')
         }
       })
-      
-      /*
-       * Start Twitter
-       */
 
       if (this.$settings.get('twitter.validated') === false) {
         this.$router.push({ name: 'settings-page' })

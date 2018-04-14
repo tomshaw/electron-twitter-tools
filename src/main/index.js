@@ -36,6 +36,18 @@ const winURL = process.env.NODE_ENV === 'development'
   ? `http://localhost:9080`
   : `file://${__dirname}/index.html`
 
+/**
+ * Sets context menu in development mode
+ * https://github.com/sindresorhus/electron-context-menu
+ */
+if (process.env.NODE_ENV === 'development') {
+  require('electron-context-menu')({
+    prepend: (params, BrowserWindow) => [{
+      label: 'Rainbow'
+    }]
+  })
+}
+
 function createWindow () {
   /**
    * Initial window options

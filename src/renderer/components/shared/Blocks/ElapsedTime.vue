@@ -11,7 +11,7 @@
       active: function () {
         const isRunning = this.active
         if (isRunning) {
-          this.interval = setInterval(this.start, 1000);
+          this.interval = setInterval(this.start, 1e3);
         } else {
           this.stop()
         }
@@ -23,6 +23,14 @@
         totalSeconds: 0
       }
     },
+    mounted() {
+      this.el = document.getElementById('elapsedTime')
+    },
+    destroyed() {
+      if (this.interval) {
+        this.stop()
+      }
+    },
     methods: {
       start() {
         this.totalSeconds++;
@@ -30,16 +38,18 @@
         let minutes = Math.floor((this.totalSeconds - hour * 3600) / 60);
         let seconds = this.totalSeconds - (hour * 3600 + minutes * 60);
         if (hour) {
-          document.getElementById('elapsedTime').innerHTML = `${pad(hour)}:${pad(minutes)}:${pad(seconds)}`;
+          this.el.innerHTML = `${pad(hour)}:${pad(minutes)}:${pad(seconds)}`;
         } else {
-          document.getElementById('elapsedTime').innerHTML = `00:${pad(minutes)}:${pad(seconds)}`;
+          this.el.innerHTML = `00:${pad(minutes)}:${pad(seconds)}`;
         }
       },
       stop() {
         if (this.interval) {
           clearInterval(this.interval)
           this.totalSeconds = 0
-          document.getElementById('elapsedTime').innerHTML = '';
+          if (this.el.length) {
+            this.el.innerHTML = '';
+          }
         }
       }
     }
