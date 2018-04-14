@@ -5,7 +5,7 @@ var processData = (next) => {
     const obj = JSON.parse(fs.readFileSync('locations.json', 'utf8'))
     const array = obj.trendLocations
     let save = []
-    for (i in array) {
+    for (let i in array) {
       let row = array[i]
       save.push({
         'name': row.name,
@@ -22,6 +22,6 @@ processData((data) => {
   fs.writeFile('./locations2.json', JSON.stringify(data), 'utf-8', (err) => {
     if (err) throw err
     console.log('FINISHED PROCESS')
-    process.exit(code = 0)
+    process.exit(0)
   })
 })
