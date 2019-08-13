@@ -1,7 +1,7 @@
 {
   "name": "electron-twitter-tools",
-  "version": "0.2.2",
-  "author": "Tom Shaw <tomshaw21@gmail.com>",
+  "version": "0.2.3",
+  "author": "Tom Shaw <hello@tomshaw.us>",
   "description": "An Electron/Vue Twitter client for the power user.",
   "license": "MIT",
   "main": "./dist/electron/main.js",
