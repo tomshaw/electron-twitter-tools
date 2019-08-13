@@ -4,7 +4,6 @@
 [![Tag](https://img.shields.io/github/tag/tomshaw/electron-twitter-tools.svg)](https://github.com/tomshaw/electron-twitter-tools/tags)
 [![GitHub (pre-)release](https://img.shields.io/github/release/tomshaw/electron-twitter-tools/all.svg)](https://github.com/tomshaw/electron-twitter-tools/releases)
 [![Version npm](https://img.shields.io/npm/v/electron-twitter-tools.svg)](https://www.npmjs.com/package/electron-twitter-tools)
-[![Downloads](https://img.shields.io/github/downloads/tomshaw/electron-twitter-tools/total.svg "Downloads")](https://github.com/tomshaw/electron-twitter-tools/releases)
 [![Downloads npm](https://img.shields.io/npm/dt/electron-twitter-tools.svg)](https://www.npmjs.com/package/electron-twitter-tools)
 [![MIT license](https://img.shields.io/npm/l/electron-twitter-tools.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/tomshaw/electron-twitter-tools.svg?style=social&label=Star)](https://github.com/tomshaw/electron-twitter-tools)
