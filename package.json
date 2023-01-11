@@ -77,7 +77,7 @@
     "electron-context-menu": "^0.9.1",
     "electron-settings": "^3.1.4",
     "fontawesome": "^4.7.2",
-    "knex": "^0.19.5",
+    "knex": "^2.4.0",
     "lodash": "^4.17.4",
     "mariasql": "^0.2.6",
     "moment": "^2.20.1",
